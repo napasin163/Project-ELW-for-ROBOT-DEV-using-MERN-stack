@@ -1,10 +1,14 @@
-function App() {
-  return (
-    <div className="container">
-      <h1>Welcome to my Project !</h1>
-      <button className="btn btn-primary">Test</button>   
-    </div>
-  );
-}
+import Header from "./components/Header/Header"
+import Footer from "./components/Footer/Footer"
+
+const App = () =>(
+  <>
+    <Header/>
+    <main style={{minHeight:"93vh"}}>
+
+    </main>
+    <Footer/>
+  </>
+)
 
 export default App;
