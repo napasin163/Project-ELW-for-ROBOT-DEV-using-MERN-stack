@@ -1,0 +1,13 @@
+img {
+    margin: auto ;
+    width: 100px ;
+    height: 100px ;
+} 
+
+body {
+    background-color: rgb(78, 207, 240);
+}
+
+.testCenter {
+    margin-top: 100px;
+}

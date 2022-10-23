@@ -1,63 +1,37 @@
-import React from 'react';
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import './Header.css';
+import './Header.css'
+import { Outlet, Link } from "react-router-dom";
 
-const Header = () => {
-  return (
-    <Navbar bg="info" expand="lg" variant='dark'>
-      <Container fluid="lg">
-      <Navbar.Brand href="#home">
-            <img
-              src="https://cdn.discordapp.com/attachments/1004398550152659047/1028312489986900029/ELW_2-removebg-preview.png"
-              width="40"    
-              height="40"
-              className="d-inline-block align-top"
-              alt="Miwamew"
-            />
-        </Navbar.Brand>
-        <Navbar.Brand href="#">ELW</Navbar.Brand>
-
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="m-auto"
-            style={{ maxHeight: '100px' }}
-            navbarScroll
-          >
-            <Nav.Link href="/home">Robots</Nav.Link>
-
-            <NavDropdown title="Arduino" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Sensor</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Motor/Servo</NavDropdown.Item>
-              <NavDropdown.Item href="#action5">Module</NavDropdown.Item>
-              <NavDropdown.Item href="#action6">Other</NavDropdown.Item>
-            </NavDropdown>
-
-            <NavDropdown title="Micro:Bit" id="navbarScrollingDropdown">
-            <NavDropdown.Item href="#action4">Sensor</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Motor/Servo</NavDropdown.Item>
-              <NavDropdown.Item href="#action5">Module</NavDropdown.Item>
-              <NavDropdown.Item href="#action6">Other</NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-          </Form>
-          <Button variant="outline-success">Search</Button>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  );
+const TopHeader = () => {
+    return (
+        <body>
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active test" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <Link to="/blogs" class="nav-link">Link</Link>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <Outlet />
+        </body>
+    );
 }
 
-export default Header
+export default TopHeader;

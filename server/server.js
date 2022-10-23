@@ -22,5 +22,5 @@ app.use(morgan("dev"))
 //route
 app.use('/api',blogRoute)
 
-const port = process.env.PORT || 9000
+const port = process.env.PORT || 9999
 app.listen(port,()=>console.log(`start server in port ${port}`))
