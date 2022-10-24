@@ -1,3 +1,36 @@
-.test {
-    color: rgb(160, 212, 64) !important;
-}   
+.BgColorBlue {
+    background-color:#005c9f !important;
+}       
+
+.buttonNavBlue {
+    top:50%;
+    background-color:#0e99ff;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    padding-left: 10px;
+  }
+
+  .buttonNavGreen {
+    top:50%;
+    background-color:#14b81a;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    padding-left: 10px;
+  }
+
+  .buttonNavYellow {
+    top:50%;
+    background-color:#fecd29;
+    color: rgb(8, 5, 5);
+    border:none;
+    border-radius:10px;
+    padding-left: 10px;
+  }
+
+  .TextELWColorWhite {
+    -webkit-text-fill-color: white;
+    border-radius: 70%;
+    
+  }
