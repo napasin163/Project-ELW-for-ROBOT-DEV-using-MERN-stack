@@ -34,3 +34,11 @@
     border-radius: 70%;
     
   }
+
+  .nav-item {
+    margin-left: 10px;
+  }
+
+  .bt-center {
+    width: 100%;
+  }

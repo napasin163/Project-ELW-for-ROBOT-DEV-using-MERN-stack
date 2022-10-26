@@ -7,7 +7,7 @@ const TopHeader = () => {
             <nav class="navbar navbar-expand-lg BgColorBlue">
                 <div class="container">
                     <Link to="/blogs" class="nav-link TextELWColorWhite">ELW</Link>
-                    <div class="d-flex justify-content-evenly" >
+                    <div class="d-flex justify-content-evenly bt-center" >
                         <ul class="navbar-nav me-2 mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <Link to="/blogs" class="nav-link buttonNavBlue">Ardino</Link>
