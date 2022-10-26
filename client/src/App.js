@@ -1,6 +1,10 @@
 import TopHeader from "./components/Header/Header";
 import Blogs from "./components/Body/TestBlogs";
+import Arduino from "./components/Body/ArduinoTest";
+import MicroBit from "./components/Body/MicroBit";
+import Robots from "./components/Body/Robots";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SideBarArduino from "./components/Body/SideBarArduino";
 
 const App = () =>{
     return (
@@ -8,9 +12,10 @@ const App = () =>{
       <Routes>
         <Route path="/" element={<TopHeader />}> 
           <Route index element={<Blogs />} />
-          <Route path="blogs" element={<Blogs />} />
-          <Route path="contact" element={<Blogs />} />
-          <Route path="*" element={<Blogs />} />
+          <Route path="sidebararduino" element={<SideBarArduino />} />
+          <Route path="arduino" element={<Arduino />} />
+          <Route path="microbit" element={<MicroBit />} />
+          <Route path="robots" element={<Robots />} />
         </Route>
       </Routes>
     </BrowserRouter>
