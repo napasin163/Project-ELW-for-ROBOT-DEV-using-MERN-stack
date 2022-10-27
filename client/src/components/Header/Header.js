@@ -6,7 +6,7 @@ const TopHeader = () => {
         <body>
             <nav class="navbar navbar-expand-lg BgColorBlue">
                 <div class="container">
-                    <Link to="/robots" class= "navbar-nav"> 
+                    <Link to="/" class= "navbar-nav"> 
                     <div>
                         <span class="">
                         <img src= "https://cdn.discordapp.com/attachments/1034796504126341230/1034796561185644554/ELW_2-removebg-preview.png" alt ="ELW" width="50"  height="50"></img>

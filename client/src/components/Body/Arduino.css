@@ -4,5 +4,26 @@
   
 
   .xd {
-    max-height: 30vh;
+    max-height: 100vh;
   }
+
+  .blackText{
+    -webkit-text-fill-color: black;
+  }
+
+  .whiteText{
+    -webkit-text-fill-color: rgb(248, 246, 246);
+  }
+
+  .BlueText{
+    -webkit-text-fill-color: #0e99ff;
+  }
+
+  .GreenText{
+    -webkit-text-fill-color: #14b81a;
+  }
+
+  .YellowText{
+    -webkit-text-fill-color: #fecd29; 
+  }
+

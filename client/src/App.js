@@ -1,5 +1,5 @@
 import TopHeader from "./components/Header/Header";
-import Blogs from "./components/Body/TestBlogs";
+import MainPage from "./components/Body/Main";
 import Arduino from "./components/Body/ArduinoTest";
 import MicroBit from "./components/Body/MicroBit";
 import Robots from "./components/Body/Robots";
@@ -11,7 +11,7 @@ const App = () =>{
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<TopHeader />}> 
-          <Route index element={<Blogs />} />
+          <Route index element={<MainPage />} />
           <Route path="sidebararduino" element={<SideBarArduino />} />
           <Route path="arduino" element={<Arduino />} />
           <Route path="microbit" element={<MicroBit />} />
