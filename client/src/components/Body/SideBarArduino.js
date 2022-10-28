@@ -31,10 +31,8 @@ const SideBarArduino = () => {
                             </button>
                             <div class="collapse show" id="dashboard-collapse">
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                    <li><Link to=" " class="link-dark d-inline-flex text-decoration-none rounded">Overview</Link></li>
-                                    <li><Link to=" " class="link-dark d-inline-flex text-decoration-none rounded">Weekly</Link></li>
-                                    <li><Link to=" " class="link-dark d-inline-flex text-decoration-none rounded">Monthly</Link></li>
-                                    <li><Link to=" " class="link-dark d-inline-flex text-decoration-none rounded">Annually</Link></li>
+                                    <li><Link to=" " class="link-dark d-inline-flex text-decoration-none rounded">Servo SG90</Link></li>
+                                    <li><Link to=" " class="link-dark d-inline-flex text-decoration-none rounded">DC Gear Motor</Link></li>
                                 </ul>
                             </div>
                         </li>
@@ -44,10 +42,13 @@ const SideBarArduino = () => {
                             </button>
                             <div class="collapse show" id="orders-collapse">
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                    <li><Link to=" " class="link-dark d-inline-flex text-decoration-none rounded">New</Link></li>
-                                    <li><Link to=" " class="link-dark d-inline-flex text-decoration-none rounded">Processed</Link></li>
-                                    <li><Link to=" " class="link-dark d-inline-flex text-decoration-none rounded">Shipped</Link></li>
-                                    <li><Link to=" " class="link-dark d-inline-flex text-decoration-none rounded">Returned</Link></li>
+                                    <li><Link to=" " class="link-dark d-inline-flex text-decoration-none rounded">Passive buzzer module</Link></li>
+                                    <li><Link to=" " class="link-dark d-inline-flex text-decoration-none rounded">Button switch module</Link></li>
+                                    <li><Link to=" " class="link-dark d-inline-flex text-decoration-none rounded">Resistance potentiometer module</Link></li>
+                                    <li><Link to=" " class="link-dark d-inline-flex text-decoration-none rounded">Adapter PS2 Joystick PlayStation</Link></li>
+                                    <li><Link to=" " class="link-dark d-inline-flex text-decoration-none rounded">Relay Module 5V 2Channel</Link></li>
+                                    <li><Link to=" " class="link-dark d-inline-flex text-decoration-none rounded">Interface 12C 16x2 LCD</Link></li>
+                                    <li><Link to=" " class="link-dark d-inline-flex text-decoration-none rounded">OLED 128x64</Link></li>
                                 </ul>
                             </div>
                         </li>

@@ -38,7 +38,7 @@ const MainPage = () => {
 
                         <div class="container">
                             <div class="carousel-caption text-end whiteText">
-                                <h1>Robots</h1>
+                                <h1>Robot</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                                 <p><a class="btn btn-lg btn-primary" href=" ">Learn more</a></p>
                             </div>
@@ -113,7 +113,7 @@ const MainPage = () => {
 
             <div class="row featurette">
                 <div class="col-md-6 marginLeft">
-                    <h2 class="featurette-heading fw-normal lh-1 blackText">Robots <span class="text-muted YellowText">and more</span></h2>
+                    <h2 class="featurette-heading fw-normal lh-1 blackText">Robot <span class="text-muted YellowText">and more</span></h2>
                     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
                 <div class="col-md-5">
