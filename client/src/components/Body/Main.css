@@ -1,7 +1,9 @@
-
-
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #ceeaff;
+  width: auto;
 }
 
 .testCenter {
@@ -46,7 +48,7 @@ text-align: center;
 margin-right: .75rem;
 margin-left: .75rem;
 }
-/* rtl:end:ignore */
+/* rtl🔚ignore */
 
 
 /* Featurettes
@@ -64,7 +66,7 @@ margin-right: 40px  ;
 letter-spacing: -.05rem;
 }
 
-/* rtl:end:remove */
+/* rtl🔚remove */
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -90,4 +92,17 @@ letter-spacing: -.05rem;
 
 .marginLeft{
   margin-left: 50px;
+}
+
+.flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.between {
+  display: flex;
+  flex-direction: row;
 }

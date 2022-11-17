@@ -4,7 +4,7 @@ import { Outlet, Link } from "react-router-dom";
 const TopHeader = () => {
     return (
         <body>
-            <nav class="navbar navbar-expand-lg BgColorBlue">
+            <nav class="navbar navbar-expand-lg BgColorBlue sticky-top">
                 <div class="container">
                     <Link to="/" class="navbar-nav">
                         <div>

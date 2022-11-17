@@ -7,13 +7,6 @@ body {
     height: -webkit-fill-available;
   }
   
-  main {
-    height: 100vh;
-    height: -webkit-fill-available;
-    max-height: 100vh;
-    overflow-x: auto;
-    overflow-y: hidden;
-  }
   
   .dropdown-toggle { outline: 0; }
   
@@ -60,4 +53,25 @@ body {
   
   .stylexd {
     width: 280px;
+    height: auto;
+  }
+
+  .testBG{
+    background-color: blue;
+  }
+
+  hr{
+    width: 110%;
+  }
+
+  p {
+    color: rgb(2, 2, 7);
+    text-indent: 30px;
+    font-size: 18px;
+  }
+
+  .embed-responsive{
+    width: 540px;
+    height: 315px;
+    margin: 0 auto;
   }

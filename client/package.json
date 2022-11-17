@@ -7,12 +7,15 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.2",
+    "highlight.js": "^11.6.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
+    "react-highlight": "^0.15.0",
+    "react-highlight.js": "^1.0.7",
+    "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4",
-    "react-router-dom": "^6.4.2"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -55,7 +55,7 @@ const MainPage = () => {
                 </button>
             </div>
 
-            <div class="container marketing">
+            <div class="container marketing flex">
                 <div class="row">
                     <div class="col-lg-4">
                         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#700" /><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
@@ -85,45 +85,51 @@ const MainPage = () => {
 
             <hr class="featurette-divider"></hr>
 
-            <div class="row featurette">
-                <div class="col-md-6 marginLeft">
-                    <h2 class="featurette-heading fw-normal lh-2 blackText">Arduino <span class="text-muted BlueText">Uno R3</span></h2>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                <div class="col-md-5">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="800" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 800x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#100" /><text x="50%" y="50%" fill="#aaa" dy=".3em">800x500</text></svg>
+            <div className='flex'>
+                <div class="featurette between">
+                    <div class="col-md-6 marginLeft">
+                        <h2 class="featurette-heading fw-normal lh-2 blackText">Arduino <span class="text-muted BlueText">Uno R3</span></h2>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="800" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 800x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#100" /><text x="50%" y="50%" fill="#aaa" dy=".3em">800x500</text></svg>
 
+                    </div>
+                </div>
+            </div>
+
+
+            <hr class="featurette-divider"></hr>
+
+            <div className='flex'>
+                <div class="featurette between">
+                    <div class="col-md-5 order-md-3 marginLeft">
+                        <h2 class="featurette-heading fw-normal lh-1 blackText">Micro: <span class="text-muted GreenText">Bit</span></h2>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="col-md-5 order-md-1 marginLeft">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="800" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 800x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#100" /><text x="50%" y="50%" fill="#aaa" dy=".3em">800x500</text></svg>
+
+                    </div>
                 </div>
             </div>
 
             <hr class="featurette-divider"></hr>
 
-            <div class="row featurette">
-                <div class="col-md-5 order-md-3 marginLeft">
-                    <h2 class="featurette-heading fw-normal lh-1 blackText">Micro: <span class="text-muted GreenText">Bit</span></h2>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                <div class="col-md-5 order-md-1 marginLeft">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="800" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 800x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#100" /><text x="50%" y="50%" fill="#aaa" dy=".3em">800x500</text></svg>
+            <div className='flex'>
+                <div class="featurette between">
+                    <div class="col-md-6 marginLeft">
+                        <h2 class="featurette-heading fw-normal lh-1 blackText">Robot <span class="text-muted YellowText">and more</span></h2>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="800" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 800x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#100" /><text x="50%" y="50%" fill="#aaa" dy=".3em">800x500</text></svg>
 
-                </div>
-            </div>
-
-            <hr class="featurette-divider"></hr>
-
-            <div class="row featurette">
-                <div class="col-md-6 marginLeft">
-                    <h2 class="featurette-heading fw-normal lh-1 blackText">Robot <span class="text-muted YellowText">and more</span></h2>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                <div class="col-md-5">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="800" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 800x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#100" /><text x="50%" y="50%" fill="#aaa" dy=".3em">800x500</text></svg>
-
+                    </div>
                 </div>
             </div>
 
             <hr class="featurette-divider"></hr>
-
 
             <footer class="container pb-5">
                 <p class="float-end"><a href="#">Back to top</a></p>
