@@ -55,9 +55,10 @@ margin-left: .75rem;
 ------------------------- */
 
 .featurette-divider {
-margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+margin: 3rem 0; /* Space out the Bootstrap <hr> more */
 margin-left: 40px;
-margin-right: 40px  ;
+margin-right: 40px;
+width: auto;
 }
 
 /* Thin out the marketing headings */
@@ -105,4 +106,21 @@ letter-spacing: -.05rem;
 .between {
   display: flex;
   flex-direction: row;
+}
+
+.bold{
+  font-weight: bold;
+  text-shadow: 3px 3px black;
+}
+
+.BlackText{
+  -webkit-text-fill-color: black;
+}
+
+.simple-linear {
+  background: linear-gradient(blue, pink);
+}
+
+.opacity{
+  opacity: 1;
 }

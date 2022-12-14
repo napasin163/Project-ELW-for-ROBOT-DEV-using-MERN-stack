@@ -38,7 +38,7 @@ const TopHeader = () => {
                                         <ul class="dropdown-menu submenu">
                                             <li><Link to="/buzzer" class="dropdown-item">Passive buzzer module</Link></li>
                                             <li><Link to="/hcsr04" class="dropdown-item">Button switch module</Link></li>
-                                            <li><Link to="/hcsr04" class="dropdown-item">Resistance potentiometer module</Link></li>
+                                            <li><Link to="/hcsr04" class="dropdown-item">Rotary Encoder Module</Link></li>
                                             <li><Link to="/hcsr04" class="dropdown-item">Adapter PS2 Joystick PlayStation</Link></li>
                                             <li><Link to="/hcsr04" class="dropdown-item">Relay Module 5V 2Channel</Link></li>
                                             <li><Link to="/hcsr04" class="dropdown-item">Interface 12C 16x2 LCD</Link></li>
@@ -48,9 +48,9 @@ const TopHeader = () => {
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <Link to=" " class="nav-link buttonNavGreen dropdown-toggle" data-bs-toggle="dropdown">Micro:Bit</Link>
+                                <Link to="/microbit" class="nav-link buttonNavGreen dropdown-toggle" data-bs-toggle="dropdown">Micro:Bit</Link>
                                 <ul class="dropdown-menu">
-                                    <li><Link to="blogs" class="dropdown-item">More info</Link></li>
+                                    <li><Link to="microbit" class="dropdown-item">More info</Link></li>
                                     <li><Link to="/blogs" class="dropdown-item ">Sensor &raquo;</Link>
                                         <ul class="dropdown-menu submenu">
                                             <li><Link to="/hcsr04" class="dropdown-item ">Ultrasonic Sensor HC-SR04</Link></li>
@@ -69,7 +69,7 @@ const TopHeader = () => {
                                         <ul class="dropdown-menu submenu">
                                             <li><Link to="/hcsr04" class="dropdown-item">Passive buzzer module</Link></li>
                                             <li><Link to="/hcsr04" class="dropdown-item">Button switch module</Link></li>
-                                            <li><Link to="/hcsr04" class="dropdown-item">Resistance potentiometer module</Link></li>
+                                            <li><Link to="/hcsr04" class="dropdown-item">Rotary Encoder Module</Link></li>
                                             <li><Link to="/hcsr04" class="dropdown-item">Relay Module 5V 2Channel</Link></li>
                                         </ul>
                                     </li>
@@ -78,10 +78,10 @@ const TopHeader = () => {
                             <li class="nav-item dropdown">
                                 <Link to=" " class="nav-link buttonNavYellow dropdown-toggle" data-bs-toggle="dropdown">Robot</Link>
                                 <ul class="dropdown-menu">
-                                    <li><Link to="blogs" class="dropdown-item">More info</Link></li>
-                                    <li><Link to="/blogs" class="dropdown-item ">Robot1</Link></li>
-                                    <li><Link to="/blogs" class="dropdown-item ">Robot2</Link></li>
-                                    <li><Link to="/blogs" class="dropdown-item ">Robot3</Link></li>
+                                    <li><Link to="robots" class="dropdown-item">More info</Link></li>
+                                    <li><Link to="/robots" class="dropdown-item ">Robot1</Link></li>
+                                    <li><Link to="/robots" class="dropdown-item ">Robot2</Link></li>
+                                    <li><Link to="/robots" class="dropdown-item ">Robot3</Link></li>
                                 </ul>
                             </li>
                         </ul>

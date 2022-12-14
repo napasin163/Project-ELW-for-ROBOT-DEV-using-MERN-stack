@@ -12,35 +12,40 @@ const MainPage = () => {
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="client\src\components\Photos\Artboard_1.svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#007" /></svg>
+                        <div class="bd-placeholder-img opacity" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <img src="https://cdn.discordapp.com/attachments/1034796504126341230/1035145144929886228/wp2163572-arduino-wallpapers.jpg" alt="test" width="100%" height="100%"></img>
+                        </div>
 
                         <div class="container">
                             <div class="carousel-caption text-start whiteText">
-                                <h1>Arduino</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-                                <p><a class="btn btn-lg btn-primary" href=" ">Learn more</a></p>
+                                <h1 class="bold">Arduino</h1>
+                                <p class="bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <p><a class="btn btn-lg btn-primary" href="/arduino">เรียนรู้เพิ่มเติม</a></p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#070" /></svg>
+                        <div class="bd-placeholder-img opacity" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <img src="https://cdn.discordapp.com/attachments/1034796504126341230/1052562383383572530/e67dc4a161d4c68d9092b26a78fbf456.jpg" alt="test" width="100%" height="100%"></img>
+                        </div>
 
                         <div class="container">
                             <div class="carousel-caption whiteText">
-                                <h1>Micro:Bit</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-                                <p><a class="btn btn-lg btn-primary" href=" ">Learn more</a></p>
+                                <h1 class="bold">Micro:Bit</h1>
+                                <p class="bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <p><a class="btn btn-lg btn-primary" href="/microbit">เรียนรู้เพิ่มเติม</a></p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#b8941d" /></svg>
-
+                        <div class="bd-placeholder-img opacity" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <img src="https://cdn.discordapp.com/attachments/1034796504126341230/1052582308370198558/asian-kid-boy-plugging-energy-signalado-robot-car_143683-4862.jpg" alt="test" width="100%" height="100%"></img>
+                        </div>
                         <div class="container">
                             <div class="carousel-caption text-end whiteText">
-                                <h1>Robot</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-                                <p><a class="btn btn-lg btn-primary" href=" ">Learn more</a></p>
+                                <h1 class="bold">Robot</h1>
+                                <p class="bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <p><a class="btn btn-lg btn-primary" href="/robots">เรียนรู้เพิ่มเติม</a></p>
                             </div>
                         </div>
                     </div>
@@ -58,30 +63,37 @@ const MainPage = () => {
             <div class="container marketing flex">
                 <div class="row">
                     <div class="col-lg-4">
-                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#700" /><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+                        <div class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <img src="https://cdn.discordapp.com/attachments/1034796504126341230/1052588599138324530/party.png" alt="test" width="30%" height="30%"></img>
+                            <text x="50%" y="50%" fill="#777" dy=".3em"></text>
+                        </div>
 
                         <h2 class="fw-normal pt-2">Fun</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p><a class="btn btn-primary" href=" ">View details &raquo;</a></p>
                     </div>
                     <div class="col-lg-4">
-                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#070" /><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+                        <div class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <img src="https://cdn.discordapp.com/attachments/1034796504126341230/1052588599461290134/thought.png" alt="test" width="30%" height="30%"></img>
+                            <text x="50%" y="50%" fill="#777" dy=".3em"></text>
+                        </div>
 
                         <h2 class="fw-normal pt-2">Knowledge</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p><a class="btn btn-primary" href=" ">View details &raquo;</a></p>
                     </div>
                     <div class="col-lg-4">
-                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#077" /><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+                        <div class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <img src="https://cdn.discordapp.com/attachments/1034796504126341230/1052588598794399834/light-bulb.png" alt="test" width="30%" height="30%"></img>
+                            <text x="50%" y="50%" fill="#777" dy=".3em"></text>
+                        </div>
 
                         <h2 class="fw-normal pt-2">Creativity</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p><a class="btn btn-primary" href=" ">View details &raquo;</a></p>
                     </div>
                 </div>
             </div>
-
-
 
             <hr class="featurette-divider"></hr>
 
@@ -89,10 +101,15 @@ const MainPage = () => {
                 <div class="featurette between">
                     <div class="col-md-6 marginLeft">
                         <h2 class="featurette-heading fw-normal lh-2 blackText">Arduino <span class="text-muted BlueText">Uno R3</span></h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="lead">เป็นบอร์ดไมโครคอนโทรเลอร์ตระกูล AVR ที่มีการพัฒนาแบบ Open Source ที่มีการเปิดเผยข้อมูลทั้งด้าน Hardware และ Software ตัว บอร์ด Arduino ถูกออกแบบมาให้ใช้งานได้ง่าย ดังนั้นจึงเหมาะสำหรับผู้เริ่มต้นศึกษา ทั้งนี้ผู้ใช้งานยังสามารถดัดแปลง เพิ่มเติม พัฒนาต่อยอดทั้งตัวบอร์ด หรือโปรแกรมต่อได้</p>
+                        <p><a class="btn btn-primary" href="/arduino">เรียนรู้เพิ่มเติม &raquo;</a></p>
                     </div>
                     <div class="col-md-5">
-                        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="800" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 800x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#100" /><text x="50%" y="50%" fill="#aaa" dy=".3em">800x500</text></svg>
+                        <div class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="800" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 800x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <img src="https://cdn.discordapp.com/attachments/1034796504126341230/1052596373620531250/CA001-removebg-preview.png" alt="test" width="600" height="600"></img>
+                            <text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+                        </div>
 
                     </div>
                 </div>
@@ -105,10 +122,15 @@ const MainPage = () => {
                 <div class="featurette between">
                     <div class="col-md-5 order-md-3 marginLeft">
                         <h2 class="featurette-heading fw-normal lh-1 blackText">Micro: <span class="text-muted GreenText">Bit</span></h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="lead">บอร์ดไมโครคอนโทรลเลอร์เพื่อการศึกษาที่เริ่มโครงการโดยสถานีโทรทัศน์ BBC จากประเทศอังกฤษ  ผลิตโดย element14  โดยในโครงการได้จัดทำบอร์ด micro:bit ขึ้นมาแจกให้กับนักเรียนในประเทศอังกฤษจำนวน 1 ล้านบอร์ด บอร์ดไมโครคอนโทรลเลอร์ที่มีจุดเด่นด้านการเขียนโปรแกรมที่ง่ายโดยใช้ภาษาบล็อก แล้วแปลงออกมาเป็นภาษา JavaScript หรือ Python ตัวบอร์ดมาพร้อมกับชิปไมโครคอนโทรลเลอร์ที่มีบลูทูธในตัว มีเซ็นเซอร์วัดความเอียง (Accelerometer) และเซ็นเซอร์แม่เหล็กโลก หรือเข็มทิศ (Magnetometer) มีหลอด LED 25 ดวง แสดงผลแบบ Dot matrix และสวิตซ์กดติดปล่อยดับ 3 ตัว</p>
+                        <p><a class="btn btn-primary" href="/microbit">เรียนรู้เพิ่มเติม &raquo;</a></p>
                     </div>
                     <div class="col-md-5 order-md-1 marginLeft">
-                        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="800" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 800x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#100" /><text x="50%" y="50%" fill="#aaa" dy=".3em">800x500</text></svg>
+                        <div class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="800" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 800x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <img src="https://cdn.discordapp.com/attachments/1034796504126341230/1052596374023188490/microbit-programmable-computer-removebg-preview.png" alt="test" width="650" height="350"></img>
+                            <text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+                        </div>
 
                     </div>
                 </div>
@@ -120,10 +142,15 @@ const MainPage = () => {
                 <div class="featurette between">
                     <div class="col-md-6 marginLeft">
                         <h2 class="featurette-heading fw-normal lh-1 blackText">Robot <span class="text-muted YellowText">and more</span></h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="lead">หุ่นยนต์ คือเครื่องยนต์ชนิดหนึ่งที่มีลักษณะโครงสร้างและรูปร่างแตกต่างกันไปตามวัตถุประสงค์ หุ่นยนต์ในแต่ละประเภทจะมีหน้าที่การทำงานในด้านต่าง ๆ ตามการควบคุมโดยตรงของมนุษย์ หรืออาจมีการตั้งค่าให้หุ่นยนต์สามารถตัดสินใจได้เองในระดับใดระดับหนึ่ง โดยในบทเรียนนี้จะสร้างหุ่นยนต์โดยใช้อุปกรณ์ที่ได้เรียนรู้ไป</p>
+                        <p><a class="btn btn-primary" href="/robots">เรียนรู้เพิ่มเติม &raquo;</a></p>
                     </div>
                     <div class="col-md-5">
-                        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="800" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 800x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#100" /><text x="50%" y="50%" fill="#aaa" dy=".3em">800x500</text></svg>
+                        <div class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="800" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 800x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <img src="https://cdn.discordapp.com/attachments/1034796504126341230/1052596373142392903/micro-maqueen-microbit-robot-platform-26368-77-B-removebg-preview.png" alt="test" width="600" height="600"></img>
+                            <text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+                        </div>
 
                     </div>
                 </div>

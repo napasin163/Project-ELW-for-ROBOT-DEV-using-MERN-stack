@@ -1,12 +1,12 @@
 import TopHeader from "./components/Header/Header";
 import MainPage from "./components/Body/Main";
-import Arduino from "./components/Body/ArduinoTest";
-import MicroBit from "./components/Body/MicroBit";
-import Robots from "./components/Body/Robots";
+import Arduino from "./components/Body/Arduino/ArduinoTest";
+import MicroBit from "./components/Body/MicroBit/MicroBit";
+import Robots from "./components/Body/Robots/Robots";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HCSR04 from "./components/Body/HCSR04";
-import Buzzer from "./components/Body/Buzzer";
-import Servo from "./components/Body/Servo";
+import HCSR04 from "./components/Body/Arduino/HCSR04";
+import Buzzer from "./components/Body/Arduino/Buzzer";
+import Servo from "./components/Body/Arduino/Servo";
 
 
 

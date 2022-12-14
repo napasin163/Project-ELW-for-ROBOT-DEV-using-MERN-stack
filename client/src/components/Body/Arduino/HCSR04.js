@@ -45,7 +45,7 @@ const HCSR04 = () => {
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                     <li><Link to="/buzzer" class="link-dark d-inline-flex text-decoration-none rounded">Passive buzzer module</Link></li>
                                     <li><Link to=" " class="link-dark d-inline-flex text-decoration-none rounded">Button switch module</Link></li>
-                                    <li><Link to=" " class="link-dark d-inline-flex text-decoration-none rounded">Resistance potentiometer module</Link></li>
+                                    <li><Link to=" " class="link-dark d-inline-flex text-decoration-none rounded">Rotary Encoder Module</Link></li>
                                     <li><Link to=" " class="link-dark d-inline-flex text-decoration-none rounded">Adapter PS2 Joystick PlayStation</Link></li>
                                     <li><Link to=" " class="link-dark d-inline-flex text-decoration-none rounded">Relay Module 5V 2Channel</Link></li>
                                     <li><Link to=" " class="link-dark d-inline-flex text-decoration-none rounded">Interface 12C 16x2 LCD</Link></li>
@@ -71,29 +71,41 @@ const HCSR04 = () => {
 
                 <div class="col-md-9 ms-lg-9 col-lg-9 px-md-4 position-sticky">
                     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                        <h1 class="h2 blackText">Ultrasonic Sensor HC-SR04</h1>
+                        <h1 class="h2 blackText bold2">Ultrasonic Sensor HC-SR04</h1>
                     </div>
                     <div class="d-flex justify-content-center">
                         <img src="https://cdn.discordapp.com/attachments/768084656465117227/1042777068141805658/png-transparent-ultrasonic-transducer-proximity-sensor-sensor-ultrasonico-electronics-others-electronics-measurement-sound-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="400" height="500" ></img>
                     </div>
                     <div class="h2 px-4 blackText">
-                        <h2>รายละเอียด</h2>
+                        <h2 class="bold2">รายละเอียด</h2>
                     </div>
                     <div class="px-5 blackText">
                         <p>HC-SR04 เป็นโมดูลอัลตร้าโซนิคเป็นอุปกรณ์เซ็นเซอร์ใช้วัดระยะทางของวัตถุกับตัวเซ็นเซอร์ โดยไม่ต้องมีการสัมผัสกับตำแหน่งที่ต้องการวัด วัดได้ตั้งแต่ 2 cm ถึง 400 cm รองรับแรงดันไฟ 3.3-5V อาศัยการทำงานของคลื่นเสียง โดยส่งสัญญาณอัลตร้าโซนิคความถี่ 40kHz (40,000Hz) ซึ่งจัดอยู่ในย่าน Ultrasonic (ความถี่สูงกว่าที่หูมนุษย์จะสามารถได้ยิน) ไปที่วัตถุที่ต้องการวัดและรับสัญญาณที่สะท้อนกลับมา พร้อมทั้งจับเวลาเพื่อนำมาใช้ในการคำนวณ โมดูลตัวนี้เป็นโมดูลยอดนิยมอีกตัวที่นำไปใช้ในโปรเจคหาระยะห่างของวัตถุ หรือใช้ในโครงงานหุ่นยนต์ต่างๆ ใช้งานง่าย ราคาถูก มีไลบรารี่สำหรับต่อกับ Arduino ได้โดยตรง เพื่อแสดงระยะทางได้ทันที </p>
                     </div>
                     <br></br>
                     <hr></hr>
-                    <div class="embed-responsive embed-responsive-16by9 ">
-                        <iframe width="700" height="400" src="https://www.youtube.com/embed/IGLVMBTIAPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='1'></iframe>
+                    <div class="embed-responsive embed-responsive-16by9 ms-5">
+                        <iframe width="1100" height="700" src="https://www.youtube.com/embed/Pyv0oIdmp5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='1'></iframe>
                     </div>
                     <br></br>
                     <br></br>
                     <br></br>
                     <br></br>
                     <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <hr></hr>
                     <div class="h2 px-4 blackText">
-                        <h2>ข้อมูลการใช้งาน</h2>
+                        <h2 class="bold2">ข้อมูลการใช้งาน</h2>
                     </div>
                     <br></br>
                     <div class="d-flex justify-content-center">
@@ -106,7 +118,7 @@ const HCSR04 = () => {
                     <p>PIN ที่ 4 –- GND</p>
                     <hr></hr>
                     <div class="h2 px-4 blackText">
-                        <h2>รูปภาพประกอบ</h2>
+                        <h2 class="bold2">รูปภาพประกอบ</h2>
                     </div>
                     <div class="d-flex justify-content-center">
                         <img src="https://cdn.discordapp.com/attachments/768084656465117227/1043224938179477524/LINE_ALBUM__221119.jpg" class="img-fluid rounded-3 mb-4" alt="555" width="800" height="700" ></img>
@@ -114,20 +126,20 @@ const HCSR04 = () => {
                     <br></br>
                     <hr></hr>
                     <div class="h2 px-4 blackText">
-                        <h2>จำลองการต่อวงจร</h2>
+                        <h2  class="bold2">จำลองการต่อวงจร</h2>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <img src="https://i.imgur.com/uc3lhRG.gif" class="img-fluid rounded-3 mb-4" alt="555" width="800" height="700" ></img>
+                        <img src="https://i.imgur.com/uc3lhRG.gif" class="img-fluid rounded-3 mb-4 ps-5" alt="555" width="1100" height="900" ></img>
                     </div>
                     <br></br>
                     <hr></hr>
                     <div class="h2 px-4 blackText">
-                        <h2>โค้ดตัวอย่าง</h2>
+                        <h2 class="bold2">โค้ดตัวอย่าง</h2>
                     </div>
                     <div class="d-flex justify-content-center ">
                         <Highlight language="c++">
-                            {`    #define Trig 10 // กำหนด Pin 10 = Trig 
-    #define Echo 9  // กำหนด Pin  9 = Echo
+                            {`    #define Trig 9 // กำหนด Pin 9 = Trig 
+    #define Echo 10  // กำหนด Pin  10 = Echo
     float duration ; // สำหรับเก็บค่าเวลาที่เสียงเดินทาง
     float distance ; // สำหรับเก็บค่าระยะทางที่คำนวณได้
     void setup() {  
@@ -149,7 +161,7 @@ const HCSR04 = () => {
 
     // แสดงค่าทาง Serial Monitor
     Serial.print("Distance: ");
-    Serial.println(distance);
+    Serial.print(distance);
     Serial.println(" cm ");
     }`}
                         </Highlight>
