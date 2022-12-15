@@ -84,6 +84,9 @@ const TopHeader = () => {
                                     <li><Link to="/robots" class="dropdown-item ">Robot3</Link></li>
                                 </ul>
                             </li>
+                            <li class="nav-item dropdown">
+                                <a href="https://www.arduino.cc/" class="nav-link buttonNavPurple">Game</a>
+                            </li>
                         </ul>
                     </div>
                 </div>

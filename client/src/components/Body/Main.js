@@ -19,7 +19,7 @@ const MainPage = () => {
                         <div class="container">
                             <div class="carousel-caption text-start whiteText">
                                 <h1 class="bold">Arduino</h1>
-                                <p class="bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <p class="bold">เรียนรู้การต่อวงจรเเละเขียนโค้ดควบคุมอุปกรณ์อิเล็กทรอนิกส์ใช้งานร่วมกับบอร์ด Aruino</p>
                                 <p><a class="btn btn-lg btn-primary" href="/arduino">เรียนรู้เพิ่มเติม</a></p>
                             </div>
                         </div>
@@ -32,7 +32,7 @@ const MainPage = () => {
                         <div class="container">
                             <div class="carousel-caption whiteText">
                                 <h1 class="bold">Micro:Bit</h1>
-                                <p class="bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <p class="bold">เรียนรู้การต่อวงจรเเละเขียนโค้ดควบคุมอุปกรณ์อิเล็กทรอนิกส์ใช้งานร่วมกับบอร์ด Micro:Bit</p>
                                 <p><a class="btn btn-lg btn-primary" href="/microbit">เรียนรู้เพิ่มเติม</a></p>
                             </div>
                         </div>
@@ -44,7 +44,7 @@ const MainPage = () => {
                         <div class="container">
                             <div class="carousel-caption text-end whiteText">
                                 <h1 class="bold">Robot</h1>
-                                <p class="bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <p class="bold">เรียนรู้การสร้างหุ่นยนต์จากการนำอุปกรณ์อิเล็กทรอนิกส์มาประยุกต์</p>
                                 <p><a class="btn btn-lg btn-primary" href="/robots">เรียนรู้เพิ่มเติม</a></p>
                             </div>
                         </div>
@@ -70,7 +70,7 @@ const MainPage = () => {
                         </div>
 
                         <h2 class="fw-normal pt-2">Fun</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p></p>
                     </div>
                     <div class="col-lg-4">
                         <div class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -80,7 +80,7 @@ const MainPage = () => {
                         </div>
 
                         <h2 class="fw-normal pt-2">Knowledge</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p></p>
                     </div>
                     <div class="col-lg-4">
                         <div class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -90,12 +90,10 @@ const MainPage = () => {
                         </div>
 
                         <h2 class="fw-normal pt-2">Creativity</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p></p>
                     </div>
                 </div>
             </div>
-
-            <hr class="featurette-divider"></hr>
 
             <div className='flex'>
                 <div class="featurette between">

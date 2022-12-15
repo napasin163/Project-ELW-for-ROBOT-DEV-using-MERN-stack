@@ -29,6 +29,15 @@
     padding-left: 10px;
   }
 
+  .buttonNavPurple {
+    top:50%;
+    background-color : #a020f0;
+    color: white;
+    border:none;
+    border-radius:10px;
+    padding-left: 10px;
+  }
+
   .TextELWColorWhite {
     -webkit-text-fill-color: white;
     border-radius: 70%;
