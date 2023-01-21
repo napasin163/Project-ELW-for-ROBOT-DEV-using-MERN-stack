@@ -1,0 +1,10 @@
+// import fonts
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Open+Sans:wght@300&display=swap');
+
+*{ 
+    font-family: 'Kanit', sans-serif;
+}
+
+//import partial files
+@import './sass/login';
+@import './sass/extends';

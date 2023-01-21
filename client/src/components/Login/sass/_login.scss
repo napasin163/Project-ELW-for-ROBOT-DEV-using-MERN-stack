@@ -1,0 +1,87 @@
+#login{
+    min-height: 91.2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @extend.position-relative;
+    @extend.text-center;
+
+    .login-box{
+        max-width: 960px;
+        margin: 0 auto;
+        box-shadow: 0 0 35px rgba(0,0,0,0.1);
+        border-radius: 10px;
+    }
+
+    /* login form styling */
+    .form-section{
+        @extend.text-center;
+        max-width: 400px;
+        margin: 0 auto;
+        width: 100;
+
+        >.title{
+            margin:10px 0 50px 0;
+
+            >.h2{
+                font-size: 50px;
+                @extend.font-bold;
+                color: rgb(238, 17, 17);
+            }
+        }
+
+        .login-inner-form{
+            @extend.position-relative;
+            color: rgb(20, 8, 8);
+
+
+            .form-box{
+                float:right;
+                @extend.width-100;
+                @extend.position-relative;
+
+                //importing icons
+                .icon.email::before{
+                    @extend.font-awesome;
+                    content:"\f0e0";
+                }
+
+
+                //style input textbox
+                >.input-text{
+                    font-size:25px;
+                    outline:none;
+                    color: #616161;
+                    border-radius: 50px;
+                    border: 1px solid transparent;
+                    @extend.background;
+                    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+                    padding: 11px 45px 11px 20px;
+                    @extend.width-100;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .primary-btn{
+                background: rgb(216, 17, 17);
+                @extend.width-100;
+                border:none;
+                color: white;
+                box-shadow: 0 0 5px rgba(0,0,0,0.2);
+                padding: 10px 30px 9px 30px;
+                cursor:pointer;
+                height:45px;
+                border-radius: 50px;
+                margin-top: 20px;
+                font-size: 20px;
+
+                &:hover{
+                    background: red;
+                }
+            }
+        }
+
+
+    }
+}
+

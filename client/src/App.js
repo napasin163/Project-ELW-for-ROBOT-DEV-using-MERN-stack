@@ -18,6 +18,7 @@ import Rotary from "./components/Body/Arduino/Rotary";
 import Tcrt from "./components/Body/Arduino/Tcrt5000";
 import Button from "./components/Body/Arduino/Button";
 import APDS from "./components/Body/Arduino/Apds-9960";
+import LoginPage from "./components/Login/LoginPage";
 
 const App = () =>{
     return (
@@ -42,6 +43,7 @@ const App = () =>{
           <Route path="arduino" element={<Arduino />} />
           <Route path="microbit" element={<MicroBit />} />
           <Route path="robots" element={<Robots />} />
+          <Route path="loginpage" element={<LoginPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
