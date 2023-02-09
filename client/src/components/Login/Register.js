@@ -24,7 +24,7 @@ export default function Register() {
             password,
             passwordCheck   
         }
-        const user = { username: "admin", email:"admin@gmail.com", password:"admin123", passwordCheck:"admin123"}
+        const user = { username, email, password, passwordCheck}
         const validate = dispatch(registerAction(user));
         validate
             .then(data => {

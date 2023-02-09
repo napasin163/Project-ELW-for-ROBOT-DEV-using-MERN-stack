@@ -25,7 +25,7 @@ const LoginPage = () => {
             password
         }
 
-        const userdata = { email: "", password:""}
+        const userdata = { email, password}
         const login = dispatch(loginAction(userdata))
         login
             .then(data => history('/'))

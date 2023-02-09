@@ -22,13 +22,14 @@ export default function LoginForm(props) {
                             <i className='icon lock'></i>
                         </div>
 
-                        {
-                            errorMessage && <Error errorMessage={errorMessage} clearError={() =>setError(undefined)}></Error>
-                        }
-
                         <div className='form-group'>
                             <button className='btn primary-btn'>Login</button>
                         </div>
+
+                        
+                        {
+                            errorMessage && <Error errorMessage={errorMessage} clearError={() =>setError(undefined)}></Error>
+                        }
 
                     </form>
                 </div>
