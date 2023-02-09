@@ -1,7 +1,25 @@
 import './Main.css'
-
+import React, {useEffect} from 'react';
+import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 const MainPage = () => {
+
+    const user = useSelector(state => state.isLoggedIn);
+    const history = useNavigate()
+
+    const route =() =>{
+        const token = localStorage.getItem('x-access-token')
+        return token ? true: false
+    }
+
+    useEffect(() => {
+        if(!route()){
+            history('/loginpage')
+
+        }
+    }, [route,history])
+
     return (
         <body>
             <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">

@@ -1,7 +1,14 @@
 import './Header.css'
 import { Outlet, Link } from "react-router-dom";
-
+import Logout from '../Imports/Logout';
+import { logoutAction } from '../../container/actions';
+import { useDispatch } from 'react-redux';
 const TopHeader = () => {
+
+    const dispatch = useDispatch()
+    const logout = () =>{
+        dispatch(logoutAction());
+    }
     return (
         <body>
             <nav class="navbar navbar-expand-lg BgColorBlue sticky-top">
@@ -88,6 +95,10 @@ const TopHeader = () => {
                                 <a href="https://napasin163.itch.io/elw-game" class="nav-link buttonNavPurple">Game</a>
                             </li>
                         </ul>
+                    </div>
+                    <div class="d-flex" >
+                        <Link to ="/loginpage" class="btn btn-outline-success text-light " type="submit">Login</Link>
+                        <Logout onLogout={logout}></Logout>
                     </div>
                 </div>
             </nav>

@@ -1,9 +1,9 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TopHeader from "./components/Header/Header";
 import MainPage from "./components/Body/Main";
 import Arduino from "./components/Body/Arduino/ArduinoTest";
 import MicroBit from "./components/Body/MicroBit/MicroBit";
 import Robots from "./components/Body/Robots/Robots";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HCSR04 from "./components/Body/Arduino/HCSR04";
 import Buzzer from "./components/Body/Arduino/Buzzer";
 import Servo from "./components/Body/Arduino/Servo";
@@ -19,6 +19,7 @@ import Tcrt from "./components/Body/Arduino/Tcrt5000";
 import Button from "./components/Body/Arduino/Button";
 import APDS from "./components/Body/Arduino/Apds-9960";
 import LoginPage from "./components/Login/LoginPage";
+import Register from "./components/Login/Register";
 
 const App = () =>{
     return (
@@ -44,6 +45,7 @@ const App = () =>{
           <Route path="microbit" element={<MicroBit />} />
           <Route path="robots" element={<Robots />} />
           <Route path="loginpage" element={<LoginPage />} />
+          <Route path="register" element={<Register />} />
         </Route>
       </Routes>
     </BrowserRouter>
