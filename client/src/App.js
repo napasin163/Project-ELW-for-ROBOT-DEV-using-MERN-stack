@@ -20,6 +20,7 @@ import Button from "./components/Body/Arduino/Button";
 import APDS from "./components/Body/Arduino/Apds-9960";
 import LoginPage from "./components/Login/LoginPage";
 import Register from "./components/Login/Register";
+import Quiz from "./components/Body/quiz/quiz";
 
 const App = () =>{
     return (
@@ -46,6 +47,7 @@ const App = () =>{
           <Route path="robots" element={<Robots />} />
           <Route path="loginpage" element={<LoginPage />} />
           <Route path="register" element={<Register />} />
+          <Route path="quiz" element={<Quiz />} />
         </Route>
       </Routes>
     </BrowserRouter>
