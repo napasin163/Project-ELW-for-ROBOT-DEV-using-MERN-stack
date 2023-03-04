@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 
-const baseURL = "http://localhost:9999/api";
+const baseURL = "https://project-elw-for-robot-dev-using-mern-stack-nghi.vercel.app/api";
 //register request
 const register = (newUser) =>{
     //POST requet on http://localhost:9999/api/register
