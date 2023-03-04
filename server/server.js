@@ -7,6 +7,7 @@ require("dotenv").config()
 
 const app = express ()
 app.use(cors());
+
 //connect cloud database
 mongoose.set("strictQuery", false);
 mongoose.connect(process.env.DATABASE,{
