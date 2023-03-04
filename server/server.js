@@ -18,7 +18,6 @@ mongoose.connect(process.env.DATABASE,{
 //middleware
 app.use(express.json())
 
-
 app.get ('/',(req,res)=>{
     res.send("Sever Request")
 })
