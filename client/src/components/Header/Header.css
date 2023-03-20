@@ -38,6 +38,15 @@
     padding-left: 10px;
   }
 
+  .buttonNavRed {
+    top:50%;
+    background-color : #ec1010;
+    color: white;
+    border:none;
+    border-radius:10px;
+    padding-left: 10px;
+  }
+
   .TextELWColorWhite {
     -webkit-text-fill-color: white;
     border-radius: 70%;

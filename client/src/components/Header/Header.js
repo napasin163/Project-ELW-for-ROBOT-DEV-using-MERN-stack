@@ -72,7 +72,7 @@ const TopHeader = () => {
                                             <li><Link to="/dc" class="dropdown-item ">DC Gear Motor</Link></li>
                                         </ul>
                                     </li>
-                                    <li><Link to="/=buzzer" class="dropdown-item ">Module &raquo;</Link>
+                                    <li><Link to="/buzzer" class="dropdown-item ">Module &raquo;</Link>
                                         <ul class="dropdown-menu submenu">
                                             <li><Link to="/buzzer" class="dropdown-item">Passive buzzer module</Link></li>
                                             <li><Link to="/button" class="dropdown-item">Button switch module</Link></li>
@@ -93,6 +93,9 @@ const TopHeader = () => {
                             </li>
                             <li class="nav-item dropdown">
                                 <a href="https://napasin163.itch.io/elw-game" class="nav-link buttonNavPurple">Game</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <Link to="/quiz" class="nav-link buttonNavRed">Quiz</Link>
                             </li>
                         </ul>
                     </div>
