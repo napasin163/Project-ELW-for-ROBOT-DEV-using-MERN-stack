@@ -63,7 +63,7 @@ const BuzzerMB = () => {
 
                 <div class="col-md-9 ms-lg-9 col-lg-9 px-md-4 position-sticky">
                     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                        <h1 class="h2 blackText bold2">Ultrasonic Sensor HC-SR04</h1>
+                        <h1 class="h2 blackText bold2">Passive buzzer module</h1>
                     </div>
                     <div class="d-flex justify-content-center">
                         <img src="https://cdn.discordapp.com/attachments/768084656465117227/1042777068141805658/png-transparent-ultrasonic-transducer-proximity-sensor-sensor-ultrasonico-electronics-others-electronics-measurement-sound-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="400" height="500" ></img>
@@ -72,7 +72,7 @@ const BuzzerMB = () => {
                         <h2 class="bold2">รายละเอียด</h2>
                     </div>
                     <div class="px-5 blackText">
-                        <p>HC-SR04 เป็นโมดูลอัลตร้าโซนิคเป็นอุปกรณ์เซ็นเซอร์ใช้วัดระยะทางของวัตถุกับตัวเซ็นเซอร์ โดยไม่ต้องมีการสัมผัสกับตำแหน่งที่ต้องการวัด วัดได้ตั้งแต่ 2 cm ถึง 400 cm รองรับแรงดันไฟ 3.3-5V อาศัยการทำงานของคลื่นเสียง โดยส่งสัญญาณอัลตร้าโซนิคความถี่ 40kHz (40,000Hz) ซึ่งจัดอยู่ในย่าน Ultrasonic (ความถี่สูงกว่าที่หูมนุษย์จะสามารถได้ยิน) ไปที่วัตถุที่ต้องการวัดและรับสัญญาณที่สะท้อนกลับมา พร้อมทั้งจับเวลาเพื่อนำมาใช้ในการคำนวณ โมดูลตัวนี้เป็นโมดูลยอดนิยมอีกตัวที่นำไปใช้ในโปรเจคหาระยะห่างของวัตถุ หรือใช้ในโครงงานหุ่นยนต์ต่างๆ ใช้งานง่าย ราคาถูก มีไลบรารี่สำหรับต่อกับ Arduino ได้โดยตรง เพื่อแสดงระยะทางได้ทันที </p>
+                        <p>เป็นโมดูลอิเล็กทรอนิกส์ที่ใช้สำหรับสร้างเสียง ทำงานแบบ Active Low โดย passive buzzer จะไม่สามารถสร้างเสียงได้ด้วยตัวมันเอง แต่จะต้องใช้สัญญาณจากวงจรอื่น ๆ เพื่อสั่งให้มีการสร้างเสียง มีลักษณะรูปทรงที่แบนหรือสี่เหลี่ยม มีขนาดเล็ก สามารถติดตั้งได้ง่ายบนบอร์ดพัฒนาหรือวงจรต่างๆ โดยปกติจะมีขาสายสองเส้น คือขา GND (อักษรย่อของ Ground) และขา Signal ซึ่งจะต้องถูกเชื่อมต่อกับพอร์ตของไมโครคอนโทรลเลอร์หรือคอมพิวเตอร์ และให้สั่งงานสัญญาณไฟฟ้าให้ผ่านตัวโมดูล จะทำให้ตัวกระตุ้นเกิดการสั่นที่ความถี่ตามสัญญาณที่ส่งเข้าไป ซึ่งจะสร้างเสียงตามความถี่นั้นๆ ออกมา มักจะใช้ในโปรเจ็กต์ที่ต้องการสร้างเสียงเพื่อแจ้งเตือนหรือสื่อสารกับผู้ใช้ หรือใช้ในการสร้างเสียงเพื่อประกาศข้อความเตือนหรือเสียงเพลงในโปรแกรมต่างๆ อย่างเช่น ในโปรเจ็กต์การสร้างโทรศัพท์เคลื่อนที่ รถบัสเทคโนโลยีสารสนเทศ </p>
                     </div>
                     <br></br>
                     <hr></hr>
@@ -103,11 +103,8 @@ const BuzzerMB = () => {
                     <div class="d-flex justify-content-center">
                         <img src="https://cdn.discordapp.com/attachments/768084656465117227/1042832455813566595/HC-SR04-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="800" height="700" ></img>
                     </div>
-                    <p>การต่อเพื่อใช้งานทำได้โดยต่อ PIN ดังนี้ </p>
-                    <p>PIN ที่ 1 -- 5V Supply</p>
-                    <p>PIN ที่ 2 -- Trigger Pulse Input</p>
-                    <p>PIN ที่ 3 -- Echo Pulse Output</p>
-                    <p>PIN ที่ 4 –- GND</p>
+                    <p>การใช้งาน Passive buzzer module จำเป็นต้องเชื่อมต่อกับพอร์ตของไมโครคอนโทรลเลอร์หรือคอมพิวเตอร์ โดยมีขาสายสองเส้น คือขา GND (อักษรย่อของ Ground) และขา Signal ซึ่งจะต้องเชื่อมต่อกับพอร์ตที่รองรับการเอาต์พุตสัญญาณออกมา เมื่อทำการเชื่อมต่อแล้ว ให้เขียนโปรแกรมสั่งให้ผ่านพอร์ต Digital Output ที่เชื่อมต่อกับขา Signal ของ Passive buzzer module โดยสั่งให้ตัวโมดูลส่งสัญญาณไฟฟ้าผ่านตัวกระตุ้น (piezoelectric element) ในโมดูล โดยไม่มีวงจรเสริมเพิ่มเติมในตัวโมดูล จะต้องใช้การควบคุมผ่านฮาร์ดแวร์หรือซอฟต์แวร์จากไมโครคอนโทรลเลอร์หรือคอมพิวเตอร์ </p>
+                    
                     <hr></hr>
                     <div class="h2 px-4 blackText">
                         <h2 class="bold2">รูปภาพประกอบ</h2>
