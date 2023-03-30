@@ -24,38 +24,29 @@ const Robots = () => {
 
                 <div class="px-5 pt-0 my-5 text-center position-sticky">
                     <div class="d-flex justify-content-right flex-wrap flex-md-nowrap align-items-center">
-                        <h1 class="h2 blackText bold2">หุ่นยนต์ติดตามเส้นตรวจจับสิ่งกีดขวาง</h1>
+                        <h1 class="h2 blackText bold2">หุ่นยนต์ติดตามเส้นตรวจจับสิ่งกีดขวาง Part 1</h1>
                     </div>
-                    <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1042777068141805658/png-transparent-ultrasonic-transducer-proximity-sensor-sensor-ultrasonico-electronics-others-electronics-measurement-sound-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="400" height="500" ></img>
+                    <div class="justify-content-center py-4">
+                        <iframe width="900" height="700" src="https://www.youtube.com/embed/_-K4jZADs0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='1'></iframe>
                     </div>
-                    <div class="h2 px-4 blackText">
+                    <div class="d-flex justify-content-right flex-wrap flex-md-nowrap align-items-center h2 px-4 blackText">
                         <h2 class="bold2">รายละเอียด</h2>
                     </div>
                     <div class="px-5 blackText">
-                        <p>HC-SR04 เป็นโมดูลอัลตร้าโซนิคเป็นอุปกรณ์เซ็นเซอร์ใช้วัดระยะทางของวัตถุกับตัวเซ็นเซอร์ โดยไม่ต้องมีการสัมผัสกับตำแหน่งที่ต้องการวัด วัดได้ตั้งแต่ 2 cm ถึง 400 cm รองรับแรงดันไฟ 3.3-5V อาศัยการทำงานของคลื่นเสียง โดยส่งสัญญาณอัลตร้าโซนิคความถี่ 40kHz (40,000Hz) ซึ่งจัดอยู่ในย่าน Ultrasonic (ความถี่สูงกว่าที่หูมนุษย์จะสามารถได้ยิน) ไปที่วัตถุที่ต้องการวัดและรับสัญญาณที่สะท้อนกลับมา พร้อมทั้งจับเวลาเพื่อนำมาใช้ในการคำนวณ โมดูลตัวนี้เป็นโมดูลยอดนิยมอีกตัวที่นำไปใช้ในโปรเจคหาระยะห่างของวัตถุ หรือใช้ในโครงงานหุ่นยนต์ต่างๆ ใช้งานง่าย ราคาถูก มีไลบรารี่สำหรับต่อกับ Arduino ได้โดยตรง เพื่อแสดงระยะทางได้ทันที </p>
+                        <p>Incididunt ipsum eiusmod proident aliqua sunt. Cupidatat consequat fugiat dolor qui eiusmod qui commodo enim ut id sit. Adipisicing officia eu veniam quis laborum. Ut in tempor nulla esse irure nulla deserunt voluptate labore proident enim dolor. Cillum Lorem aliqua consectetur consectetur enim eiusmod labore sint enim amet ad do.
+
+                            Veniam consectetur culpa velit esse et dolor non fugiat qui ipsum nostrud laboris aliquip amet. Dolor pariatur eu id occaecat non ex amet ipsum ut commodo amet. Eu minim officia sit eiusmod nostrud qui mollit qui adipisicing et irure cupidatat labore occaecat.
+
+                            Nisi labore nisi ipsum officia ut deserunt nulla. Id adipisicing tempor id magna consectetur enim ullamco commodo exercitation. Aliqua reprehenderit reprehenderit commodo fugiat ea ad voluptate dolore elit aute. Esse elit consectetur ex consequat irure fugiat. Proident do consequat enim cillum consectetur aute eiusmod irure ea deserunt eu aliqua.
+
+                            Excepteur aliqua do elit excepteur eiusmod elit officia eu duis proident commodo. Eu quis velit dolore irure deserunt magna. Est ut anim ut do aliqua ea veniam aliquip laboris ullamco reprehenderit. Ex magna ad laborum adipisicing in qui ipsum.</p>
                     </div>
                     <br></br>
                     <hr class="featurette-divider"></hr>
-                    <div class="embed-responsive embed-responsive-16by9 ms-5 ">
-                        <iframe width="1400" height="700" src="https://www.youtube.com/embed/Pyv0oIdmp5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='1'></iframe>
+                    <div class="d-flex justify-content-center">
+                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1042777068141805658/png-transparent-ultrasonic-transducer-proximity-sensor-sensor-ultrasonico-electronics-others-electronics-measurement-sound-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="400" height="500" ></img>
                     </div>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
+
                     <hr class="featurette-divider"></hr>
                     <div class="h2 px-4 blackText">
                         <h2 class="bold2">ข้อมูลการใช้งาน</h2>
