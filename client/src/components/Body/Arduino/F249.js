@@ -21,7 +21,6 @@ const F249 = () => {
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                     <li><Link to="/hcsr04" class="link-dark d-inline-flex text-decoration-none rounded">Ultrasonic Sensor HC-SR04</Link></li>
                                     <li><Link to="/tcrt" class="link-dark d-inline-flex text-decoration-none rounded">Reflective Sensor (TCRT5000)</Link></li>
-                                    <li><Link to="/apds" class="link-dark d-inline-flex text-decoration-none rounded">GY-9960 Infrared RGB Gesture Sensor (APDS-9960)</Link></li>
                                     <li><Link to="/f249" class="link-dark d-inline-flex text-decoration-none rounded">F249 Counter Module Motor Speed Sensor</Link></li>
                                     <li><Link to="/e18" class="link-dark d-inline-flex text-decoration-none rounded">Infrared photoelectric switch Sensor E18-D80NK</Link></li>
                                 </ul>
@@ -33,9 +32,7 @@ const F249 = () => {
                             </button>
                             <div class="collapse show" id="dashboard-collapse">
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                    <li><Link to="/servoM" class="link-dark d-inline-flex text-decoration-none rounded">Servo G90s</Link></li>
-                                    <li><Link to="/dc" class="link-dark d-inline-flex text-decoration-none rounded">DC Gear Motor</Link></li>
-                                </ul>
+                                    <li><Link to="/servoM" class="link-dark d-inline-flex text-decoration-none rounded">Servo G90s</Link></li>                                </ul>
                             </div>
                         </li>
                         <li class="mb-1">
@@ -46,11 +43,11 @@ const F249 = () => {
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                     <li><Link to="/buzzer" class="link-dark d-inline-flex text-decoration-none rounded">Passive buzzer module</Link></li>
                                     <li><Link to="/button" class="link-dark d-inline-flex text-decoration-none rounded">Button switch module</Link></li>
-                                    <li><Link to="/rotary" class="link-dark d-inline-flex text-decoration-none rounded">Rotary Encoder Module</Link></li>
                                     <li><Link to="/joystick" class="link-dark d-inline-flex text-decoration-none rounded">Adapter PS2 Joystick PlayStation</Link></li>
                                     <li><Link to="/relay" class="link-dark d-inline-flex text-decoration-none rounded">Relay Module 5V 2Channel</Link></li>
                                     <li><Link to="/lcd" class="link-dark d-inline-flex text-decoration-none rounded">Interface 12C 16x2 LCD</Link></li>
                                     <li><Link to="/oled" class="link-dark d-inline-flex text-decoration-none rounded">OLED 128x64</Link></li>
+                                    <li><Link to="/motor" class="dropdown-item">L298N Motor Driver</Link></li>
                                 </ul>
                             </div>
                         </li>

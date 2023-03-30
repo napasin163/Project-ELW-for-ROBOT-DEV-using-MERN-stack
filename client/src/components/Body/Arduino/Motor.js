@@ -3,7 +3,7 @@ import { Outlet, Link } from "react-router-dom";
 import Highlight from 'react-highlight'
 
 
-const APDS = () => {
+const Motor = () => {
     return (
         <body>
             <main class="d-flex flex-nowrap">
@@ -21,7 +21,6 @@ const APDS = () => {
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                     <li><Link to="/hcsr04" class="link-dark d-inline-flex text-decoration-none rounded">Ultrasonic Sensor HC-SR04</Link></li>
                                     <li><Link to="/tcrt" class="link-dark d-inline-flex text-decoration-none rounded">Reflective Sensor (TCRT5000)</Link></li>
-                                    <li><Link to="/apds" class="link-dark d-inline-flex text-decoration-none rounded">GY-9960 Infrared RGB Gesture Sensor (APDS-9960)</Link></li>
                                     <li><Link to="/f249" class="link-dark d-inline-flex text-decoration-none rounded">F249 Counter Module Motor Speed Sensor</Link></li>
                                     <li><Link to="/e18" class="link-dark d-inline-flex text-decoration-none rounded">Infrared photoelectric switch Sensor E18-D80NK</Link></li>
                                 </ul>
@@ -33,9 +32,7 @@ const APDS = () => {
                             </button>
                             <div class="collapse show" id="dashboard-collapse">
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                    <li><Link to="/servoM" class="link-dark d-inline-flex text-decoration-none rounded">Servo G90s</Link></li>
-                                    <li><Link to="/dc" class="link-dark d-inline-flex text-decoration-none rounded">DC Gear Motor</Link></li>
-                                </ul>
+                                    <li><Link to="/servoM" class="link-dark d-inline-flex text-decoration-none rounded">Servo G90s</Link></li>                                </ul>
                             </div>
                         </li>
                         <li class="mb-1">
@@ -46,11 +43,11 @@ const APDS = () => {
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                     <li><Link to="/buzzer" class="link-dark d-inline-flex text-decoration-none rounded">Passive buzzer module</Link></li>
                                     <li><Link to="/button" class="link-dark d-inline-flex text-decoration-none rounded">Button switch module</Link></li>
-                                    <li><Link to="/rotary" class="link-dark d-inline-flex text-decoration-none rounded">Rotary Encoder Module</Link></li>
                                     <li><Link to="/joystick" class="link-dark d-inline-flex text-decoration-none rounded">Adapter PS2 Joystick PlayStation</Link></li>
                                     <li><Link to="/relay" class="link-dark d-inline-flex text-decoration-none rounded">Relay Module 5V 2Channel</Link></li>
-                                    <li><Link to="/lcd" class="link-dark d-inline-flex text-decoration-none rounded">Interface 12C 16x2 LCD</Link></li>
+                                    <li><Link to="/Motor" class="link-dark d-inline-flex text-decoration-none rounded">Interface 12C 16x2 Motor</Link></li>
                                     <li><Link to="/oled" class="link-dark d-inline-flex text-decoration-none rounded">OLED 128x64</Link></li>
+                                    <li><Link to="/motor" class="dropdown-item">L298N Motor Driver</Link></li>
                                 </ul>
                             </div>
                         </li>
@@ -72,21 +69,21 @@ const APDS = () => {
 
                 <div class="col-md-9 ms-lg-9 col-lg-9 px-md-4 position-sticky">
                     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                        <h1 class="h2 blackText bold2">GY-9960 Infrared RGB Gesture Sensor (APDS-9960)</h1>
+                        <h1 class="h2 blackText bold2">L298N Motor Driver</h1>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1052621304236343326/GY-9960.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="400" height="500" ></img>
+                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1090807010737532999/e7hrfe-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="400" height="500" ></img>
                     </div>
                     <div class="h2 px-4 blackText">
                         <h2 class="bold2">รายละเอียด</h2>
                     </div>
                     <div class="px-5 blackText">
-                        <p>เป็นเซนเซอร์ตรวจจับสี RGB และท่าทาง ใช้ในการตรวจวัดแสง UV ค่าสี RGB ระยะห่างของวัตถุ ตรวจจับการเคลื่อนไหวได้ 4 ทิศทาง ระยะตรวจจับ 10-20 cm การสื่อสารเป็นแบบ I2C ใช้ไฟเลี้ยง 2.4-3.6V ทำให้เซนเซอร์ APDS-9960 สามารถนำไปประยุกต์ใช้ในกับสั่งงานควบคุมคอมพิวเตอร์ ไมโครคอนโทรลเลอร์ หุ่นยนต์และอื่นๆ ด้วยท่าทาง เช่น การโบกหรือปัดมือ</p>
+                        <p>Motor Driver Module (L298N) เป็นโมดูลที่ใช้สำหรับควบคุมการทำงานของมอเตอร์ โดยมีการเชื่อมต่อกับไมโครคอนโทรเลอร์หรือบอร์ดไมโครคอนโทรเลอร์ เพื่อทำการสั่งงานการทำงานของมอเตอร์ได้ โดยมีความสามารถในการควบคุมแรงดันได้สูงสุด 2 ช่อง ทำให้เหมาะสำหรับการนำมาใช้ในการสร้างโมดูลรถยนต์ที่ใช้การควบคุมมอเตอร์ได้ง่าย ๆ และสะดวก หรือการสร้างหุ่นยนต์ และโมดูลอื่น ๆ ที่ใช้มอเตอร์ในการทำงาน โมดูล Motor Driver Module (L298N) มีส่วนประกอบหลัก ประกอบไปด้วย ตัวจ่ายไฟ (power supply) ที่รองรับการเชื่อมต่อแบบ DC และสามารถใช้แรงดันไฟฟ้าได้สูงสุด 46V โดยมีความสามารถในการควบคุมกระแสได้สูงสุดถึง 2A ต่อช่อง และมีส่วนประกอบอื่น ๆ เช่น วงจร Relay และวงจร Logic ที่ช่วยให้การควบคุมมอเตอร์ได้ง่ายขึ้น โดยเฉพาะในการสลับสัญญาณกลับและสลับสัญญาณหน้าของมอเตอร์ ทำให้มีประสิทธิภาพในการทำงานที่แม่นยำและมีประสิทธิภาพสูง </p>
                     </div>
                     <br></br>
                     <hr></hr>
                     <div class="embed-responsive embed-responsive-16by9 ms-5">
-                        <iframe width="1100" height="700" src="https://www.youtube.com/embed/Pyv0oIdmp5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='1'></iframe>
+                        <iframe width="1100" height="700" src="https://www.youtube.com/embed/AAH-kdJxFTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='1'></iframe>
                     </div>
                     <br></br>
                     <br></br>
@@ -110,20 +107,17 @@ const APDS = () => {
                     </div>
                     <br></br>
                     <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1053047738461343755/APDS_9960-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="800" height="700" ></img>
+                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1090805237830393866/Drive_motor-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="800" height="700" ></img>
                     </div>
-                    <p>Arduino Pin  APDS-9960 Board  Function</p>
-                    <p>3.3V - VCC - Power </p>
-                    <p>GND - GND - Ground</p>
-                    <p>A4 - SDA - I2C Data</p>
-                    <p>A5 - SCL - I2C Clock</p>
-                    <p>2 - INT - Interrupt </p>
+                    <div class="px-5 blackText">
+                        <p>การใช้งาน Motor Driver Module (L298N) จะต้องเชื่อมต่อกับบอร์ด Arduino และมอเตอร์ด้วยสายไฟฟ้า โดยมีขั้วเชื่อมต่อ 5V และ GND สำหรับจ่ายไฟเข้ามาในโมดูล และมีขั้วเชื่อมต่อ IN1, IN2, IN3 และ IN4 สำหรับควบคุมการทำงานของมอเตอร์ และมีขั้วเชื่อมต่อ OUT1, OUT2, OUT3 และ OUT4 สำหรับส่งสัญญาณไฟฟ้าไปยังมอเตอร์ </p>
+                    </div>
                     <hr></hr>
                     <div class="h2 px-4 blackText">
                         <h2 class="bold2">รูปภาพประกอบ</h2>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/837757981549396049/1053045604865015838/LINE_ALBUM___5.jpg" class="img-fluid rounded-3 mb-4" alt="555" width="800" height="700" ></img>
+                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1043224938179477524/LINE_ALBUM__221119.jpg" class="img-fluid rounded-3 mb-4" alt="555" width="800" height="700" ></img>
                     </div>
                     <br></br>
                     <hr></hr>
@@ -140,32 +134,27 @@ const APDS = () => {
                     </div>
                     <div class="d-flex justify-content-center ">
                         <Highlight language="c++">
-                            {`    #define Trig 9 // กำหนด Pin 9 = Trig 
-    #define Echo 10  // กำหนด Pin  10 = Echo
-    float duration ; // สำหรับเก็บค่าเวลาที่เสียงเดินทาง
-    float distance ; // สำหรับเก็บค่าระยะทางที่คำนวณได้
-    void setup() {  
-    pinMode(Trig, OUTPUT); //กำหนดขา Trig เป็น output
-    pinMode(Echo, INPUT); // กำหนดขา Echo เป็น input
-    Serial.begin(9600); // เริ่ม Serial เพื่อใช้ Serial Monitor
+                            {`    // Motor A
+    #define dir1PinA  2
+    #define dir2PinA  3
+    #define speedPinA  4 //   เพื่อให้ PWM สามารถควบคุมความเร็วมอเตอร์ 
+    void setup()
+        {
+    Serial.begin(9600);
+    //กำหนด ขา เพื่อใช้ในการควบคุมการทำงานของ  Motor ผ่านทาง L298N
+    pinMode(dir1PinA,OUTPUT);
+    pinMode(dir2PinA,OUTPUT);
+    pinMode(speedPinA,OUTPUT);
     }
-    void loop(){
-    
-    digitalWrite(Trig, LOW); // เคลียร์ค่าขา trig ป้องกันกรณีสถานะค้างเก่าค้างอยู่ 
-    delayMicroseconds(5);    // 5 ไมโครวินาที
-    
-    digitalWrite(Trig, HIGH); // ให้ขา Trig ส่งคลื่นออกไป 
-    delayMicroseconds(10);    //10 ไมโครวินาที
-    digitalWrite(Trig, LOW);  // ให้ขา Trig ปิดการส่งคลื่นออกไป  
-    
-    duration = pulseIn(Echo, HIGH); // จับเวลาจนกว่าจะมีคลื่นเสียงมากระทบ Echo โดยคำสั่ง pulseIn
-    distance = (duration*0.034)/2;  // คำนวณหาระยะตามสูตรข้างต้น
+    void loop()
+         {
+    // Motor A
+    analogWrite(speedPinA, 255); //ตั้งค่าความเร็ว PWM ผ่านตัวแปร ค่าต่ำลง มอเตอร์จะหมุนช้าลง
+    digitalWrite(dir1PinA, HIGH);
+    digitalWrite(dir2PinA, LOW);
 
-    // แสดงค่าทาง Serial Monitor
-    Serial.print("Distance: ");
-    Serial.print(distance);
-    Serial.println(" cm ");
-    }`}
+    }
+`}
                         </Highlight>
                     </div>
                 </div>
@@ -175,4 +164,4 @@ const APDS = () => {
     );
 }
 
-export default APDS;
+export default Motor;

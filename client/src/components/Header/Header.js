@@ -30,26 +30,24 @@ const TopHeader = () => {
                                         <ul class="dropdown-menu submenu">
                                             <li><Link to="/hcsr04" class="dropdown-item ">Ultrasonic Sensor HC-SR04</Link></li>
                                             <li><Link to="/tcrt" class="dropdown-item ">Reflective Sensor (TCRT5000)</Link></li>
-                                            <li><Link to="/apds" class="dropdown-item ">GY-9960 Infrared RGB Gesture Sensor (APDS-9960)</Link></li>
                                             <li><Link to="/f249" class="dropdown-item ">F249 Counter Module Motor Speed Sensor</Link></li>
                                             <li><Link to="/e18" class="dropdown-item ">Infrared photoelectric switch Sensor E18-D80NK</Link></li>
                                         </ul>
                                     </li>
-                                    <li><Link to="/servoM" class="dropdown-item ">Motor/Servo &raquo;</Link>
+                                    <li><Link to="/servoM" class="dropdown-item ">Servo &raquo;</Link>
                                         <ul class="dropdown-menu submenu">
                                             <li><Link to="/servoM" class="dropdown-item ">Servo G90s</Link></li>
-                                            <li><Link to="/dc" class="dropdown-item ">DC Gear Motor</Link></li>
                                         </ul>
                                     </li>
                                     <li><Link to="/buzzer" class="dropdown-item ">Module &raquo;</Link>
                                         <ul class="dropdown-menu submenu">
                                             <li><Link to="/buzzer" class="dropdown-item">Passive buzzer module</Link></li>
                                             <li><Link to="/button" class="dropdown-item">Button switch module</Link></li>
-                                            <li><Link to="/rotary" class="dropdown-item">Rotary Encoder Module</Link></li>
                                             <li><Link to="/joystick" class="dropdown-item">Adapter PS2 Joystick PlayStation</Link></li>
                                             <li><Link to="/relay" class="dropdown-item">Relay Module 5V 2Channel</Link></li>
                                             <li><Link to="/lcd" class="dropdown-item">Interface 12C 16x2 LCD</Link></li>
                                             <li><Link to="/oled" class="dropdown-item">OLED 128x64</Link></li>
+                                            <li><Link to="/motor" class="dropdown-item">L298N Motor Driver</Link></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -60,36 +58,28 @@ const TopHeader = () => {
                                     <li><Link to="microbit" class="dropdown-item">More info</Link></li>
                                     <li><Link to="/hcsr04" class="dropdown-item ">Sensor &raquo;</Link>
                                         <ul class="dropdown-menu submenu">
-                                            <li><Link to="/hcsr04" class="dropdown-item ">Ultrasonic Sensor HC-SR04</Link></li>
+                                            <li><Link to="/hcsr04MB" class="dropdown-item ">Ultrasonic Sensor HC-SR04</Link></li>
                                             <li><Link to="/tcrt" class="dropdown-item ">Reflective Sensor (TCRT5000)</Link></li>
-                                            <li><Link to="/f249" class="dropdown-item ">F249 Counter Module Motor Speed Sensor</Link></li>
-                                            <li><Link to="/e18" class="dropdown-item ">Infrared photoelectric switch Sensor E18-D80NK</Link></li>
                                         </ul>
                                     </li>
                                     <li><Link to="/servoM" class="dropdown-item ">Motor/Servo &raquo;</Link>
                                         <ul class="dropdown-menu submenu">
                                             <li><Link to="/servoM" class="dropdown-item ">Servo G90s</Link></li>
-                                            <li><Link to="/dc" class="dropdown-item ">DC Gear Motor</Link></li>
                                         </ul>
                                     </li>
                                     <li><Link to="/buzzer" class="dropdown-item ">Module &raquo;</Link>
                                         <ul class="dropdown-menu submenu">
                                             <li><Link to="/buzzer" class="dropdown-item">Passive buzzer module</Link></li>
-                                            <li><Link to="/button" class="dropdown-item">Button switch module</Link></li>
-                                            <li><Link to="/rotary" class="dropdown-item">Rotary Encoder Module</Link></li>
                                             <li><Link to="/relay" class="dropdown-item">Relay Module 5V 2Channel</Link></li>
+                                            <li><Link to="/lcd" class="dropdown-item">Interface 12C 16x2 LCD</Link></li>
+                                            <li><Link to="/oled" class="dropdown-item">OLED 128x64</Link></li>
+                                            <li><Link to="/motor" class="dropdown-item">L298N Motor Driver</Link></li>
                                         </ul>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <Link to=" " class="nav-link buttonNavYellow dropdown-toggle" data-bs-toggle="dropdown">Robot</Link>
-                                <ul class="dropdown-menu">
-                                    <li><Link to="robots" class="dropdown-item">More info</Link></li>
-                                    <li><Link to="/robots" class="dropdown-item ">Robot1</Link></li>
-                                    <li><Link to="/robots" class="dropdown-item ">Robot2</Link></li>
-                                    <li><Link to="/robots" class="dropdown-item ">Robot3</Link></li>
-                                </ul>
+                                <Link to="/robots" class="nav-link buttonNavYellow">Robot</Link>
                             </li>
                             <li class="nav-item dropdown">
                                 <a href="https://napasin163.itch.io/elw-game" class="nav-link buttonNavPurple">Game</a>

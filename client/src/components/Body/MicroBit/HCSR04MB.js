@@ -1,16 +1,14 @@
-import './HCSR04.css'
 import { Outlet, Link } from "react-router-dom";
 import Highlight from 'react-highlight'
 
-
-const Rotary = () => {
+const HCSR04MB = () => {
     return (
         <body>
             <main class="d-flex flex-nowrap">
                 <div class="flex-shrink-0 p-3 bg-white stylexd">
-                    <Link to="/arduino" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom ">
+                    <Link to="/microbit" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom ">
                         <svg class="bi pe-none me-2" width="30" height="24"></svg>
-                        <span class="fs-5 fw-semibold">Arduino</span>
+                        <span class="fs-5 fw-semibold">Micro:Bit</span>
                     </Link>
                     <ul class="list-unstyled ps-0">
                         <li class="mb-1">
@@ -21,21 +19,16 @@ const Rotary = () => {
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                     <li><Link to="/hcsr04" class="link-dark d-inline-flex text-decoration-none rounded">Ultrasonic Sensor HC-SR04</Link></li>
                                     <li><Link to="/tcrt" class="link-dark d-inline-flex text-decoration-none rounded">Reflective Sensor (TCRT5000)</Link></li>
-                                    <li><Link to="/apds" class="link-dark d-inline-flex text-decoration-none rounded">GY-9960 Infrared RGB Gesture Sensor (APDS-9960)</Link></li>
-                                    <li><Link to="/f249" class="link-dark d-inline-flex text-decoration-none rounded">F249 Counter Module Motor Speed Sensor</Link></li>
-                                    <li><Link to="/e18" class="link-dark d-inline-flex text-decoration-none rounded">Infrared photoelectric switch Sensor E18-D80NK</Link></li>
                                 </ul>
                             </div>
                         </li>
                         <li class="mb-1">
                             <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-                                Servo/Motor
+                                Motor
                             </button>
                             <div class="collapse show" id="dashboard-collapse">
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                    <li><Link to="/servoM" class="link-dark d-inline-flex text-decoration-none rounded">Servo G90s</Link></li>
-                                    <li><Link to="/dc" class="link-dark d-inline-flex text-decoration-none rounded">DC Gear Motor</Link></li>
-                                </ul>
+                                    <li><Link to="/servoM" class="link-dark d-inline-flex text-decoration-none rounded">Servo G90s</Link></li>                                </ul>
                             </div>
                         </li>
                         <li class="mb-1">
@@ -45,12 +38,10 @@ const Rotary = () => {
                             <div class="collapse show" id="orders-collapse">
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                     <li><Link to="/buzzer" class="link-dark d-inline-flex text-decoration-none rounded">Passive buzzer module</Link></li>
-                                    <li><Link to="/button" class="link-dark d-inline-flex text-decoration-none rounded">Button switch module</Link></li>
-                                    <li><Link to="/rotary" class="link-dark d-inline-flex text-decoration-none rounded">Rotary Encoder Module</Link></li>
-                                    <li><Link to="/joystick" class="link-dark d-inline-flex text-decoration-none rounded">Adapter PS2 Joystick PlayStation</Link></li>
                                     <li><Link to="/relay" class="link-dark d-inline-flex text-decoration-none rounded">Relay Module 5V 2Channel</Link></li>
                                     <li><Link to="/lcd" class="link-dark d-inline-flex text-decoration-none rounded">Interface 12C 16x2 LCD</Link></li>
                                     <li><Link to="/oled" class="link-dark d-inline-flex text-decoration-none rounded">OLED 128x64</Link></li>
+                                    <li><Link to="/motor" class="dropdown-item">L298N Motor Driver</Link></li>
                                 </ul>
                             </div>
                         </li>
@@ -72,17 +63,16 @@ const Rotary = () => {
 
                 <div class="col-md-9 ms-lg-9 col-lg-9 px-md-4 position-sticky">
                     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                        <h1 class="h2 blackText bold2">Rotary Encoder Module (HW-040)</h1>
+                        <h1 class="h2 blackText bold2">Ultrasonic Sensor HC-SR04</h1>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/837757981549396049/1053050756019785768/image-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="400" height="500" ></img>
+                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1042777068141805658/png-transparent-ultrasonic-transducer-proximity-sensor-sensor-ultrasonico-electronics-others-electronics-measurement-sound-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="400" height="500" ></img>
                     </div>
                     <div class="h2 px-4 blackText">
                         <h2 class="bold2">รายละเอียด</h2>
                     </div>
                     <div class="px-5 blackText">
-                        <p>เป็นอุปกรณ์ที่แปลงการหมุน (360 องศา) เป็นสัญญาณทางไฟฟ้า  เพื่อใช้ในการปรับค่าของการทำงานของอุปกรณ์ ซึ่งทำงานต่างจาก Potentiometer คือ 
-                            สามารถหมุนได้ต่อเนื่องไม่มีสุดปลายในแต่ละด้าน เป็นเซนเซอร์ตรวจจับการหมุน สำหรับรับข้อมูลโดยการบิดหมุนที่ตัว Rotary จะได้เลขค่าตามที่เรากำหนดไว้ในการเพิ่มหรือลดค่า ของการหมุนแต่ละล็อก ใช้สำหรับกำหนดค่าขึ้นลง เช่น การปรับโวลุ่มเสียงเพลง</p>
+                        <p>HC-SR04 เป็นโมดูลอัลตร้าโซนิคเป็นอุปกรณ์เซ็นเซอร์ใช้วัดระยะทางของวัตถุกับตัวเซ็นเซอร์ โดยไม่ต้องมีการสัมผัสกับตำแหน่งที่ต้องการวัด วัดได้ตั้งแต่ 2 cm ถึง 400 cm รองรับแรงดันไฟ 3.3-5V อาศัยการทำงานของคลื่นเสียง โดยส่งสัญญาณอัลตร้าโซนิคความถี่ 40kHz (40,000Hz) ซึ่งจัดอยู่ในย่าน Ultrasonic (ความถี่สูงกว่าที่หูมนุษย์จะสามารถได้ยิน) ไปที่วัตถุที่ต้องการวัดและรับสัญญาณที่สะท้อนกลับมา พร้อมทั้งจับเวลาเพื่อนำมาใช้ในการคำนวณ โมดูลตัวนี้เป็นโมดูลยอดนิยมอีกตัวที่นำไปใช้ในโปรเจคหาระยะห่างของวัตถุ หรือใช้ในโครงงานหุ่นยนต์ต่างๆ ใช้งานง่าย ราคาถูก มีไลบรารี่สำหรับต่อกับ Arduino ได้โดยตรง เพื่อแสดงระยะทางได้ทันที </p>
                     </div>
                     <br></br>
                     <hr></hr>
@@ -111,25 +101,24 @@ const Rotary = () => {
                     </div>
                     <br></br>
                     <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/837757981549396049/1053050200391962725/Rotary_Enocder-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="800" height="700" ></img>
+                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1042832455813566595/HC-SR04-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="800" height="700" ></img>
                     </div>
                     <p>การต่อเพื่อใช้งานทำได้โดยต่อ PIN ดังนี้ </p>
-                    <p>5V - 5V</p>
-                    <p>GND - GND</p>
-                    <p>CLK - 3</p>
-                    <p>DT - 2</p>
-                    <p>KEY – 8</p>
+                    <p>PIN ที่ 1 -- 5V Supply</p>
+                    <p>PIN ที่ 2 -- Trigger Pulse Input</p>
+                    <p>PIN ที่ 3 -- Echo Pulse Output</p>
+                    <p>PIN ที่ 4 –- GND</p>
                     <hr></hr>
                     <div class="h2 px-4 blackText">
                         <h2 class="bold2">รูปภาพประกอบ</h2>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/837757981549396049/1053045603736752158/LINE_ALBUM___1.jpg" class="img-fluid rounded-3 mb-4" alt="555" width="800" height="700" ></img>
+                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1043224938179477524/LINE_ALBUM__221119.jpg" class="img-fluid rounded-3 mb-4" alt="555" width="800" height="700" ></img>
                     </div>
                     <br></br>
                     <hr></hr>
                     <div class="h2 px-4 blackText">
-                        <h2 class="bold2">จำลองการต่อวงจร</h2>
+                        <h2  class="bold2">จำลองการต่อวงจร</h2>
                     </div>
                     <div class="d-flex justify-content-center">
                         <img src="https://i.imgur.com/uc3lhRG.gif" class="img-fluid rounded-3 mb-4 ps-5" alt="555" width="1100" height="900" ></img>
@@ -141,77 +130,40 @@ const Rotary = () => {
                     </div>
                     <div class="d-flex justify-content-center ">
                         <Highlight language="c++">
-                            {`enum PinAssignments {
-  encoderPinA = 2, // ขา S1
-  encoderPinB = 3, // ขา S2
-  clearButton = 4  // ขา Key
-                // จ่ายไฟที่ขา +5v และ gnd
-                // Example For Arduino Uno By www.ArduinoAll.com
-};
-volatile unsigned int encoderPos = 0;  // สำหรับนับจำนวน
-unsigned int lastReportedPos = 1;   // change management
-static boolean rotating = false;    // debounce management
-boolean A_set = false;
-boolean B_set = false;
-void setup() {
+                            {`    #define Trig 9 // กำหนด Pin 9 = Trig 
+    #define Echo 10  // กำหนด Pin  10 = Echo
+    float duration ; // สำหรับเก็บค่าเวลาที่เสียงเดินทาง
+    float distance ; // สำหรับเก็บค่าระยะทางที่คำนวณได้
+    void setup() {  
+    pinMode(Trig, OUTPUT); //กำหนดขา Trig เป็น output
+    pinMode(Echo, INPUT); // กำหนดขา Echo เป็น input
+    Serial.begin(9600); // เริ่ม Serial เพื่อใช้ Serial Monitor
+    }
+    void loop(){
+    
+    digitalWrite(Trig, LOW); // เคลียร์ค่าขา trig ป้องกันกรณีสถานะค้างเก่าค้างอยู่ 
+    delayMicroseconds(5);    // 5 ไมโครวินาที
+    
+    digitalWrite(Trig, HIGH); // ให้ขา Trig ส่งคลื่นออกไป 
+    delayMicroseconds(10);    //10 ไมโครวินาที
+    digitalWrite(Trig, LOW);  // ให้ขา Trig ปิดการส่งคลื่นออกไป  
+    
+    duration = pulseIn(Echo, HIGH); // จับเวลาจนกว่าจะมีคลื่นเสียงมากระทบ Echo โดยคำสั่ง pulseIn
+    distance = (duration*0.034)/2;  // คำนวณหาระยะตามสูตรข้างต้น
 
-  pinMode(encoderPinA, INPUT_PULLUP); // กำหนดโหมดเป็นแบบ Input pullup
-  pinMode(encoderPinB, INPUT_PULLUP);
-  pinMode(clearButton, INPUT_PULLUP);
-  attachInterrupt(0, doEncoderA, CHANGE); //ทำงานแบบ interrupt เบอร์ 0 ในนี้คือขา pin 2
-  attachInterrupt(1, doEncoderB, CHANGE); //ทำงานแบบ interrupt เบอร์ 1 ในนี้คือขา pin 3
-  Serial.begin(9600);
-}
-
-void loop() {
-  rotating = true;  // reset the debouncer
-
-  if (lastReportedPos != encoderPos) {
-    Serial.print("Index:");
-    Serial.println(encoderPos, DEC);
-    lastReportedPos = encoderPos;
-  }
-  if (digitalRead(clearButton) == LOW )  {
-    encoderPos = 0;
-    Serial.println("Click:Reset Index");
-    delay(200);
-  }
-}
-
-
-// คำสั่งทำงานแบบ interrupt เมื่อมีการหมุน
-void doEncoderA() {
-  // debounce
-  if ( rotating ) delay (1);  // หน่วงเวลาป้องกันสัญญาณบกวน debounce
-
-  // เช็คว่ามีบิดสวิตช์
-  if ( digitalRead(encoderPinA) != A_set ) { // debounce once more
-    A_set = !A_set;
-    // adjust counter + if A leads B
-    if ( A_set && !B_set )
-      encoderPos += 1;
-    rotating = false;  // no more debouncing until loop() hits again
-  }
-}
-
-// Interrupt on B changing state, same as A above
-void doEncoderB() {
-  if ( rotating ) delay (1);
-  if ( digitalRead(encoderPinB) != B_set ) {
-    B_set = !B_set;
-    //  adjust counter - 1 if B leads A
-    if ( B_set && !A_set )
-      encoderPos -= 1;
-    rotating = false;
-  }
-}`}
+    // แสดงค่าทาง Serial Monitor
+    Serial.print("Distance: ");
+    Serial.print(distance);
+    Serial.println(" cm ");
+    }`}
                         </Highlight>
                     </div>
                 </div>
             </main>
             <script src="sidebars.js"></script>
         </body>
+
+
     );
 }
-
-export default Rotary;
+export default HCSR04MB;

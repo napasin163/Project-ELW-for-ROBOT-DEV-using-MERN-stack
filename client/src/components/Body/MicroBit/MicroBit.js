@@ -1,5 +1,4 @@
 import '../Arduino/Arduino.css'
-import './MicroBit.css'
 const MicroBit = () => {
     return (
         <body>
@@ -95,15 +94,6 @@ const MicroBit = () => {
                         </div>
                         <div class="col">
                             <div class="card h-100">
-                                <img src="https://cdn.discordapp.com/attachments/768084656465117227/1052621304236343326/GY-9960.png" height="380" class="card-img-top" alt="GY-9960"></img>
-                                <div class="card-body">
-                                    <h5 class="card-title">GY-9960 Infrared RGB Gesture Sensor (APDS-9960)</h5>
-                                    <p class="card-text">เซนเซอร์ตรวจจับสี RGB</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
                                 <img src="https://cdn.discordapp.com/attachments/768084656465117227/1052621305859538944/Infrared_photoelectric_switch_Sensor_E18-D80NK.png" class="card-img-top" alt="E18-D80NK"></img>
                                 <div class="card-body">
                                     <h5 class="card-title">Infrared photoelectric switch Sensor E18-D80NK</h5>
@@ -121,14 +111,6 @@ const MicroBit = () => {
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card h-100">
-                                <img src="https://cdn.discordapp.com/attachments/768084656465117227/1052623020335845417/DC_gear.png" class="card-img-top" alt="DC GEAR"></img>
-                                <div class="card-body">
-                                    <h5 class="card-title">DC Gear Motor</h5>
-                                    <p class="card-text">มอเตอร์เกียร์</p>
-                                </div>
-                            </div>
-                        </div><div class="col">
                             <div class="card h-100">
                                 <img src="https://cdn.discordapp.com/attachments/768084656465117227/1043252975725973535/Picture1-removebg-preview.png" class="card-img-top" alt="buzzer"></img>
                                 <div class="card-body">
@@ -148,15 +130,6 @@ const MicroBit = () => {
                         </div>
                         <div class="col">
                             <div class="card h-100">
-                                <img src="https://cdn.discordapp.com/attachments/768084656465117227/1052624657414631454/Rotary_Encoder_Module_HW-040.png" class="card-img-top" alt="potentiometer"></img>
-                                <div class="card-body">
-                                    <h5 class="card-title">Rotary Encoder Module</h5>
-                                    <p class="card-text">โมดูล Rotary หมุนรับค่า 360 องศา</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
                                 <img src="https://cdn.discordapp.com/attachments/768084656465117227/1052628002414018570/Relay_module.png" height="470" class="card-img-top" alt="relay"></img>
                                 <div class="card-body">
                                     <h5 class="card-title">Relay Module 5V 2Channel</h5>
@@ -167,6 +140,7 @@ const MicroBit = () => {
                     </div>
                     <br></br>
                 </div>
+                <hr class="featurette-divider"></hr>
                 <footer class="container pb-5">
                     <p class="float-end"><a href="#">Back to top</a></p>
                     <p>&copy; 2022 KMITL. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>

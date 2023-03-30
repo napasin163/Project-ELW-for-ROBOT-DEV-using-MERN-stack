@@ -96,15 +96,6 @@ const Arduino = () => {
                         </div>
                         <div class="col">
                             <div class="card h-100">
-                                <img src="https://cdn.discordapp.com/attachments/768084656465117227/1052621304236343326/GY-9960.png" height="380" class="card-img-top" alt="GY-9960"></img>
-                                <div class="card-body">
-                                    <h5 class="card-title">GY-9960 Infrared RGB Gesture Sensor (APDS-9960)</h5>
-                                    <p class="card-text">เซนเซอร์ตรวจจับสี RGB</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
                                 <img src="https://cdn.discordapp.com/attachments/768084656465117227/1052621305524011008/F249.png" class="card-img-top" alt="F249"></img>
                                 <div class="card-body">
                                     <h5 class="card-title">F249 Counter Module Motor Speed Sensor</h5>
@@ -132,14 +123,6 @@ const Arduino = () => {
                         </div>
                         <div class="col">
                             <div class="card h-100">
-                                <img src="https://cdn.discordapp.com/attachments/768084656465117227/1052623020335845417/DC_gear.png" class="card-img-top" alt="DC GEAR"></img>
-                                <div class="card-body">
-                                    <h5 class="card-title">DC Gear Motor</h5>
-                                    <p class="card-text">มอเตอร์เกียร์</p>
-                                </div>
-                            </div>
-                        </div><div class="col">
-                            <div class="card h-100">
                                 <img src="https://cdn.discordapp.com/attachments/768084656465117227/1043252975725973535/Picture1-removebg-preview.png" class="card-img-top" alt="buzzer"></img>
                                 <div class="card-body">
                                     <h5 class="card-title">Passive buzzer module</h5>
@@ -153,15 +136,6 @@ const Arduino = () => {
                                 <div class="card-body">
                                     <h5 class="card-title">Button switch module</h5>
                                     <p class="card-text">โมดูลปุ่ม</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="https://cdn.discordapp.com/attachments/768084656465117227/1052624657414631454/Rotary_Encoder_Module_HW-040.png" class="card-img-top" alt="potentiometer"></img>
-                                <div class="card-body">
-                                    <h5 class="card-title">Rotary Encoder Module</h5>
-                                    <p class="card-text">โมดูล Rotary หมุนรับค่า 360 องศา</p>
                                 </div>
                             </div>
                         </div>
@@ -205,6 +179,7 @@ const Arduino = () => {
                     </div>
                     <br></br>
                 </div>
+                <hr class="featurette-divider"></hr>
                 <footer class="container pb-5">
                     <p class="float-end"><a href="#">Back to top</a></p>
                     <p>&copy; 2022 KMITL. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
