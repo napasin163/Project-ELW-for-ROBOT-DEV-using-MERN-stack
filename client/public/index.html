@@ -55,5 +55,63 @@
   integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+  const quizContainer = document.getElementById("question-container");
+  const submitButton = document.getElementById("submit-button");
+  const scoreContainer = document.getElementById("score-container");
+  const questions = [
+    {
+      question: "What is the capital of France?",
+      choices: ["Paris", "London", "Berlin"],
+      answer: "Paris"
+    },
+    {
+      question: "What is the largest country in the world?",
+      choices: ["China", "USA", "Russia"],
+      answer: "Russia"
+    },
+    {
+      question: "What is the highest mountain in the world?",
+      choices: ["Mount Kilimanjaro", "Mount Everest", "Mount Fuji"],
+      answer: "Mount Everest"
+    }
+  ];
+
+  function displayQuiz() {
+    const output = [];
+    questions.forEach((question, index) => {
+      const choices = [];
+      for (let i = 0; i < question.choices.length; i++) {
+        choices.push(
+          `<label>
+               <input type="radio" name="question${index}" value="${question.choices[i]}">
+               ${question.choices[i]}
+             </label>`
+        );
+      }
+      output.push(
+        `<div class="question">
+             <h3>${question.question}</h3>
+             <div class="choices">${choices.join("")}</div>
+           </div>`
+      );
+    });
+    quizContainer.innerHTML = output.join("");
+  }
+
+  function calculateScore() {
+    let score = 0;
+    questions.forEach((question, index) => {
+      const selected = document.querySelector(`input[name="question${index}"]:checked`);
+      if (selected && selected.value === question.answer) {
+        score++;
+      }
+    });
+    scoreContainer.innerHTML = `Your score is ${score} out of ${questions.length}.`;
+  }
+
+  displayQuiz();
+  submitButton.addEventListener("click", calculateScore);
+</script>
 
 </html>

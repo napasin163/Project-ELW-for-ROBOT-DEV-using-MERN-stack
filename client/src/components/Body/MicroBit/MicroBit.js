@@ -43,7 +43,7 @@ const MicroBit = () => {
                     <div class="col-lg-6 mx-auto">
                         <p class="lead mb-4 blackText">คู่มือเเละขั้นตอนการใช้งานบอร์ด Micro:Bit กับอุปกรณ์อิเล็กทรอนิกส์ต่างๆ สามารถกดเข้าไปที่ปุ่มด้านล่างเพื่อเรียนรู้เพิ่มเติมได้เลย !</p>
                         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                            <a href="/hcsr04" class="btn btn-success btn-lg px-4 me-sm-3"> Learn more!</a>
+                            <a href="/hcsr04MB" class="btn btn-success btn-lg px-4 me-sm-3"> Learn more!</a>
                         </div>
                     </div>
 
@@ -94,15 +94,6 @@ const MicroBit = () => {
                         </div>
                         <div class="col">
                             <div class="card h-100">
-                                <img src="https://cdn.discordapp.com/attachments/768084656465117227/1052621305859538944/Infrared_photoelectric_switch_Sensor_E18-D80NK.png" class="card-img-top" alt="E18-D80NK"></img>
-                                <div class="card-body">
-                                    <h5 class="card-title">Infrared photoelectric switch Sensor E18-D80NK</h5>
-                                    <p class="card-text">เซนเซอร์ตรวจจับวัตถุ</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
                                 <img src="https://cdn.discordapp.com/attachments/768084656465117227/1043260993985314836/Mini-Servo-Motor-SG91R-removebg-preview.png" height="470" class="card-img-top" alt="SG91R"></img>
                                 <div class="card-body">
                                     <h5 class="card-title">Servo G90s</h5>
@@ -121,19 +112,37 @@ const MicroBit = () => {
                         </div>
                         <div class="col">
                             <div class="card h-100">
-                                <img src="https://cdn.discordapp.com/attachments/768084656465117227/1052624411729084476/Bontton.png" height="470" class="card-img-top" alt="Button"></img>
+                                <img src="https://cdn.discordapp.com/attachments/768084656465117227/1052628002414018570/Relay_module.png" height="470" class="card-img-top" alt="relay"></img>
                                 <div class="card-body">
-                                    <h5 class="card-title">Button switch module</h5>
-                                    <p class="card-text">โมดูลปุ่ม</p>
+                                    <h5 class="card-title">Relay Module 5V 2Channel</h5>
+                                    <p class="card-text">โมดูล รีเลย์</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card h-100">
-                                <img src="https://cdn.discordapp.com/attachments/768084656465117227/1052628002414018570/Relay_module.png" height="470" class="card-img-top" alt="relay"></img>
+                                <img src="https://cdn.discordapp.com/attachments/768084656465117227/1052629356234674238/yvsnfv-removebg-preview.png" height="470" class="card-img-top" alt="lcd"></img>
                                 <div class="card-body">
-                                    <h5 class="card-title">Relay Module 5V 2Channel</h5>
-                                    <p class="card-text">โมดูล รีเลย์</p>
+                                    <h5 class="card-title">Interface 12C 16x2 LCD</h5>
+                                    <p class="card-text">โมดูล จอLCD</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="https://cdn.discordapp.com/attachments/768084656465117227/1052628000937627688/OLED.png" height="470" class="card-img-top" alt="OLCD"></img>
+                                <div class="card-body">
+                                    <h5 class="card-title">OLED 128x64</h5>
+                                    <p class="card-text">โมดูล จอOLED</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="https://cdn.discordapp.com/attachments/768084656465117227/1090807010737532999/e7hrfe-removebg-preview.png" height="470" class="card-img-top" alt="relay"></img>
+                                <div class="card-body">
+                                    <h5 class="card-title">L298N Motor Driver</h5>
+                                    <p class="card-text">โมดูล มอเตอร์ไดร์ฟ</p>
                                 </div>
                             </div>
                         </div>

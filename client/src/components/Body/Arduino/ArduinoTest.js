@@ -176,7 +176,17 @@ const Arduino = () => {
                                 </div>
                             </div>
                         </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="https://cdn.discordapp.com/attachments/768084656465117227/1090807010737532999/e7hrfe-removebg-preview.png" height="470" class="card-img-top" alt="relay"></img>
+                                <div class="card-body">
+                                    <h5 class="card-title">L298N Motor Driver</h5>
+                                    <p class="card-text">โมดูล มอเตอร์ไดร์ฟ</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    
                     <br></br>
                 </div>
                 <hr class="featurette-divider"></hr>

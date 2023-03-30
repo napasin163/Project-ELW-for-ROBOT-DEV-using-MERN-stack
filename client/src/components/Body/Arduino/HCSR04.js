@@ -3,6 +3,7 @@ import { Outlet, Link } from "react-router-dom";
 import Highlight from 'react-highlight'
 
 const HCSR04 = () => {
+    
     return (
         <body>
             <main class="d-flex flex-nowrap">
@@ -27,7 +28,7 @@ const HCSR04 = () => {
                         </li>
                         <li class="mb-1">
                             <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-                                Servo/Motor
+                                Servo
                             </button>
                             <div class="collapse show" id="dashboard-collapse">
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
@@ -123,7 +124,7 @@ const HCSR04 = () => {
                     <br></br>
                     <hr></hr>
                     <div class="h2 px-4 blackText">
-                        <h2  class="bold2">จำลองการต่อวงจร</h2>
+                        <h2 class="bold2">จำลองการต่อวงจร</h2>
                     </div>
                     <div class="d-flex justify-content-center">
                         <img src="https://i.imgur.com/uc3lhRG.gif" class="img-fluid rounded-3 mb-4 ps-5" alt="555" width="1100" height="900" ></img>
@@ -165,7 +166,7 @@ const HCSR04 = () => {
                     </div>
                 </div>
             </main>
-            <script src="sidebars.js"></script>
+            <script src="testScript.js"></script>
         </body>
 
 

@@ -21,6 +21,14 @@ import Quiz from "./components/Body/quiz/quiz";
 import Result from "./components/Body/quiz/result";
 import Motor from "./components/Body/Arduino/Motor";
 import HCSR04MB from "./components/Body/MicroBit/HCSR04MB";
+import BuzzerMB from "./components/Body/MicroBit/BuzzerMB";
+import LCDMB from "./components/Body/MicroBit/LCDMB";
+import MotorMB from "./components/Body/MicroBit/MotorMB";
+import OLEDMB from "./components/Body/MicroBit/OLEDMB";
+import RelayMB from "./components/Body/MicroBit/RelayMB";
+import ServoMB from "./components/Body/MicroBit/ServoMB";
+import TcrtMB from "./components/Body/MicroBit/TcrtMB";
+import Quiz2 from "./components/Body/Arduino/testScript";
 
 const App = () =>{
     return (
@@ -48,6 +56,14 @@ const App = () =>{
           <Route path="result" element={<Result />} />
           <Route path="motor" element={<Motor />} />
           <Route path="hcsr04MB" element={<HCSR04MB />} />
+          <Route path="buzzerMB" element={<BuzzerMB />} />
+          <Route path="lcdMB" element={<LCDMB />} />
+          <Route path="motorMB" element={<MotorMB />} />
+          <Route path="oledMB" element={<OLEDMB />} />
+          <Route path="relayMB" element={<RelayMB />} />
+          <Route path="servoMB" element={<ServoMB />} />
+          <Route path="tcrtMB" element={<TcrtMB />} />
+          <Route path="quiz2" element={<Quiz2 />} />
         </Route>
       </Routes>
     </BrowserRouter>
