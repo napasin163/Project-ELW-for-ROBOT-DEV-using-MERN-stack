@@ -78,13 +78,12 @@ const Button = () => {
                         <h2 class="bold2">รายละเอียด</h2>
                     </div>
                     <div class="px-5 blackText">
-                        <p>โมดูลปุ่มกด Button Switch เป็นปุ่มกดลักษณะกดติดปล่อยดับ แบบ pull up เมื่อยังไม่กดสวิตช์ให้สัญญาณ 1 เมื่อกดสวิตช์ให้สัญญาณ 0  ใช้ร่วมกับบอร์ดพัฒนาโปรแกรม 
-                            เช่น บอร์ด Arduino เหมาะสำหรับการใช้เป็นอุปกรณ์อินพุท มีตัวต้านทางคร่อมกราวด์ในตัวไม่จำเป็นต้องต่อตัวต้านทานเพิ่ม ลดการ Bounce ของสัญญาณในการกดปุ่มแต่ละครั้ง</p>
+                        <p>Button switch module เป็นโมดูลอิเล็กทรอนิกส์ที่ใช้สำหรับตรวจจับสถานะการกดปุ่ม (button) เป็นปุ่มกดลักษณะกดติดปล่อยดับ แบบ pull up เมื่อยังไม่กดสวิตช์ให้สัญญาณ 1 เมื่อกดสวิตช์ให้สัญญาณ 0 โดยมีโครงสร้างพื้นฐานประกอบด้วยสองส่วนหลัก คือปุ่มกด (button) และเรซิสเตอร์ (resistor) ภายในโมดูลจะมีขา (pin) ทั้งหมดสามขา คือ VCC, GND, และ Signal โดยสามารถเชื่อมต่อกับบอร์ดพัฒนาโปรแกรม เพื่อใช้งานได้ตามต้องการ โดยเมื่อปุ่มถูกกด เรซิสเตอร์จะเปลี่ยนค่าความต้านทานภายใน ซึ่งจะทำให้สัญญาณ Signal เปลี่ยนแปลง และส่งสัญญาณไปยังบอร์ดพัฒนาโปรแกรม เพื่อรับรู้สถานะการกดปุ่ม (button) และดำเนินการตามโปรแกรมที่ได้เขียนไว้ โมดูล Button switch เป็นอุปกรณ์ที่ใช้งานได้ง่ายและเหมาะสำหรับการนำมาใช้ในการควบคุมอุปกรณ์ต่างๆ เช่น การเปิดปิดไฟ หรือเปิดปิดเครื่องใช้ไฟฟ้าอื่นๆ ตามที่ผู้ใช้ต้องการ </p>
                     </div>
                     <br></br>
                     <hr></hr>
                     <div class="embed-responsive embed-responsive-16by9 ms-5">
-                    <iframe width="1100" height="700" src="https://www.youtube.com/embed/zHif0Dwbhe0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='1'></iframe>
+                        <iframe width="1100" height="700" src="https://www.youtube.com/embed/zHif0Dwbhe0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='1'></iframe>
                     </div>
                     <br></br>
                     <br></br>
@@ -110,11 +109,10 @@ const Button = () => {
                     <div class="d-flex justify-content-center">
                         <img src="https://cdn.discordapp.com/attachments/837757981549396049/1053043001628303440/Button-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="800" height="700" ></img>
                     </div>
-                    <p>การต่อเพื่อใช้งานทำได้โดยต่อ PIN ดังนี้ </p>
-                    <p>PIN ที่ 1 -- 5V Supply</p>
-                    <p>PIN ที่ 2 -- Trigger Pulse Input</p>
-                    <p>PIN ที่ 3 -- Echo Pulse Output</p>
-                    <p>PIN ที่ 4 –- GND</p>
+                    <div class="px-5 blackText">
+                        <p>การใช้งาน Button switch module จะต้องเชื่อมต่อกับพอร์ตของไมโครคอนโทรลเลอร์หรือคอมพิวเตอร์ที่มีความสามารถรับเอาต์พุตสัญญาณเข้ามาได้ โดยมีขาสายสองเส้น คือขา GND (อักษรย่อของ Ground) และขา Signal ซึ่งจะต้องเชื่อมต่อกับพอร์ตที่ต้องการใช้งาน เมื่อทำการเชื่อมต่อแล้ว ในการอ่านสถานะของ Button switch module จะต้องใช้คำสั่งอ่านข้อมูลจากพอร์ตของไมโครคอนโทรลเลอร์ โดยอ่านค่า digital input ที่เชื่อมต่อกับขา Signal ของ Button switch module ในบอร์ด Arduino สามารถอ่านค่า digital input ได้</p>
+                        <br></br>
+                    </div>
                     <hr></hr>
                     <div class="h2 px-4 blackText">
                         <h2 class="bold2">รูปภาพประกอบ</h2>

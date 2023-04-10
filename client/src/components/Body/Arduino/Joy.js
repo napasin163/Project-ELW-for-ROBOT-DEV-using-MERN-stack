@@ -145,7 +145,7 @@ byte type = 0;
 byte vibrate = 0;
 void setup(){
  Serial.begin(57600);
- error = ps2x.config_gamepad(12,10,11,13, true, true);   //เสียบสายสัญญาณใส่พอร์ตดิจิตอลที่ 12-10-11-13 เทียบกับสัญญาณ clock, command, attention or cs, data                                                   
+ error = ps2x.config_gamepad(12,10,11,13, true, true);   //เสียบสายสัญญาณใส่พอร์ตดิจิตอลที่ 12-10-11-13 เทียบกับสัญญาณ clock, command, attention or cs, data
  if(error == 0)
    Serial.println("Found Controller configured successfully."); //พบคอนโทรลเลอร์ที่กำหนดค่าสำเร็จแล้ว
   else if(error == 1)
@@ -217,7 +217,7 @@ void loop(){
          Serial.println("R1");
     if(ps2x.ButtonPressed(PSB_R2))          //กดปุ่มR2 1 ครั้งเมื่อกดปุ่ม
          Serial.println("R2"); 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////       
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
     if(ps2x.Button(PSB_GREEN))          //กดปุ่มสามเหลี่ยม
          Serial.println("Triangle");       
     if(ps2x.Button(PSB_RED))            //กดปุ่มวงกลม

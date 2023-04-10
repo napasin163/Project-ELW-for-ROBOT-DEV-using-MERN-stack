@@ -79,3 +79,7 @@ body {
   .bold2{
     font-weight: bold;
   }
+
+  b{
+    font-size: 18px;
+  }

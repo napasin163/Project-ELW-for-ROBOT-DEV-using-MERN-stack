@@ -78,12 +78,12 @@ const F249 = () => {
                         <h2 class="bold2">รายละเอียด</h2>
                     </div>
                     <div class="px-5 blackText">
-                        <p>เป็นเซนเซอร์นับจำนวน (ก้ามปู) สำหรับ Arduino  เมื่อมีวัตถุมาบังที่เซนเซอร์เอาต์พุตจะเป็น 1 เมื่อไม่มีสิ่งกีดขวางจะเป็น 0 นำไปประยุกต์ใช้ในงานได้หลากหลาย เช่น การนับรอบการหมุนของมอเตอร์ ทำเครื่องรับเหรียญ เป็นต้น พร้อมหลอดไฟ LED แสดงการทำงาน </p>
+                        <p>F249 Counter Module Motor Speed Sensor เป็นโมดูลที่ใช้วัดความเร็วรอบของมอเตอร์ หรือเครื่องจักรที่มีการหมุน โดยใช้เซ็นเซอร์ตรวจจับการเคลื่อนไหวของวัตถุเพื่อวัดความถี่ เมื่อมีวัตถุมาบังที่เซนเซอร์เอาต์พุตจะเป็น 1 เมื่อไม่มีสิ่งกีดขวางจะเป็น 0 จากนั้นแปลงค่าความถี่เป็นความเร็วรอบของมอเตอร์ และแสดงผลบนจอ LCD หรืออุปกรณ์แสดงผลอื่น ๆ ได้ตามที่ตั้งค่า โมดูลนี้สามารถใช้งานได้กับหลายประเภทของมอเตอร์ และมีความแม่นยำสูงในการวัดความเร็วรอบของมอเตอร์ โดยสามารถตั้งค่าค่าคงที่ให้กับโมดูลได้เพื่อให้เหมาะสมกับการใช้งานต่าง ๆ โดยใช้การเชื่อมต่อเข้ากับบอร์ดไมโครคอนโทรลเลอร์เพื่อใช้งานได้อย่างมีประสิทธิภาพและมีความสะดวกสบายในการใช้งาน นำไปประยุกต์ใช้ในงานได้หลากหลาย เช่น การนับรอบการหมุนของมอเตอร์ ทำเครื่องรับเหรียญ เป็นต้น พร้อมหลอดไฟ LED แสดงการทำงาน</p>
                     </div>
                     <br></br>
                     <hr></hr>
                     <div class="embed-responsive embed-responsive-16by9 ms-5">
-                        <iframe width="1100" height="700" src="https://www.youtube.com/embed/Pyv0oIdmp5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='1'></iframe>
+                        <iframe width="1100" height="700" src="https://www.youtube.com/embed/vm2926xTj_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='1'></iframe>
                     </div>
                     <br></br>
                     <br></br>
@@ -107,26 +107,22 @@ const F249 = () => {
                     </div>
                     <br></br>
                     <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1042832455813566595/HC-SR04-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="800" height="700" ></img>
+                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1094941132858851378/32D88A6B-EC7A-47F1-A9F8-A0C2C923DDC6-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="800" height="700" ></img>
                     </div>
-                    <p>การต่อใช้งานกับ Arduino</p>
-                    <p>ขา2 - A0 </p>
-                    <p>5V - Vcc </p>
-                    <p>GND - GND </p>
-                    <hr></hr>
-                    <div class="h2 px-4 blackText">
-                        <h2 class="bold2">รูปภาพประกอบ</h2>
+                    <div class="px-5 blackText">
+                        <b>การใช้งาน F249 Counter Module Motor Speed Sensor มีขั้นตอนดังนี้</b>
+                        <p>1. ติดตั้งโมดูล F249 ลงบนบอร์ดไมโครคอนโทรลเลอร์ โดยเชื่อมต่อขา OUT1 และ OUT2 ของโมดูลเข้ากับขา Digital Input ของบอร์ด และขา VCC และ GND ของโมดูลเข้ากับขา Power Supply ของบอร์ด</p>
+                        <p>2. เชื่อมต่อเซ็นเซอร์ตรวจจับความเร็วรอบของมอเตอร์เข้ากับโมดูล โดยเซ็นเซอร์ TCRT5000 จะต้องถูกติดตั้งบนโครงสร้างที่สามารถจับเสามอเตอร์ได้อย่างแม่นยำ โดยปกติจะติดตั้งที่โครงสร้างแบบล้อหรือลูกกลิ้งเพื่อให้เซ็นเซอร์ตรวจจับการเคลื่อนไหวของเสามอเตอร์</p>
+                        <p>3. ตั้งค่าโปรแกรมบนบอร์ด Arduino หรือไมโครคอนโทรลเลอร์อื่น ๆ เพื่ออ่านค่าความถี่ที่ถูกส่งออกจาก F249 Counter Module Motor Speed Sensor และแปลงเป็นความเร็วรอบของมอเตอร์ โดยการเขียนโปรแกรมนี้จะต้องระบุค่าคงที่ที่เกี่ยวข้องกับจำนวนช่องความถี่ของโมดูล และระยะเวลาที่ใช้ในการวัดความถี่เพื่อแปลงเป็นความเร็วรอบของมอเตอร์</p>
+                        <p>4. นำผลลัพธ์การวัดความเร็วรอบของมอเตอร์ที่ได้มาแสดงผลบนจอ LCD หรืออุปกรณ์แสดงผลอื่น ๆ ได้ตามที่ต้องการ	</p>
+                        <br></br>
                     </div>
-                    <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1043224938179477524/LINE_ALBUM__221119.jpg" class="img-fluid rounded-3 mb-4" alt="555" width="800" height="700" ></img>
-                    </div>
-                    <br></br>
                     <hr></hr>
                     <div class="h2 px-4 blackText">
                         <h2 class="bold2">จำลองการต่อวงจร</h2>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <img src="https://i.imgur.com/uc3lhRG.gif" class="img-fluid rounded-3 mb-4 ps-5" alt="555" width="1100" height="900" ></img>
+                        <img src="https://i.imgur.com/BW9pu6G.gif" class="img-fluid rounded-3 mb-4 ps-5" alt="555" width="1100" height="900" ></img>
                     </div>
                     <br></br>
                     <hr></hr>
@@ -135,34 +131,33 @@ const F249 = () => {
                     </div>
                     <div class="d-flex justify-content-center ">
                         <Highlight language="c++">
-                            {`    #define Trig 9 // กำหนด Pin 9 = Trig 
-    #define Echo 10  // กำหนด Pin  10 = Echo
-    float duration ; // สำหรับเก็บค่าเวลาที่เสียงเดินทาง
-    float distance ; // สำหรับเก็บค่าระยะทางที่คำนวณได้
-    void setup() {  
-    pinMode(Trig, OUTPUT); //กำหนดขา Trig เป็น output
-    pinMode(Echo, INPUT); // กำหนดขา Echo เป็น input
-    Serial.begin(9600); // เริ่ม Serial เพื่อใช้ Serial Monitor
-    }
-    void loop(){
-    
-    digitalWrite(Trig, LOW); // เคลียร์ค่าขา trig ป้องกันกรณีสถานะค้างเก่าค้างอยู่ 
-    delayMicroseconds(5);    // 5 ไมโครวินาที
-    
-    digitalWrite(Trig, HIGH); // ให้ขา Trig ส่งคลื่นออกไป 
-    delayMicroseconds(10);    //10 ไมโครวินาที
-    digitalWrite(Trig, LOW);  // ให้ขา Trig ปิดการส่งคลื่นออกไป  
-    
-    duration = pulseIn(Echo, HIGH); // จับเวลาจนกว่าจะมีคลื่นเสียงมากระทบ Echo โดยคำสั่ง pulseIn
-    distance = (duration*0.034)/2;  // คำนวณหาระยะตามสูตรข้างต้น
+                            {`// เพื่อให้มั่นใจว่า เซนเซอร์จะ นับ ทันที ทุกครั้ง 
+//เราจะใช้การทำงานแบบ interrupt เพื่อให้ทำงานทันที ที่เซนเซอร์ตรวจจับได้
 
-    // แสดงค่าทาง Serial Monitor
-    Serial.print("Distance: ");
-    Serial.print(distance);
-    Serial.println(" cm ");
-    }`}
+int sensor = 8;
+void setup() {
+  pinMode(sensor, INPUT);
+  attachInterrupt(0, doCounter, FALLING); // ทำงานแบบ interrupt เบอร์ 0 ในนี้คือขา 8
+  // เมื่อเกิดเหตุการณ์ แรงดันที่ขา 2 มีการเปลี่ยนแปลงจากสัญญาณสูงเป็นต่ำ ให้ทำในฟังก์ชั่น doCounter
+  Serial.begin(9600);
+}
+boolean isCounter = false;
+int count = 0;
+void loop() {
+  if (isCounter == true) {
+    isCounter = false;
+    Serial.println(count);
+  }
+}
+
+void doCounter() { // เมื่อเซนเซอร์ตรวจจับวัตถุ
+  isCounter = true;
+  count++;
+}
+`}
                         </Highlight>
                     </div>
+                    <br></br>
                 </div>
             </main>
             <script src="sidebars.js"></script>

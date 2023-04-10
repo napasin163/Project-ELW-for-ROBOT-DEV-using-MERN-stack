@@ -78,13 +78,12 @@ const E18 = () => {
                         <h2 class="bold2">รายละเอียด</h2>
                     </div>
                     <div class="px-5 blackText">
-                        <p>เป็นเซนเซอร์ตรวจจับวัตถุที่ใช้หลักการสะท้อนของคลื่นอินฟาเรด หากมีวัตถุขวางจะมีการสะท้อนกลับมาเพื่อใช้แทนสวิตช์เซนเซอร์ว่าขณะนี้มีสิ่งกีดขวาง หรือวัตถุอยู่หน้าเซนเซอร์หรือไม่ สามารถกำหนดระยะในการทำงานได้โดยปรับค่าที่ Potentiometer ตรวจจับวัตถุได้ในช่วง  3-80 cm 
-                            โดยใช้ไฟเลี้ยง 5v จาก Arduino ได้ทันที ซึ่งให้ค่าออกมาเป็นสัญญาณ on-off โดย off คือ มีสิ่งกีดขวาง, on คือ ไม่มีสิ่งกีดขวาง สามารถนำไปใช้งานกับหุ่นยนต์หลบสิ่งกีดขวางหรืองาน automation เช่น ไลน์การผลิตต่างๆ เป็นต้น </p>
+                        <p>เป็นเซนเซอร์ตรวจจับวัตถุที่ใช้หลักการสะท้อนของคลื่นอินฟาเรด หากมีวัตถุขวางจะมีการสะท้อนกลับมาว่าขณะนี้มีสิ่งกีดขวาง หรือวัตถุอยู่หน้าเซนเซอร์หรือไม่ สามารถกำหนดระยะในการทำงานได้โดยปรับค่าที่ Potentiometer ตรวจจับวัตถุได้ในช่วง  3-80 เซนติเมตร โดยใช้ไฟเลี้ยง 5 โวลต์ จาก Arduino ได้ทันที ซึ่งให้ค่าออกมาเป็นสัญญาณ on-off โดย off คือ มีสิ่งกีดขวางและ on คือ ไม่มีสิ่งกีดขวาง สามารถนำไปใช้งานในหลายแวดวง เช่น การตรวจจับวัตถุบนลูกบอลและลูกปิงปอง ตรวจจับวัตถุในระบบทางกล สามารถนำไปใช้งานกับหุ่นยนต์หลบสิ่งกีดขวาง รวมถึงการป้องกันการชนกันของรถยนต์และระบบอัตโนมัติในโรงงานและอุตสาหกรรมอื่นๆ โดยเซ็นเซอร์นี้มีระยะการตรวจจับไกลถึง 80 เซนติเมตร</p>
                     </div>
                     <br></br>
                     <hr></hr>
                     <div class="embed-responsive embed-responsive-16by9 ms-5">
-                        <iframe width="1100" height="700" src="https://www.youtube.com/embed/Pyv0oIdmp5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='1'></iframe>
+                        <iframe width="1100" height="700" src="https://www.youtube.com/embed/ePZWdC1XMOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='1'></iframe>
                     </div>
                     <br></br>
                     <br></br>
@@ -108,12 +107,22 @@ const E18 = () => {
                     </div>
                     <br></br>
                     <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/837757981549396049/1053047912722092124/E18-D80NK_Infrared-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="800" height="700" ></img>
+                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1094943979415543838/E18-D80NK_Infrared-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="800" height="700" ></img>
                     </div>
-                    <p>การต่อใช้งานกับ Arduino</p>
-                    <p>5V - SVDC (สายสีน้ำตาล) </p>
-                    <p>GND - GND (สายสีน้ำเงิน) </p>
-                    <p>A0 - OUT (สายสีดำ)</p>
+                    <div class="px-5 blackText">
+                    <b>Infrared photoelectric switch Sensor E18-D80NK เป็นอุปกรณ์ที่ใช้งานง่ายและมีความแม่นยำสูง โดยมีขั้วเชื่อมต่อ 3 ขั้ว ได้แก่ VCC, GND และ OUT ซึ่งมีหน้าที่ดังนี้</b>
+                    <p>1.	VCC (Voltage supply): ขั้วนี้เชื่อมต่อกับแหล่งจ่ายไฟเพื่อให้เซ็นเซอร์ทำงานได้</p>
+                    <p>2.	GND (Ground): ขั้วนี้เชื่อมต่อกับสายลงดินหรืออุปกรณ์ที่อยู่ในระบบต่อไป</p>
+                    <p>3.	OUT (Output): เมื่อตรวจจับวัตถุที่ผ่านขบวนแสงอินฟราเรดแล้ว จะมีสัญญาณออกมาที่ขั้วนี้ ซึ่งเป็นสัญญาณดิจิตอลที่มีสถานะเป็น High (1) หรือ Low (0) ขึ้นอยู่กับวัตถุที่ถูกตรวจจับว่าอยู่หรือไม่อยู่ในช่วงระยะที่กำหนด</p>
+                    <br></br>
+                    <b>การติดตั้งและใช้งาน:</b>
+                    <p>1.	เชื่อมต่อขั้ว VCC และ GND ของเซ็นเซอร์กับแหล่งจ่ายไฟที่มีแรงดันไฟเท่ากัน</p>
+                    <p>2.	เชื่อมต่อขั้ว OUT ของเซ็นเซอร์กับขั้วอินพุทของไมโครคอนโทรเลอร์หรือเบอร์เพื่อรับสัญญาณ</p>
+                    <p>3.	ปรับขั้วปรับระยะตรวจจับได้ตามต้องการ</p>
+                    <p>4.	นำวัตถุที่ต้องการตรวจจับผ่านขบวนแสงอินฟราเรด และดูสถานะของสัญญาณที่เชื่อมต่อกับขั้ว OUT เพื่อตรวจสอบการทำงานของเซ็นเซอร์</p>
+                    <br></br>
+                    </div>
+
                     <hr></hr>
                     <div class="h2 px-4 blackText">
                         <h2 class="bold2">รูปภาพประกอบ</h2>
@@ -136,36 +145,29 @@ const E18 = () => {
                     </div>
                     <div class="d-flex justify-content-center ">
                         <Highlight language="c++">
-                            {`int led = 13;                // the pin that the LED is atteched to
-int sensor = 2;              // the pin that the sensor is atteched to
-int state = HIGH;             // by default, no motion detected
-int val = 0;                 // variable to store the sensor status (value)
+                            {`int sensor = 2;              // กำหนดตัวแปร sensor เท่ากับ 2
+int state = HIGH;             // กำหนดตัวแปร state เท่ากับ HIGH
+int val = 0;                 // กำหนดตัวแปร val เท่ากับ 0
 void setup() {
-  pinMode(led, OUTPUT);      // initalize LED as an output
-  pinMode(sensor, INPUT);    // initialize sensor as an input
-  Serial.begin(115200);        // initialize serial
+  pinMode(sensor, INPUT);    // กำหนดขา sensor เป็น input
+  Serial.begin(9600);        // initialize serial
 }
 void loop(){
-  val = digitalRead(sensor);   // read sensor value
+  val = digitalRead(sensor);   // อ่านค่า sensor
   if (val == LOW) {           // check if the sensor is LOW 
-    digitalWrite(led, LOW);   // turn LED OFF
-    delay(100);                // delay 100 milliseconds 
     if (state == HIGH) {
-      Serial.println(" Warning Detect "); 
-      Serial.println(""); 
+      Serial.println("Warning Detect "); 
       state = LOW;       // update variable state to C
     }
   } 
   else {
-      digitalWrite(led, HIGH); // turn LED ON
-      delay(200);             // delay 200 milliseconds 
       if (state == LOW){
         Serial.println("Clear OK");
-        Serial.println("");
         state = HIGH;       // update variable state to HIGH
     }
   }
-}`}
+}
+`}
                         </Highlight>
                     </div>
                 </div>
