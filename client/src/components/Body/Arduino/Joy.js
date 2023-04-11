@@ -69,21 +69,26 @@ const Joystick = () => {
 
                 <div class="col-md-9 ms-lg-9 col-lg-9 px-md-4 position-sticky">
                     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                        <h1 class="h2 blackText bold2">Adapter PS2 Joystick PlayStation</h1>
+                        <h1 class="h2 blackText bold2">Adapter PS2 Joystick PlayStation and Wireless PS2 Joystick</h1>
                     </div>
                     <div class="d-flex justify-content-center">
                         <img src="https://cdn.discordapp.com/attachments/768084656465117227/1052628002112012338/JoyStick.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="400" height="500" ></img>
+                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1095346629818724382/Picture1-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="300" height="400" ></img>
                     </div>
-                    <div class="h2 px-4 blackText">
+                    <div class="h2 px-4 pb-2 blackText">
                         <h2 class="bold2">รายละเอียด</h2>
                     </div>
                     <div class="px-5 blackText">
-                        <p>สำหรับแปลงหัวจอย Joystick Playstation PS2 Controller For Robot Control Wireless และ Joystick Playstation PS2 Controller For Robot แบบมีสาย ให้เป็นขาสำหรับ Arduino ใช้ได้ทั้งจอย PS2 แบบมีสาย และแบบไร้สาย</p>
+                        <b>Adapter PS2 Joystick PlayStation </b>
+                        <p>คืออุปกรณ์ที่ช่วยให้สามารถเชื่อมต่อและใช้งานจอยสำหรับเครื่องเล่นเกม PlayStation 2 กับคอมพิวเตอร์หรืออุปกรณ์อื่นที่มีพอร์ต USB ได้ โดยทั่วไปแล้ว Adapter จะประกอบด้วยสายสัญญาณที่เชื่อมต่อกับพอร์ตจอยของ PlayStation 2 และสาย USB ที่เชื่อมต่อกับคอมพิวเตอร์หรืออุปกรณ์อื่น นอกจากนี้ Adapter ยังมีส่วนควบคุมต่างๆ เพื่อช่วยให้การใช้งานจอย PlayStation 2 บนเครื่องอื่นๆ เป็นไปได้ง่ายขึ้น ซึ่งทำให้คุณสามารถเล่นเกมด้วยจอย PlayStation 2 บนคอมพิวเตอร์หรืออุปกรณ์อื่นได้อย่างสะดวกสบายมากยิ่งขึ้น</p>
+                        <br></br>
+                        <b>Wireless PS2 Joystick </b>
+                        <p>คือ เครื่องควบคุมเกมที่ใช้งานได้กับเครื่องเล่นเกม PlayStation 2 แบบไร้สาย โดยปกติจะมีรูปแบบคล้ายกับ Joystick แบบที่ต้องเชื่อมต่อสายกับเครื่อง PlayStation 2 แต่ Wireless PS2 Joystick จะใช้วิธีการเชื่อมต่อแบบไร้สายผ่านสัญญาณวิทยุหรือระบบอื่น ๆ เช่น Bluetooth หรือระบบสัญญาณ RF ซึ่งช่วยให้ผู้เล่นสามารถควบคุมการเล่นเกมได้โดยไม่ต้องมีสายขัดขวาง หรือจำกัดอยู่ในระยะการเชื่อมต่อที่กำหนดของสายต่อ</p>
                     </div>
                     <br></br>
                     <hr></hr>
                     <div class="embed-responsive embed-responsive-16by9 ms-5">
-                        <iframe width="1100" height="700" src="https://www.youtube.com/embed/Pyv0oIdmp5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='1'></iframe>
+                        <iframe width="1100" height="700" src="https://www.youtube.com/embed/ggYmI9Jj3oY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='1'></iframe>
                     </div>
                     <br></br>
                     <br></br>
@@ -107,15 +112,23 @@ const Joystick = () => {
                     </div>
                     <br></br>
                     <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1053040145332441138/Adapter_PS2_Joystick_PlayStation-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="800" height="700" ></img>
+                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1095345554579525833/Adapter_PS2_Joystick_PlayStation-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="800" height="700" ></img>
                     </div>
-                    <p>ตัวอย่างการต่อกับบอร์ด Arduino Uno</p>
-                    <p>VCC - 5V</p>
-                    <p>DAT - 12</p>
-                    <p>CMD - 11</p>
-                    <p>CLK - 13</p>
-                    <p>ATT - 10</p>
-                    <p>GND – GND</p>
+                    <div class="px-5 blackText">
+                    <b>การใช้งาน Adapter PS2 Joystick PlayStation ทำได้ง่ายๆ ดังนี้</b>
+                    <p>1.	ต่ออุปกรณ์ Adapter PS2 Joystick PlayStation เข้ากับพอร์ต USB ของคอมพิวเตอร์หรือเครื่องเล่น DVD/Blu-ray ที่ไม่มีพอร์ตสำหรับเชื่อมต่อแบบ Analog.</p>
+                    <p>2.	นำจอยสติ๊ก PS2 เชื่อมต่อกับ Adapter PS2 Joystick PlayStation โดยเสียบปลั๊กเข้าในพอร์ตที่เป็น Digital.</p>
+                    <p>3.	รอให้คอมพิวเตอร์หรือเครื่องเล่น DVD/Blu-ray ตรวจสอบและติดตั้งไดรเวอร์สำหรับอุปกรณ์ Adapter PS2 Joystick PlayStation (หากมี) และกำหนดค่าต่างๆ ตามความต้องการ.</p>
+                    <p>4.	เมื่อติดตั้งและกำหนดค่าเสร็จสมบูรณ์แล้ว จอยสติ๊ก PS2 จะสามารถใช้งานได้บนคอมพิวเตอร์หรือเครื่องเล่น DVD/Blu-ray ที่ไม่มีพอร์ตสำหรับเชื่อมต่อแบบ Analog ได้เลย</p>
+                    
+                    <br></br>
+                    <b>การใช้งาน Wireless PS2 Joystick ทำได้ง่ายๆ ดังนี้</b>
+                    <p>1.   ปิดอุปกรณ์ Wireless PS2 Joystick และตั้งค่ารับสัญญาณตามคู่มือการใช้งาน โดยทำการกดปุ่มโหมดเปิดเพื่อเชื่อมต่อและกำหนดช่องสัญญาณไว้สำหรับเครื่อง PS2.</p>
+                    <p>2.	เปิดเครื่อง PS2 และเสียบรับสัญญาณของอุปกรณ์ Wireless PS2 Joystick ลงในพอร์ตที่กำหนดไว้ โดยรับสัญญาณเป็นแบบ Plug and Play หรือต้องกดปุ่ม Sync เพื่อเชื่อมต่อกับอุปกรณ์ตัวอื่น ๆ ที่ต้องการใช้งาน.</p>
+                    <p>3.	รอให้รับสัญญาณจากอุปกรณ์ Wireless PS2 Joystick และเริ่มใช้งานได้ทันที โดยสามารถใช้งานกับเกมทั่วไปบนเครื่อง PS2 ได้เลย โดยไม่ต้องกำหนดการตั้งค่าใด ๆ เพิ่มเติม.</p>
+                    <p>4.	เมื่อใช้งานเสร็จสิ้น ปิดเครื่อง PS2 และปิดอุปกรณ์ Wireless PS2 Joystick เพื่อประหยัดแบตเตอรี่และป้องกันการสูญเสียสัญญาณ.</p>
+                    <br></br>
+                    </div>
                     <hr></hr>
                     <div class="h2 px-4 blackText">
                         <h2 class="bold2">รูปภาพประกอบ</h2>
@@ -129,7 +142,7 @@ const Joystick = () => {
                         <h2 class="bold2">จำลองการต่อวงจร</h2>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <img src="https://i.imgur.com/uc3lhRG.gif" class="img-fluid rounded-3 mb-4 ps-5" alt="555" width="1100" height="900" ></img>
+                        <img src="https://i.imgur.com/k0Dmq9Y.gif" class="img-fluid rounded-3 mb-4 ps-5" alt="555" width="1100" height="900" ></img>
                     </div>
                     <br></br>
                     <hr></hr>
@@ -243,6 +256,7 @@ void loop(){
 }`}
                         </Highlight>
                     </div>
+                    <br></br>
                 </div>
             </main>
             <script src="sidebars.js"></script>

@@ -112,20 +112,13 @@ const Motor = () => {
                     <div class="px-5 blackText">
                         <p>การใช้งาน Motor Driver Module (L298N) จะต้องเชื่อมต่อกับบอร์ด Arduino และมอเตอร์ด้วยสายไฟฟ้า โดยมีขั้วเชื่อมต่อ 5V และ GND สำหรับจ่ายไฟเข้ามาในโมดูล และมีขั้วเชื่อมต่อ IN1, IN2, IN3 และ IN4 สำหรับควบคุมการทำงานของมอเตอร์ และมีขั้วเชื่อมต่อ OUT1, OUT2, OUT3 และ OUT4 สำหรับส่งสัญญาณไฟฟ้าไปยังมอเตอร์ </p>
                     </div>
-                    <hr></hr>
-                    <div class="h2 px-4 blackText">
-                        <h2 class="bold2">รูปภาพประกอบ</h2>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1043224938179477524/LINE_ALBUM__221119.jpg" class="img-fluid rounded-3 mb-4" alt="555" width="800" height="700" ></img>
-                    </div>
                     <br></br>
                     <hr></hr>
                     <div class="h2 px-4 blackText">
                         <h2 class="bold2">จำลองการต่อวงจร</h2>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <img src="https://i.imgur.com/uc3lhRG.gif" class="img-fluid rounded-3 mb-4 ps-5" alt="555" width="1100" height="900" ></img>
+                        <img src="https://i.imgur.com/0KAVPw0.gif" class="img-fluid rounded-3 mb-4 ps-5" alt="555" width="1100" height="900" ></img>
                     </div>
                     <br></br>
                     <hr></hr>
@@ -157,6 +150,7 @@ const Motor = () => {
 `}
                         </Highlight>
                     </div>
+                    <br></br>
                 </div>
             </main>
             <script src="sidebars.js"></script>

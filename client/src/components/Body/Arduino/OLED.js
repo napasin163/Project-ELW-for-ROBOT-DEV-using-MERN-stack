@@ -78,7 +78,7 @@ const OLED = () => {
                         <h2 class="bold2">รายละเอียด</h2>
                     </div>
                     <div class="px-5 blackText">
-                        <p>HC-SR04 เป็นโมดูลอัลตร้าโซนิคเป็นอุปกรณ์เซ็นเซอร์ใช้วัดระยะทางของวัตถุกับตัวเซ็นเซอร์ โดยไม่ต้องมีการสัมผัสกับตำแหน่งที่ต้องการวัด วัดได้ตั้งแต่ 2 cm ถึง 400 cm รองรับแรงดันไฟ 3.3-5V อาศัยการทำงานของคลื่นเสียง โดยส่งสัญญาณอัลตร้าโซนิคความถี่ 40kHz (40,000Hz) ซึ่งจัดอยู่ในย่าน Ultrasonic (ความถี่สูงกว่าที่หูมนุษย์จะสามารถได้ยิน) ไปที่วัตถุที่ต้องการวัดและรับสัญญาณที่สะท้อนกลับมา พร้อมทั้งจับเวลาเพื่อนำมาใช้ในการคำนวณ โมดูลตัวนี้เป็นโมดูลยอดนิยมอีกตัวที่นำไปใช้ในโปรเจคหาระยะห่างของวัตถุ หรือใช้ในโครงงานหุ่นยนต์ต่างๆ ใช้งานง่าย ราคาถูก มีไลบรารี่สำหรับต่อกับ Arduino ได้โดยตรง เพื่อแสดงระยะทางได้ทันที </p>
+                        <p>OLED 128x64 คือโมดูลหน้าจอแสดงผลที่ใช้เทคโนโลยี OLED (Organic Light Emitting Diode) ในการแสดงผล โดยมีขนาดหน้าจอขนาด 128x64 คือมีความละเอียดแบบกริด (pixel) ขนาด 128 แถวและ 64 คอลัมน์ สามารถแสดงผลภาพและข้อความได้อย่างชัดเจน สดใส และสว่างได้โดยไม่ต้องใช้แสงหลังเต่า (backlight) OLED 128x64 มีขนาดเล็กและสามารถใช้งานได้ง่าย โดยมีการเชื่อมต่อผ่านขา I2C หรือ SPI ซึ่งช่วยให้การเขียนโปรแกรมและการควบคุมแสดงผลได้ง่ายขึ้น โดยมักจะนำไปใช้ในการแสดงผลข้อมูลต่าง ๆ ในอุปกรณ์ต่าง ๆ เช่น นาฬิกาอัจฉริยะ โทรศัพท์มือถือ อุปกรณ์การติดตั้งในรถยนต์</p>
                     </div>
                     <br></br>
                     <hr></hr>
@@ -109,11 +109,12 @@ const OLED = () => {
                     <div class="d-flex justify-content-center">
                         <img src="https://cdn.discordapp.com/attachments/768084656465117227/1053053583911821372/OLED_128x64-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="800" height="700" ></img>
                     </div>
-                    <p>การต่อเพื่อใช้งานทำได้โดยต่อ PIN ดังนี้ </p>
-                    <p>PIN ที่ 1 -- 5V Supply</p>
-                    <p>PIN ที่ 2 -- Trigger Pulse Input</p>
-                    <p>PIN ที่ 3 -- Echo Pulse Output</p>
-                    <p>PIN ที่ 4 –- GND</p>
+                    <div class="px-5 blackText">
+                    <b>ข้อมูลการใช้งานของ OLED 128x64 มีดังนี้: </b>
+                    <p>1.	การเชื่อมต่อ OLED 128x64 มี 4 ขา ได้แก่ VCC, GND, SDA และ SCL โดยที่ขา VCC ต่อกับแหล่งจ่ายไฟ 3.3V หรือ 5V ของ Microcontroller และ GND ต่อกับแหล่งจ่ายไฟ GND ของ Microcontroller ส่วน SDA และ SCL จะต้องเชื่อมต่อกับขาพอร์ต I2C หรือ SPI ของ Microcontroller</p>
+                    <p>2.	การใช้งาน OLED 128x64 จะต้องมีการติดตั้งไลบรารีก่อน ซึ่งไลบรารีที่ใช้กันอย่างแพร่หลายคือ Adafruit_SSD1306 โดยสามารถติดตั้งได้ผ่าน Library Manager ของ Arduino IDE</p>
+                    <br></br>
+                    </div>
                     <hr></hr>
                     <div class="h2 px-4 blackText">
                         <h2 class="bold2">รูปภาพประกอบ</h2>
@@ -127,7 +128,7 @@ const OLED = () => {
                         <h2 class="bold2">จำลองการต่อวงจร</h2>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <img src="https://i.imgur.com/uc3lhRG.gif" class="img-fluid rounded-3 mb-4 ps-5" alt="555" width="1100" height="900" ></img>
+                        <img src="https://i.imgur.com/kj8ujw4.gif" class="img-fluid rounded-3 mb-4 ps-5" alt="555" width="1100" height="900" ></img>
                     </div>
                     <br></br>
                     <hr></hr>
@@ -174,6 +175,7 @@ void loop() {
 }`}
                         </Highlight>
                     </div>
+                    <br></br>
                 </div>
             </main>
             <script src="sidebars.js"></script>

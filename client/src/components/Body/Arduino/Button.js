@@ -126,7 +126,7 @@ const Button = () => {
                         <h2 class="bold2">จำลองการต่อวงจร</h2>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <img src="https://i.imgur.com/uc3lhRG.gif" class="img-fluid rounded-3 mb-4 ps-5" alt="555" width="1100" height="900" ></img>
+                        <img src="https://i.imgur.com/0VpkiWw.gif" class="img-fluid rounded-3 mb-4 ps-5" alt="555" width="1100" height="900" ></img>
                     </div>
                     <br></br>
                     <hr></hr>
@@ -151,6 +151,7 @@ void loop(){
 }`}
                         </Highlight>
                     </div>
+                    <br></br>
                 </div>
             </main>
             <script src="sidebars.js"></script>
