@@ -63,21 +63,21 @@ const RelayMB = () => {
 
                 <div class="col-md-9 ms-lg-9 col-lg-9 px-md-4 position-sticky">
                     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                        <h1 class="h2 blackText bold2">Ultrasonic Sensor HC-SR04</h1>
+                        <h1 class="h2 blackText bold2">Relay Module 2 ช่อง 5V</h1>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1042777068141805658/png-transparent-ultrasonic-transducer-proximity-sensor-sensor-ultrasonico-electronics-others-electronics-measurement-sound-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="400" height="500" ></img>
+                        <img src="https://cdn.discordapp.com/attachments/837757981549396049/1053045455354855545/Relay_module-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="300" height="500" ></img>
                     </div>
                     <div class="h2 px-4 blackText">
                         <h2 class="bold2">รายละเอียด</h2>
                     </div>
                     <div class="px-5 blackText">
-                        <p>HC-SR04 เป็นโมดูลอัลตร้าโซนิคเป็นอุปกรณ์เซ็นเซอร์ใช้วัดระยะทางของวัตถุกับตัวเซ็นเซอร์ โดยไม่ต้องมีการสัมผัสกับตำแหน่งที่ต้องการวัด วัดได้ตั้งแต่ 2 cm ถึง 400 cm รองรับแรงดันไฟ 3.3-5V อาศัยการทำงานของคลื่นเสียง โดยส่งสัญญาณอัลตร้าโซนิคความถี่ 40kHz (40,000Hz) ซึ่งจัดอยู่ในย่าน Ultrasonic (ความถี่สูงกว่าที่หูมนุษย์จะสามารถได้ยิน) ไปที่วัตถุที่ต้องการวัดและรับสัญญาณที่สะท้อนกลับมา พร้อมทั้งจับเวลาเพื่อนำมาใช้ในการคำนวณ โมดูลตัวนี้เป็นโมดูลยอดนิยมอีกตัวที่นำไปใช้ในโปรเจคหาระยะห่างของวัตถุ หรือใช้ในโครงงานหุ่นยนต์ต่างๆ ใช้งานง่าย ราคาถูก มีไลบรารี่สำหรับต่อกับ Arduino ได้โดยตรง เพื่อแสดงระยะทางได้ทันที </p>
+                        <p>Relay module 5V 2 channel คืออุปกรณ์ที่ใช้สำหรับควบคุมการเปิด-ปิดวงจรไฟฟ้า โดยมีความสามารถในการควบคุมไฟฟ้าได้สูงสุด 2 ช่อง ซึ่งแต่ละช่องจะมีเกตเปอร์นำไฟฟ้าแยกออกจากกันได้ ในแต่ละช่องจะมีขั้วสัญญาณเข้า (Input) และขั้วสัญญาณออก (Output) ที่ใช้ในการเชื่อมต่อกับวงจรไฟฟ้าที่ต้องการควบคุม สามารถนำไปใช้ควบคุมการเปิด-ปิดอุปกรณ์ต่างๆ เช่น ไฟห้อง, พัดลม, ประตูอัตโนมัติ หรือเครื่องจักรอุตสาหกรรม โดยอุปกรณ์นี้มีการควบคุมด้วยสัญญาณไฟฟ้าจากไมโครคอนโทรเลอร์หรือบอร์ดคอมพิวเตอร์ ที่สามารถใช้งานได้ง่ายผ่านพอร์ต GPIO หรือบางรุ่นอาจมีการเชื่อมต่อผ่าน USB ซึ่งจะทำให้ง่ายต่อการนำไปใช้งานในการควบคุมต่างๆ ในงานอุตสาหกรรมหรือการใช้งานในบ้านได้ง่ายขึ้น อุปกรณ์ Relay module 5V 2 channel นั้นมีความน่าเชื่อถือสูงและใช้งานได้ง่าย โดยไม่ต้องใช้วิธีการเขียนโค้ดคอมพิวเตอร์ขั้นสูงมากนักในการใช้งาน</p>
                     </div>
                     <br></br>
                     <hr></hr>
                     <div class="embed-responsive embed-responsive-16by9 ms-5">
-                        <iframe width="1100" height="700" src="https://www.youtube.com/embed/Pyv0oIdmp5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='1'></iframe>
+                        <iframe width="1100" height="700" src="https://www.youtube.com/embed/oU3tw-prZ5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='1'></iframe>
                     </div>
                     <br></br>
                     <br></br>
@@ -101,27 +101,18 @@ const RelayMB = () => {
                     </div>
                     <br></br>
                     <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1042832455813566595/HC-SR04-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="800" height="700" ></img>
+                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1095700219850653717/Relay-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="800" height="700" ></img>
                     </div>
-                    <p>การต่อเพื่อใช้งานทำได้โดยต่อ PIN ดังนี้ </p>
-                    <p>PIN ที่ 1 -- 5V Supply</p>
-                    <p>PIN ที่ 2 -- Trigger Pulse Input</p>
-                    <p>PIN ที่ 3 -- Echo Pulse Output</p>
-                    <p>PIN ที่ 4 –- GND</p>
+                    <div class="px-5 blackText">
+                    <p>การใช้งาน relay module จะต้องเชื่อมต่อกับอุปกรณ์อื่น ๆ เพื่อควบคุมการเปิด-ปิด โดยมีขั้วสัญญาณเข้า (input) และขั้วไฟฟ้าออก (output) ที่มีการต่อไฟฟ้าผ่าน relay ในตัวโมดูล เมื่อเชื่อมต่อแล้ว ในการควบคุมการเปิด-ปิด relay module สามารถใช้คำสั่ง digitalWrite() หรือ digitalRead() ได้เช่นเดียวกับการควบคุมอุปกรณ์แบบอื่น ๆ ในบอร์ด Arduino </p>
+                    </div>
                     <hr></hr>
-                    <div class="h2 px-4 blackText">
-                        <h2 class="bold2">รูปภาพประกอบ</h2>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1043224938179477524/LINE_ALBUM__221119.jpg" class="img-fluid rounded-3 mb-4" alt="555" width="800" height="700" ></img>
-                    </div>
                     <br></br>
-                    <hr></hr>
                     <div class="h2 px-4 blackText">
                         <h2  class="bold2">จำลองการต่อวงจร</h2>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <img src="https://i.imgur.com/uc3lhRG.gif" class="img-fluid rounded-3 mb-4 ps-5" alt="555" width="1100" height="900" ></img>
+                        <img src="https://i.imgur.com/XjcbVa4.gif" class="img-fluid rounded-3 mb-4 ps-5" alt="555" width="1100" height="900" ></img>
                     </div>
                     <br></br>
                     <hr></hr>
@@ -129,34 +120,7 @@ const RelayMB = () => {
                         <h2 class="bold2">โค้ดตัวอย่าง</h2>
                     </div>
                     <div class="d-flex justify-content-center ">
-                        <Highlight language="c++">
-                            {`    #define Trig 9 // กำหนด Pin 9 = Trig 
-    #define Echo 10  // กำหนด Pin  10 = Echo
-    float duration ; // สำหรับเก็บค่าเวลาที่เสียงเดินทาง
-    float distance ; // สำหรับเก็บค่าระยะทางที่คำนวณได้
-    void setup() {  
-    pinMode(Trig, OUTPUT); //กำหนดขา Trig เป็น output
-    pinMode(Echo, INPUT); // กำหนดขา Echo เป็น input
-    Serial.begin(9600); // เริ่ม Serial เพื่อใช้ Serial Monitor
-    }
-    void loop(){
-    
-    digitalWrite(Trig, LOW); // เคลียร์ค่าขา trig ป้องกันกรณีสถานะค้างเก่าค้างอยู่ 
-    delayMicroseconds(5);    // 5 ไมโครวินาที
-    
-    digitalWrite(Trig, HIGH); // ให้ขา Trig ส่งคลื่นออกไป 
-    delayMicroseconds(10);    //10 ไมโครวินาที
-    digitalWrite(Trig, LOW);  // ให้ขา Trig ปิดการส่งคลื่นออกไป  
-    
-    duration = pulseIn(Echo, HIGH); // จับเวลาจนกว่าจะมีคลื่นเสียงมากระทบ Echo โดยคำสั่ง pulseIn
-    distance = (duration*0.034)/2;  // คำนวณหาระยะตามสูตรข้างต้น
-
-    // แสดงค่าทาง Serial Monitor
-    Serial.print("Distance: ");
-    Serial.print(distance);
-    Serial.println(" cm ");
-    }`}
-                        </Highlight>
+                    <img src="https://cdn.discordapp.com/attachments/768084656465117227/1095700220102332437/Relay.jpg" class="img-fluid rounded-3 mb-4" alt=" 123" width="700" height="700" ></img>
                     </div>
                 </div>
             </main>

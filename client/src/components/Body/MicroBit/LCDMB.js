@@ -63,21 +63,21 @@ const LCDMB = () => {
 
                 <div class="col-md-9 ms-lg-9 col-lg-9 px-md-4 position-sticky">
                     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                        <h1 class="h2 blackText bold2">Ultrasonic Sensor HC-SR04</h1>
+                        <h1 class="h2 blackText bold2">Interface 12C 16x2 LCD</h1>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1042777068141805658/png-transparent-ultrasonic-transducer-proximity-sensor-sensor-ultrasonico-electronics-others-electronics-measurement-sound-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="400" height="500" ></img>
+                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1052629356234674238/yvsnfv-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="400" height="500" ></img>
                     </div>
                     <div class="h2 px-4 blackText">
                         <h2 class="bold2">รายละเอียด</h2>
                     </div>
                     <div class="px-5 blackText">
-                        <p>HC-SR04 เป็นโมดูลอัลตร้าโซนิคเป็นอุปกรณ์เซ็นเซอร์ใช้วัดระยะทางของวัตถุกับตัวเซ็นเซอร์ โดยไม่ต้องมีการสัมผัสกับตำแหน่งที่ต้องการวัด วัดได้ตั้งแต่ 2 cm ถึง 400 cm รองรับแรงดันไฟ 3.3-5V อาศัยการทำงานของคลื่นเสียง โดยส่งสัญญาณอัลตร้าโซนิคความถี่ 40kHz (40,000Hz) ซึ่งจัดอยู่ในย่าน Ultrasonic (ความถี่สูงกว่าที่หูมนุษย์จะสามารถได้ยิน) ไปที่วัตถุที่ต้องการวัดและรับสัญญาณที่สะท้อนกลับมา พร้อมทั้งจับเวลาเพื่อนำมาใช้ในการคำนวณ โมดูลตัวนี้เป็นโมดูลยอดนิยมอีกตัวที่นำไปใช้ในโปรเจคหาระยะห่างของวัตถุ หรือใช้ในโครงงานหุ่นยนต์ต่างๆ ใช้งานง่าย ราคาถูก มีไลบรารี่สำหรับต่อกับ Arduino ได้โดยตรง เพื่อแสดงระยะทางได้ทันที </p>
+                    <p>I2C 16x2 LCD เป็นโมดูลหน้าจอ LCD (Liquid Crystal Display) ที่สามารถใช้งานผ่านการเชื่อมต่อแบบ I2C (Inter-Integrated Circuit) ได้ โดยมีขนาดหน้าจอขนาด 16x2 คือมีแถว 2 แถว แต่ละแถวมี 16 ตัวอักษร สามารถแสดงผลข้อความหรือตัวเลขได้ โดยมีการเชื่อมต่อผ่านสายไฟสามสาย คือ VCC, GND, และ SDA (Serial Data) รวมถึง SCL (Serial Clock) ซึ่งเป็นสัญญาณนาฬิกาของ I2C การใช้งาน I2C 16x2 LCD จะสะดวกและง่ายกว่าการใช้งาน LCD แบบอื่น ๆ เนื่องจากการเชื่อมต่อของโมดูลนี้ไม่ต้องใช้เส้นสายค่อยเยอะ และสามารถใช้ไลบรารี่ (library) ในการเขียนโปรแกรมได้ง่าย ๆ โดยไม่ต้องเขียนโค้ดซับซ้อน ซึ่งทำให้เหมาะสำหรับผู้ที่ต้องการสร้างโปรเจคหรืออุปกรณ์ที่มีการแสดงผลหน้าจอในลักษณะเป็นข้อความหรือตัวเลขอย่างง่าย ๆ หรือสำหรับผู้เริ่มต้นเรียนรู้การใช้งาน LCD ด้วยตนเอง </p>
                     </div>
                     <br></br>
                     <hr></hr>
                     <div class="embed-responsive embed-responsive-16by9 ms-5">
-                        <iframe width="1100" height="700" src="https://www.youtube.com/embed/Pyv0oIdmp5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='1'></iframe>
+                        <iframe width="1100" height="700" src="https://www.youtube.com/embed/4oayQQ_nfkw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='1'></iframe>
                     </div>
                     <br></br>
                     <br></br>
@@ -101,19 +101,10 @@ const LCDMB = () => {
                     </div>
                     <br></br>
                     <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1042832455813566595/HC-SR04-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="800" height="700" ></img>
+                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1095701948491104276/LCD_I2C-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="800" height="700" ></img>
                     </div>
-                    <p>การต่อเพื่อใช้งานทำได้โดยต่อ PIN ดังนี้ </p>
-                    <p>PIN ที่ 1 -- 5V Supply</p>
-                    <p>PIN ที่ 2 -- Trigger Pulse Input</p>
-                    <p>PIN ที่ 3 -- Echo Pulse Output</p>
-                    <p>PIN ที่ 4 –- GND</p>
-                    <hr></hr>
-                    <div class="h2 px-4 blackText">
-                        <h2 class="bold2">รูปภาพประกอบ</h2>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1043224938179477524/LINE_ALBUM__221119.jpg" class="img-fluid rounded-3 mb-4" alt="555" width="800" height="700" ></img>
+                    <div class="px-5 blackText">
+                    <p>การเชื่อมต่อ Inferred I2C 16x2 LCD มี 4 ขา ได้แก่ VCC, GND, SDA และ SCL โดยที่ขา VCC ต่อกับแหล่งจ่ายไฟ 5V ของ Arduino และ GND ต่อกับแหล่งจ่ายไฟ GND ของ Arduino ส่วน SDA และ SCL จะต้องเชื่อมต่อกับขาพอร์ต I2C ของ Arduino ซึ่งจะอยู่ที่ขา A4 และ A5</p>
                     </div>
                     <br></br>
                     <hr></hr>
@@ -121,7 +112,7 @@ const LCDMB = () => {
                         <h2  class="bold2">จำลองการต่อวงจร</h2>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <img src="https://i.imgur.com/uc3lhRG.gif" class="img-fluid rounded-3 mb-4 ps-5" alt="555" width="1100" height="900" ></img>
+                        <img src="https://i.imgur.com/OKZligx.gif" class="img-fluid rounded-3 mb-4 ps-5" alt="555" width="1100" height="900" ></img>
                     </div>
                     <br></br>
                     <hr></hr>
@@ -129,35 +120,9 @@ const LCDMB = () => {
                         <h2 class="bold2">โค้ดตัวอย่าง</h2>
                     </div>
                     <div class="d-flex justify-content-center ">
-                        <Highlight language="c++">
-                            {`    #define Trig 9 // กำหนด Pin 9 = Trig 
-    #define Echo 10  // กำหนด Pin  10 = Echo
-    float duration ; // สำหรับเก็บค่าเวลาที่เสียงเดินทาง
-    float distance ; // สำหรับเก็บค่าระยะทางที่คำนวณได้
-    void setup() {  
-    pinMode(Trig, OUTPUT); //กำหนดขา Trig เป็น output
-    pinMode(Echo, INPUT); // กำหนดขา Echo เป็น input
-    Serial.begin(9600); // เริ่ม Serial เพื่อใช้ Serial Monitor
-    }
-    void loop(){
-    
-    digitalWrite(Trig, LOW); // เคลียร์ค่าขา trig ป้องกันกรณีสถานะค้างเก่าค้างอยู่ 
-    delayMicroseconds(5);    // 5 ไมโครวินาที
-    
-    digitalWrite(Trig, HIGH); // ให้ขา Trig ส่งคลื่นออกไป 
-    delayMicroseconds(10);    //10 ไมโครวินาที
-    digitalWrite(Trig, LOW);  // ให้ขา Trig ปิดการส่งคลื่นออกไป  
-    
-    duration = pulseIn(Echo, HIGH); // จับเวลาจนกว่าจะมีคลื่นเสียงมากระทบ Echo โดยคำสั่ง pulseIn
-    distance = (duration*0.034)/2;  // คำนวณหาระยะตามสูตรข้างต้น
-
-    // แสดงค่าทาง Serial Monitor
-    Serial.print("Distance: ");
-    Serial.print(distance);
-    Serial.println(" cm ");
-    }`}
-                        </Highlight>
+                    <img src="https://cdn.discordapp.com/attachments/768084656465117227/1095701948793106533/I2C_LCD.jpg" class="img-fluid rounded-3 mb-4" alt=" 123" width="700" height="700" ></img>
                     </div>
+                    <br></br>
                 </div>
             </main>
             <script src="sidebars.js"></script>

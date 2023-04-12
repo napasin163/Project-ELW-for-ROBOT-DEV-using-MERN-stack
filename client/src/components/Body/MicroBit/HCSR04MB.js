@@ -11,7 +11,7 @@ const HCSR04MB = () => {
                         <span class="fs-5 fw-semibold">Micro:Bit</span>
                     </Link>
                     <ul class="list-unstyled ps-0">
-                    <li class="mb-1">
+                        <li class="mb-1">
                             <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
                                 Sensor
                             </button>
@@ -77,7 +77,7 @@ const HCSR04MB = () => {
                     <br></br>
                     <hr></hr>
                     <div class="embed-responsive embed-responsive-16by9 ms-5">
-                        <iframe width="1100" height="700" src="https://www.youtube.com/embed/Pyv0oIdmp5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='1'></iframe>
+                        <iframe width="1100" height="700" src="https://www.youtube.com/embed/uBSHv4gJSj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='1'></iframe>
                     </div>
                     <br></br>
                     <br></br>
@@ -101,27 +101,23 @@ const HCSR04MB = () => {
                     </div>
                     <br></br>
                     <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1042832455813566595/HC-SR04-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="800" height="700" ></img>
+                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1095687671008985118/HC-SR04-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="800" height="700" ></img>
                     </div>
-                    <p>การต่อเพื่อใช้งานทำได้โดยต่อ PIN ดังนี้ </p>
-                    <p>PIN ที่ 1 -- 5V Supply</p>
-                    <p>PIN ที่ 2 -- Trigger Pulse Input</p>
-                    <p>PIN ที่ 3 -- Echo Pulse Output</p>
-                    <p>PIN ที่ 4 –- GND</p>
-                    <hr></hr>
-                    <div class="h2 px-4 blackText">
-                        <h2 class="bold2">รูปภาพประกอบ</h2>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1043224938179477524/LINE_ALBUM__221119.jpg" class="img-fluid rounded-3 mb-4" alt="555" width="800" height="700" ></img>
+                    <div class="px-5 blackText">
+                        <b>การใช้งาน Ultrasonic Sensor Module HC-SR04 สามารถทำได้โดยการต่อโมดูลเซ็นเซอร์กับไมโครคอนโทรเลอร์หรือบอร์ดพัฒนาอิเล็กทรอนิกส์ต่างๆ ดังนั้นจึงต้องมีการเชื่อมต่อขาต่างๆ ดังนี้</b>
+                        <p>1. ต่อขา VCC ของโมดูลเซ็นเซอร์กับขาไฟบอร์ดพัฒนา</p>
+                        <p>2. ต่อขา GND ของโมดูลเซ็นเซอร์กับขาอีกด้านของไฟบอร์ดพัฒนา</p>
+                        <p>3. ต่อขา Trigger ของโมดูลเซ็นเซอร์กับขา Digital Output ของไฟบอร์ดพัฒนา</p>
+                        <p>4. ต่อขา Echo ของโมดูลเซ็นเซอร์กับขา Digital Input ของไฟบอร์ดพัฒนา</p>
+                        <br></br>
                     </div>
                     <br></br>
                     <hr></hr>
                     <div class="h2 px-4 blackText">
-                        <h2  class="bold2">จำลองการต่อวงจร</h2>
+                        <h2 class="bold2">จำลองการต่อวงจร</h2>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <img src="https://i.imgur.com/uc3lhRG.gif" class="img-fluid rounded-3 mb-4 ps-5" alt="555" width="1100" height="900" ></img>
+                        <img src="https://i.imgur.com/QMVU6MX.gif" class="img-fluid rounded-3 mb-4 ps-5" alt="555" width="1100" height="900" ></img>
                     </div>
                     <br></br>
                     <hr></hr>
@@ -129,35 +125,9 @@ const HCSR04MB = () => {
                         <h2 class="bold2">โค้ดตัวอย่าง</h2>
                     </div>
                     <div class="d-flex justify-content-center ">
-                        <Highlight language="c++">
-                            {`    #define Trig 9 // กำหนด Pin 9 = Trig 
-    #define Echo 10  // กำหนด Pin  10 = Echo
-    float duration ; // สำหรับเก็บค่าเวลาที่เสียงเดินทาง
-    float distance ; // สำหรับเก็บค่าระยะทางที่คำนวณได้
-    void setup() {  
-    pinMode(Trig, OUTPUT); //กำหนดขา Trig เป็น output
-    pinMode(Echo, INPUT); // กำหนดขา Echo เป็น input
-    Serial.begin(9600); // เริ่ม Serial เพื่อใช้ Serial Monitor
-    }
-    void loop(){
-    
-    digitalWrite(Trig, LOW); // เคลียร์ค่าขา trig ป้องกันกรณีสถานะค้างเก่าค้างอยู่ 
-    delayMicroseconds(5);    // 5 ไมโครวินาที
-    
-    digitalWrite(Trig, HIGH); // ให้ขา Trig ส่งคลื่นออกไป 
-    delayMicroseconds(10);    //10 ไมโครวินาที
-    digitalWrite(Trig, LOW);  // ให้ขา Trig ปิดการส่งคลื่นออกไป  
-    
-    duration = pulseIn(Echo, HIGH); // จับเวลาจนกว่าจะมีคลื่นเสียงมากระทบ Echo โดยคำสั่ง pulseIn
-    distance = (duration*0.034)/2;  // คำนวณหาระยะตามสูตรข้างต้น
-
-    // แสดงค่าทาง Serial Monitor
-    Serial.print("Distance: ");
-    Serial.print(distance);
-    Serial.println(" cm ");
-    }`}
-                        </Highlight>
+                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1095687484807065650/HC-SR04.jpg" class="img-fluid rounded-3 mb-4" alt=" 123" width="700" height="700" ></img>
                     </div>
+                    <br></br>
                 </div>
             </main>
             <script src="sidebars.js"></script>

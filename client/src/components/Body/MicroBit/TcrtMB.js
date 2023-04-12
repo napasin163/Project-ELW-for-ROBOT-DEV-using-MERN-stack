@@ -11,7 +11,7 @@ const TcrtMB = () => {
                         <span class="fs-5 fw-semibold">Micro:Bit</span>
                     </Link>
                     <ul class="list-unstyled ps-0">
-                    <li class="mb-1">
+                        <li class="mb-1">
                             <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
                                 Sensor
                             </button>
@@ -63,21 +63,21 @@ const TcrtMB = () => {
 
                 <div class="col-md-9 ms-lg-9 col-lg-9 px-md-4 position-sticky">
                     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                        <h1 class="h2 blackText bold2">Ultrasonic Sensor HC-SR04</h1>
+                        <h1 class="h2 blackText bold2">Reflective Sensor (TCRT5000)</h1>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1042777068141805658/png-transparent-ultrasonic-transducer-proximity-sensor-sensor-ultrasonico-electronics-others-electronics-measurement-sound-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="400" height="500" ></img>
+                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1052620712520712242/TCRT5000.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="400" height="500" ></img>
                     </div>
                     <div class="h2 px-4 blackText">
                         <h2 class="bold2">รายละเอียด</h2>
                     </div>
                     <div class="px-5 blackText">
-                        <p>HC-SR04 เป็นโมดูลอัลตร้าโซนิคเป็นอุปกรณ์เซ็นเซอร์ใช้วัดระยะทางของวัตถุกับตัวเซ็นเซอร์ โดยไม่ต้องมีการสัมผัสกับตำแหน่งที่ต้องการวัด วัดได้ตั้งแต่ 2 cm ถึง 400 cm รองรับแรงดันไฟ 3.3-5V อาศัยการทำงานของคลื่นเสียง โดยส่งสัญญาณอัลตร้าโซนิคความถี่ 40kHz (40,000Hz) ซึ่งจัดอยู่ในย่าน Ultrasonic (ความถี่สูงกว่าที่หูมนุษย์จะสามารถได้ยิน) ไปที่วัตถุที่ต้องการวัดและรับสัญญาณที่สะท้อนกลับมา พร้อมทั้งจับเวลาเพื่อนำมาใช้ในการคำนวณ โมดูลตัวนี้เป็นโมดูลยอดนิยมอีกตัวที่นำไปใช้ในโปรเจคหาระยะห่างของวัตถุ หรือใช้ในโครงงานหุ่นยนต์ต่างๆ ใช้งานง่าย ราคาถูก มีไลบรารี่สำหรับต่อกับ Arduino ได้โดยตรง เพื่อแสดงระยะทางได้ทันที </p>
+                        <p>Reflective Sensor เป็นเซนเซอร์ที่ใช้ตรวจจับวัตถุโดยใช้แสงอินฟาเรด โดยจะมี LED แบบอินฟาเรดยิงแสงอินฟาเรดออกไป และมีตัวรับแสงอินฟาเรดรับค่าแสงที่สะท้อนกลับมา เมื่อวัตถุอยู่ใกล้จะมีแสงสะท้อนกลับมามากกว่าวัตถุที่อยู่ไกล จึงสามารถนำมาเช็ควัตถุผ่าน หรือใช้ตรวจจับเส้นสีขาว/ดำได้ โดยเส้นขาวจะให้แสงสะท้อนกลับมากกว่าสีดำ ใช้ไฟ 3.3-5V  ให้เอาต์พุตออกมา 2 แบบ คือ แบบดิจิตอลสามารถปรับค่าที่ต้องการได้ เมื่อค่าที่อ่านได้ถึงระดับที่ต้องการก็จะส่งค่า 1 ออกมา ถ้ายังไม่ถึงระดับก็จะส่งค่า 0 ออกมา และอีกแบบคือเอาต์พุตแบบอะนาล็อก อ่านค่าได้เป็นตัวเลข 0-1023 TCRT5000 นั้นเป็นเซ็นเซอร์แบบไอน์ฟรูด (Infrared) ซึ่งมีความละเอียดสูง ใช้งานได้ง่ายและราคาไม่แพง และมักนิยมใช้งานในงานอุตสาหกรรม การสร้างโรบอต หรืองาน DIY (Do-It-Yourself) ต่างๆ ด้วยความสามารถในการตรวจจับระยะทางของวัตถุในระยะสั้นๆ ส่วนใหญ่มักจะใช้งานร่วมกับไมโครคอนโทรเลอร์ หรือบอร์ดพัฒนาอิเล็กทรอนิกส์</p>
                     </div>
                     <br></br>
                     <hr></hr>
                     <div class="embed-responsive embed-responsive-16by9 ms-5">
-                        <iframe width="1100" height="700" src="https://www.youtube.com/embed/Pyv0oIdmp5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='1'></iframe>
+                        <iframe width="1100" height="700" src="https://www.youtube.com/embed/SZSOZJsx_bI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='1'></iframe>
                     </div>
                     <br></br>
                     <br></br>
@@ -101,27 +101,23 @@ const TcrtMB = () => {
                     </div>
                     <br></br>
                     <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1042832455813566595/HC-SR04-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="800" height="700" ></img>
+                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1095694067049963580/TCRT5000-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="800" height="700" ></img>
                     </div>
-                    <p>การต่อเพื่อใช้งานทำได้โดยต่อ PIN ดังนี้ </p>
-                    <p>PIN ที่ 1 -- 5V Supply</p>
-                    <p>PIN ที่ 2 -- Trigger Pulse Input</p>
-                    <p>PIN ที่ 3 -- Echo Pulse Output</p>
-                    <p>PIN ที่ 4 –- GND</p>
-                    <hr></hr>
-                    <div class="h2 px-4 blackText">
-                        <h2 class="bold2">รูปภาพประกอบ</h2>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1043224938179477524/LINE_ALBUM__221119.jpg" class="img-fluid rounded-3 mb-4" alt="555" width="800" height="700" ></img>
+                    <div class="px-5 blackText">
+                        <b>การใช้งาน Reflective Sensor (TCRT5000) มีขั้นตอน ดังนี้</b>
+                        <p>1. ต่อเซ็นเซอร์เข้ากับวงจร: ใช้สายไฟสองเส้นต่อเข้ากับขา Output และ GND ของเซ็นเซอร์ แล้วนำไปต่อเข้ากับวงจร</p>
+                        <p>2. การตั้งค่าตัวเซ็นเซอร์: ต้องการตั้งค่าระยะห่างที่จะใช้ตรวจจับ สามารถปรับเปลี่ยนระยะห่างได้โดยการเลื่อนตัวเซ็นเซอร์ไปมาในระยะห่างที่ต้องการ</p>
+                        <p>3. การทดสอบเซ็นเซอร์: ใช้วัตถุที่ต้องการทดสอบวางอยู่หน้าเซ็นเซอร์ แล้วอ่านค่าเซ็นเซอร์จาก output ของเซ็นเซอร์ เมื่อวัตถุอยู่หน้าเซ็นเซอร์ จะมีการส่งแสงกลับมาที่ตัวรับ ทำให้เกิดการเปลี่ยนแปลงของสัญญาณ output ของเซ็นเซอร์ ซึ่งสามารถนำไปใช้งานต่อได้ตามต้องการ</p>
+                        <p>4. การนำไปใช้งาน: Reflective Sensor (TCRT5000) สามารถนำไปใช้ตรวจจับวัตถุหรือเคลื่อนไหวในหลายแวดวง เช่น ใช้ในหุ่นยนต์เพื่อตรวจจับสิ่งกีดขวาง ใช้ในเครื่องจักรอุตสาหกรรมเพื่อตรวจจับวัตถุที่เคลื่อนที่ หรือใช้ในการสร้างโปรเจคที่ต้องการตรวจจับวัตถุหรือความเคลื่อนไหวของวัตถุแบบไม่ต้องสัมผัสโดยตรง</p>
+                        <br></br>
                     </div>
                     <br></br>
                     <hr></hr>
                     <div class="h2 px-4 blackText">
-                        <h2  class="bold2">จำลองการต่อวงจร</h2>
+                        <h2 class="bold2">จำลองการต่อวงจร</h2>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <img src="https://i.imgur.com/uc3lhRG.gif" class="img-fluid rounded-3 mb-4 ps-5" alt="555" width="1100" height="900" ></img>
+                        <img src="https://i.imgur.com/ttI203J.gif" class="img-fluid rounded-3 mb-4 ps-5" alt="555" width="1100" height="900" ></img>
                     </div>
                     <br></br>
                     <hr></hr>
@@ -129,35 +125,9 @@ const TcrtMB = () => {
                         <h2 class="bold2">โค้ดตัวอย่าง</h2>
                     </div>
                     <div class="d-flex justify-content-center ">
-                        <Highlight language="c++">
-                            {`    #define Trig 9 // กำหนด Pin 9 = Trig 
-    #define Echo 10  // กำหนด Pin  10 = Echo
-    float duration ; // สำหรับเก็บค่าเวลาที่เสียงเดินทาง
-    float distance ; // สำหรับเก็บค่าระยะทางที่คำนวณได้
-    void setup() {  
-    pinMode(Trig, OUTPUT); //กำหนดขา Trig เป็น output
-    pinMode(Echo, INPUT); // กำหนดขา Echo เป็น input
-    Serial.begin(9600); // เริ่ม Serial เพื่อใช้ Serial Monitor
-    }
-    void loop(){
-    
-    digitalWrite(Trig, LOW); // เคลียร์ค่าขา trig ป้องกันกรณีสถานะค้างเก่าค้างอยู่ 
-    delayMicroseconds(5);    // 5 ไมโครวินาที
-    
-    digitalWrite(Trig, HIGH); // ให้ขา Trig ส่งคลื่นออกไป 
-    delayMicroseconds(10);    //10 ไมโครวินาที
-    digitalWrite(Trig, LOW);  // ให้ขา Trig ปิดการส่งคลื่นออกไป  
-    
-    duration = pulseIn(Echo, HIGH); // จับเวลาจนกว่าจะมีคลื่นเสียงมากระทบ Echo โดยคำสั่ง pulseIn
-    distance = (duration*0.034)/2;  // คำนวณหาระยะตามสูตรข้างต้น
-
-    // แสดงค่าทาง Serial Monitor
-    Serial.print("Distance: ");
-    Serial.print(distance);
-    Serial.println(" cm ");
-    }`}
-                        </Highlight>
+                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1095693353351381053/TCRT5000.jpg" class="img-fluid rounded-3 mb-4" alt=" 123" width="700" height="700" ></img>
                     </div>
+                    <br></br>
                 </div>
             </main>
             <script src="sidebars.js"></script>

@@ -70,7 +70,7 @@ const Relay = () => {
 
                 <div class="col-md-9 ms-lg-9 col-lg-9 px-md-4 position-sticky">
                     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                        <h1 class="h2 blackText bold2">Relay Module 2 ช่อง 5V </h1>
+                        <h1 class="h2 blackText bold2">Relay Module 2 ช่อง 5V</h1>
                     </div>
                     <div class="d-flex justify-content-center">
                         <img src="https://cdn.discordapp.com/attachments/837757981549396049/1053045455354855545/Relay_module-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="300" height="400" ></img>

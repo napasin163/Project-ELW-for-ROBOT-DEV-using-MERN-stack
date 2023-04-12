@@ -11,7 +11,7 @@ const ServoMB = () => {
                         <span class="fs-5 fw-semibold">Micro:Bit</span>
                     </Link>
                     <ul class="list-unstyled ps-0">
-                    <li class="mb-1">
+                        <li class="mb-1">
                             <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
                                 Sensor
                             </button>
@@ -63,21 +63,24 @@ const ServoMB = () => {
 
                 <div class="col-md-9 ms-lg-9 col-lg-9 px-md-4 position-sticky">
                     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                        <h1 class="h2 blackText bold2">Ultrasonic Sensor HC-SR04</h1>
+                        <h1 class="h2 blackText bold2">Servo G90s</h1>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1042777068141805658/png-transparent-ultrasonic-transducer-proximity-sensor-sensor-ultrasonico-electronics-others-electronics-measurement-sound-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="400" height="500" ></img>
+                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1043260993985314836/Mini-Servo-Motor-SG91R-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="400" height="500" ></img>
                     </div>
                     <div class="h2 px-4 blackText">
                         <h2 class="bold2">รายละเอียด</h2>
                     </div>
                     <div class="px-5 blackText">
-                        <p>HC-SR04 เป็นโมดูลอัลตร้าโซนิคเป็นอุปกรณ์เซ็นเซอร์ใช้วัดระยะทางของวัตถุกับตัวเซ็นเซอร์ โดยไม่ต้องมีการสัมผัสกับตำแหน่งที่ต้องการวัด วัดได้ตั้งแต่ 2 cm ถึง 400 cm รองรับแรงดันไฟ 3.3-5V อาศัยการทำงานของคลื่นเสียง โดยส่งสัญญาณอัลตร้าโซนิคความถี่ 40kHz (40,000Hz) ซึ่งจัดอยู่ในย่าน Ultrasonic (ความถี่สูงกว่าที่หูมนุษย์จะสามารถได้ยิน) ไปที่วัตถุที่ต้องการวัดและรับสัญญาณที่สะท้อนกลับมา พร้อมทั้งจับเวลาเพื่อนำมาใช้ในการคำนวณ โมดูลตัวนี้เป็นโมดูลยอดนิยมอีกตัวที่นำไปใช้ในโปรเจคหาระยะห่างของวัตถุ หรือใช้ในโครงงานหุ่นยนต์ต่างๆ ใช้งานง่าย ราคาถูก มีไลบรารี่สำหรับต่อกับ Arduino ได้โดยตรง เพื่อแสดงระยะทางได้ทันที </p>
+                        <p>เซอร์โวมอเตอร์ (Servo Motor) เป็นการรวมมอเตอร์ไฟฟ้ากระแสตรง (DC Motor) เข้ากับวงจรควบคุม โดยความแตกต่างที่สำคัญของเซอร์โวมอเตอร์กับมอเตอร์แบบอื่น ๆ คือเซอร์โวมอเตอร์จะรู้ตำแหน่งที่ตัวเองอยู่ และสั่งเปลี่ยนตำแหน่งโดยการเปลี่ยนองศาได้ MG90S เป็นเซอร์โวมอเตอร์เฟืองเหล็ก สามารถหมุน 180 องศา ไปกลับได้ ขนาดเล็กแข็งแรง น้ำหนัก 13.4 g ทอร์ก 2.2 kg-cm ที่แรงดัน 6 V ความเร็วในการหมุน 0.08 sec/60degree (6v) ใช้ไฟเลี้ยง 4.8V - 6V ควบคุมการทำงานด้วยสัญญาณ PWM สามารถสั่งงานผ่านไมโครคอนโทรลเลอร์ เพื่อควบคุมตำแหน่งได้ง่าย เหมาะสำหรับหุ่นยนต์ขนาดเล็ก ทำมือจับของหุ่นยนต์ นิยมใช้งานในเครื่องบินบังคับ เรือบังคับ โดยใช้กำหนดทิศทางของหางเสือเป็นองศา
+                            <p>เซอร์โวมอเตอร์ประกอบด้วย 4 ส่วนหลัก คือ มอเตอร์กระแสตรง (DC Motor) ชุดเฟืองทดรอบ (Gear system) วอลุ่ม (Potentiometer หรือ VR) และวงจรควบคุม (Control Electronics)</p>
+                            <p>หลักการทำงานของเซอร์โวมอเตอร์เริ่มที่วงจรควบคุม เมื่อวงจรควบคุมได้รับข้อมูลองศาที่ต้องการมาแล้ว วงจรควบคุมจะคำนวณว่ามอเตอร์จะต้องหมุนในทิศทางตามเข็มนาฬิกา หรือทวนเข็มนาฬิกา เพื่อให้ไปสู่องศาที่ต้องการได้ เมื่อมอเตอร์เริ่มหมุน ตัววอลุ่มที่ติดอยู่กับชุดเฟืองมอเตอร์จะตรวจสอบตำแหน่งที่มอเตอร์หมุนไป โดยหากวอลุ่มตรวจพบว่าตำแหน่งที่มอเตอร์หมุนเริ่มใกล้กับองศาที่ผู้ใช้กำหนด วงจรส่วนควบคุมจะเริ่มสั่งให้มอเตอร์หมุนช้าลงเพื่อให้หมุนเข้าใกล้องศาที่กำหนดได้มากที่สุด เมื่อมอเตอร์หมุนได้ตำแหน่งองศาที่ถูกต้องแล้ว วงจรส่วนควบคุมจะตรวจสอบตำแหน่งของมอเตอร์เป็นระยะ ๆ โดยอ่านค่าจากวอลุ่ม หากตรวจพบว่าตำแหน่งผิดเพี้ยนไปจากค่าที่ตั้งไว้ (อันอาจเกิดจากผู้ใช้เอามือไปหมุนเล่น หรือภาระส่งผลให้ตำแหน่งเคลื่อน) วงจรควบคุมก็จะสั่งให้มอเตอร์หมุนกลับมาให้ได้ตำแหน่งเป็นระยะ ๆ</p>
+                        </p>
                     </div>
                     <br></br>
                     <hr></hr>
                     <div class="embed-responsive embed-responsive-16by9 ms-5">
-                        <iframe width="1100" height="700" src="https://www.youtube.com/embed/Pyv0oIdmp5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='1'></iframe>
+                        <iframe width="1100" height="700" src="https://www.youtube.com/embed/r_a6N8wpy5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='1'></iframe>
                     </div>
                     <br></br>
                     <br></br>
@@ -101,27 +104,22 @@ const ServoMB = () => {
                     </div>
                     <br></br>
                     <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1042832455813566595/HC-SR04-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="800" height="700" ></img>
+                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1095696709482446858/servo-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="800" height="700" ></img>
                     </div>
-                    <p>การต่อเพื่อใช้งานทำได้โดยต่อ PIN ดังนี้ </p>
-                    <p>PIN ที่ 1 -- 5V Supply</p>
-                    <p>PIN ที่ 2 -- Trigger Pulse Input</p>
-                    <p>PIN ที่ 3 -- Echo Pulse Output</p>
-                    <p>PIN ที่ 4 –- GND</p>
+                    <div class="px-5 blackText">
+                        <b>การใช้งาน Servo motor 90s มีขั้นตอนดังนี้</b>
+                        <p>1.	ต่อสายไฟ: ต่อสายไฟสัญญาณ (Signal Pin) กับขาควบคุม (Control Pin) ของ Servo motor 90s และต่อสายไฟไฟจากแหล่งจ่ายไฟ (Power Supply) เข้ากับขาอานาล็อก (Analog Pin) และขาไฟ VCC ของ Servo motor 90s</p>
+                        <p>2.	กำหนดค่า: กำหนดค่าการทำงานของ Servo motor 90s ด้วยโปรแกรมที่ใช้ในการควบคุม โดยกำหนดค่าองศาที่ต้องการให้มอเตอร์หมุนไปยังแต่ละสถานะ</p>
+                        <p>3.	สั่งงาน: สั่งงาน Servo motor 90s โดยส่งสัญญาณ PWM ไปยังขาควบคุม (Control Pin) ของมอเตอร์ และมอเตอร์จะหมุนไปยังมุมที่กำหนดไว้ในโปรแกรม</p>
+                        <br></br>
+                    </div>
                     <hr></hr>
+                
                     <div class="h2 px-4 blackText">
-                        <h2 class="bold2">รูปภาพประกอบ</h2>
+                        <h2 class="bold2">จำลองการต่อวงจร</h2>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1043224938179477524/LINE_ALBUM__221119.jpg" class="img-fluid rounded-3 mb-4" alt="555" width="800" height="700" ></img>
-                    </div>
-                    <br></br>
-                    <hr></hr>
-                    <div class="h2 px-4 blackText">
-                        <h2  class="bold2">จำลองการต่อวงจร</h2>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <img src="https://i.imgur.com/uc3lhRG.gif" class="img-fluid rounded-3 mb-4 ps-5" alt="555" width="1100" height="900" ></img>
+                        <img src="https://i.imgur.com/HlQYWyw.gif" class="img-fluid rounded-3 mb-4 ps-5" alt="555" width="1100" height="900" ></img>
                     </div>
                     <br></br>
                     <hr></hr>
@@ -129,35 +127,9 @@ const ServoMB = () => {
                         <h2 class="bold2">โค้ดตัวอย่าง</h2>
                     </div>
                     <div class="d-flex justify-content-center ">
-                        <Highlight language="c++">
-                            {`    #define Trig 9 // กำหนด Pin 9 = Trig 
-    #define Echo 10  // กำหนด Pin  10 = Echo
-    float duration ; // สำหรับเก็บค่าเวลาที่เสียงเดินทาง
-    float distance ; // สำหรับเก็บค่าระยะทางที่คำนวณได้
-    void setup() {  
-    pinMode(Trig, OUTPUT); //กำหนดขา Trig เป็น output
-    pinMode(Echo, INPUT); // กำหนดขา Echo เป็น input
-    Serial.begin(9600); // เริ่ม Serial เพื่อใช้ Serial Monitor
-    }
-    void loop(){
-    
-    digitalWrite(Trig, LOW); // เคลียร์ค่าขา trig ป้องกันกรณีสถานะค้างเก่าค้างอยู่ 
-    delayMicroseconds(5);    // 5 ไมโครวินาที
-    
-    digitalWrite(Trig, HIGH); // ให้ขา Trig ส่งคลื่นออกไป 
-    delayMicroseconds(10);    //10 ไมโครวินาที
-    digitalWrite(Trig, LOW);  // ให้ขา Trig ปิดการส่งคลื่นออกไป  
-    
-    duration = pulseIn(Echo, HIGH); // จับเวลาจนกว่าจะมีคลื่นเสียงมากระทบ Echo โดยคำสั่ง pulseIn
-    distance = (duration*0.034)/2;  // คำนวณหาระยะตามสูตรข้างต้น
-
-    // แสดงค่าทาง Serial Monitor
-    Serial.print("Distance: ");
-    Serial.print(distance);
-    Serial.println(" cm ");
-    }`}
-                        </Highlight>
+                    <img src="https://cdn.discordapp.com/attachments/768084656465117227/1095696709176270948/servo.jpg" class="img-fluid rounded-3 mb-4" alt=" 123" width="700" height="700" ></img>
                     </div>
+                    <br></br>
                 </div>
             </main>
             <script src="sidebars.js"></script>

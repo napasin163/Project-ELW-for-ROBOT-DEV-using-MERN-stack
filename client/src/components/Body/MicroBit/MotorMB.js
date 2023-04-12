@@ -62,22 +62,22 @@ const MotorMB = () => {
                 </div>
 
                 <div class="col-md-9 ms-lg-9 col-lg-9 px-md-4 position-sticky">
-                    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                        <h1 class="h2 blackText bold2">Ultrasonic Sensor HC-SR04</h1>
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                        <h1 class="h2 blackText bold2">L298N Motor Driver</h1>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1042777068141805658/png-transparent-ultrasonic-transducer-proximity-sensor-sensor-ultrasonico-electronics-others-electronics-measurement-sound-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="400" height="500" ></img>
+                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1090807010737532999/e7hrfe-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="400" height="500" ></img>
                     </div>
                     <div class="h2 px-4 blackText">
                         <h2 class="bold2">รายละเอียด</h2>
                     </div>
                     <div class="px-5 blackText">
-                        <p>HC-SR04 เป็นโมดูลอัลตร้าโซนิคเป็นอุปกรณ์เซ็นเซอร์ใช้วัดระยะทางของวัตถุกับตัวเซ็นเซอร์ โดยไม่ต้องมีการสัมผัสกับตำแหน่งที่ต้องการวัด วัดได้ตั้งแต่ 2 cm ถึง 400 cm รองรับแรงดันไฟ 3.3-5V อาศัยการทำงานของคลื่นเสียง โดยส่งสัญญาณอัลตร้าโซนิคความถี่ 40kHz (40,000Hz) ซึ่งจัดอยู่ในย่าน Ultrasonic (ความถี่สูงกว่าที่หูมนุษย์จะสามารถได้ยิน) ไปที่วัตถุที่ต้องการวัดและรับสัญญาณที่สะท้อนกลับมา พร้อมทั้งจับเวลาเพื่อนำมาใช้ในการคำนวณ โมดูลตัวนี้เป็นโมดูลยอดนิยมอีกตัวที่นำไปใช้ในโปรเจคหาระยะห่างของวัตถุ หรือใช้ในโครงงานหุ่นยนต์ต่างๆ ใช้งานง่าย ราคาถูก มีไลบรารี่สำหรับต่อกับ Arduino ได้โดยตรง เพื่อแสดงระยะทางได้ทันที </p>
+                        <p>Motor Driver Module (L298N) เป็นโมดูลที่ใช้สำหรับควบคุมการทำงานของมอเตอร์ โดยมีการเชื่อมต่อกับไมโครคอนโทรเลอร์หรือบอร์ดไมโครคอนโทรเลอร์ เพื่อทำการสั่งงานการทำงานของมอเตอร์ได้ โดยมีความสามารถในการควบคุมแรงดันได้สูงสุด 2 ช่อง ทำให้เหมาะสำหรับการนำมาใช้ในการสร้างโมดูลรถยนต์ที่ใช้การควบคุมมอเตอร์ได้ง่าย ๆ และสะดวก หรือการสร้างหุ่นยนต์ และโมดูลอื่น ๆ ที่ใช้มอเตอร์ในการทำงาน โมดูล Motor Driver Module (L298N) มีส่วนประกอบหลัก ประกอบไปด้วย ตัวจ่ายไฟ (power supply) ที่รองรับการเชื่อมต่อแบบ DC และสามารถใช้แรงดันไฟฟ้าได้สูงสุด 46V โดยมีความสามารถในการควบคุมกระแสได้สูงสุดถึง 2A ต่อช่อง และมีส่วนประกอบอื่น ๆ เช่น วงจร Relay และวงจร Logic ที่ช่วยให้การควบคุมมอเตอร์ได้ง่ายขึ้น โดยเฉพาะในการสลับสัญญาณกลับและสลับสัญญาณหน้าของมอเตอร์ ทำให้มีประสิทธิภาพในการทำงานที่แม่นยำและมีประสิทธิภาพสูง </p>
                     </div>
                     <br></br>
                     <hr></hr>
                     <div class="embed-responsive embed-responsive-16by9 ms-5">
-                        <iframe width="1100" height="700" src="https://www.youtube.com/embed/Pyv0oIdmp5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='1'></iframe>
+                        <iframe width="1100" height="700" src="https://www.youtube.com/embed/Ht1LcRp472U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='1'></iframe>
                     </div>
                     <br></br>
                     <br></br>
@@ -101,27 +101,18 @@ const MotorMB = () => {
                     </div>
                     <br></br>
                     <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1042832455813566595/HC-SR04-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="800" height="700" ></img>
+                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1095708249744998461/964E8B2B-6998-491B-A9A6-364DB6052BD6.jpg" class="img-fluid rounded-3 mb-4" alt=" 123" width="800" height="700" ></img>
                     </div>
-                    <p>การต่อเพื่อใช้งานทำได้โดยต่อ PIN ดังนี้ </p>
-                    <p>PIN ที่ 1 -- 5V Supply</p>
-                    <p>PIN ที่ 2 -- Trigger Pulse Input</p>
-                    <p>PIN ที่ 3 -- Echo Pulse Output</p>
-                    <p>PIN ที่ 4 –- GND</p>
-                    <hr></hr>
-                    <div class="h2 px-4 blackText">
-                        <h2 class="bold2">รูปภาพประกอบ</h2>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <img src="https://cdn.discordapp.com/attachments/768084656465117227/1043224938179477524/LINE_ALBUM__221119.jpg" class="img-fluid rounded-3 mb-4" alt="555" width="800" height="700" ></img>
-                    </div>
+                    <div class="px-5 blackText">
+                        <p>การใช้งาน Motor Driver Module (L298N) จะต้องเชื่อมต่อกับบอร์ด Arduino และมอเตอร์ด้วยสายไฟฟ้า โดยมีขั้วเชื่อมต่อ 5V และ GND สำหรับจ่ายไฟเข้ามาในโมดูล และมีขั้วเชื่อมต่อ IN1, IN2, IN3 และ IN4 สำหรับควบคุมการทำงานของมอเตอร์ และมีขั้วเชื่อมต่อ OUT1, OUT2, OUT3 และ OUT4 สำหรับส่งสัญญาณไฟฟ้าไปยังมอเตอร์ </p>
+                    </div>          
                     <br></br>
                     <hr></hr>
                     <div class="h2 px-4 blackText">
                         <h2 class="bold2">จำลองการต่อวงจร</h2>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <img src="https://i.imgur.com/uc3lhRG.gif" class="img-fluid rounded-3 mb-4 ps-5" alt="555" width="1100" height="900" ></img>
+                        <img src="https://i.imgur.com/i4Weh4W.gif" class="img-fluid rounded-3 mb-4 ps-5" alt="555" width="1100" height="900" ></img>
                     </div>
                     <br></br>
                     <hr></hr>
@@ -129,35 +120,9 @@ const MotorMB = () => {
                         <h2 class="bold2">โค้ดตัวอย่าง</h2>
                     </div>
                     <div class="d-flex justify-content-center ">
-                        <Highlight language="c++">
-                            {`    #define Trig 9 // กำหนด Pin 9 = Trig 
-    #define Echo 10  // กำหนด Pin  10 = Echo
-    float duration ; // สำหรับเก็บค่าเวลาที่เสียงเดินทาง
-    float distance ; // สำหรับเก็บค่าระยะทางที่คำนวณได้
-    void setup() {  
-    pinMode(Trig, OUTPUT); //กำหนดขา Trig เป็น output
-    pinMode(Echo, INPUT); // กำหนดขา Echo เป็น input
-    Serial.begin(9600); // เริ่ม Serial เพื่อใช้ Serial Monitor
-    }
-    void loop(){
-    
-    digitalWrite(Trig, LOW); // เคลียร์ค่าขา trig ป้องกันกรณีสถานะค้างเก่าค้างอยู่ 
-    delayMicroseconds(5);    // 5 ไมโครวินาที
-    
-    digitalWrite(Trig, HIGH); // ให้ขา Trig ส่งคลื่นออกไป 
-    delayMicroseconds(10);    //10 ไมโครวินาที
-    digitalWrite(Trig, LOW);  // ให้ขา Trig ปิดการส่งคลื่นออกไป  
-    
-    duration = pulseIn(Echo, HIGH); // จับเวลาจนกว่าจะมีคลื่นเสียงมากระทบ Echo โดยคำสั่ง pulseIn
-    distance = (duration*0.034)/2;  // คำนวณหาระยะตามสูตรข้างต้น
-
-    // แสดงค่าทาง Serial Monitor
-    Serial.print("Distance: ");
-    Serial.print(distance);
-    Serial.println(" cm ");
-    }`}
-                        </Highlight>
+                    <img src="https://cdn.discordapp.com/attachments/768084656465117227/1095708249526910996/5cd98917294a0a5a.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="700" height="700" ></img>
                     </div>
+                    <br></br>
                 </div>
             </main>
             <script src="sidebars.js"></script>

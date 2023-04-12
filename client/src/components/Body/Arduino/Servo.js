@@ -112,11 +112,11 @@ const Servo = () => {
                         <img src="https://cdn.discordapp.com/attachments/768084656465117227/1043260993578475643/Servo-removebg-preview.png" class="img-fluid rounded-3 mb-4" alt=" 123" width="800" height="700" ></img>
                     </div>
                     <div class="px-5 blackText">
-                    <b>การใช้งาน Servo motor 90s มีขั้นตอนดังนี้</b>
-                    <p>1.	ต่อสายไฟ: ต่อสายไฟสัญญาณ (Signal Pin) กับขาควบคุม (Control Pin) ของ Servo motor 90s และต่อสายไฟไฟจากแหล่งจ่ายไฟ (Power Supply) เข้ากับขาอานาล็อก (Analog Pin) และขาไฟ VCC ของ Servo motor 90s</p>
-                    <p>2.	กำหนดค่า: กำหนดค่าการทำงานของ Servo motor 90s ด้วยโปรแกรมที่ใช้ในการควบคุม โดยกำหนดค่าองศาที่ต้องการให้มอเตอร์หมุนไปยังแต่ละสถานะ</p>
-                    <p>3.	สั่งงาน: สั่งงาน Servo motor 90s โดยส่งสัญญาณ PWM ไปยังขาควบคุม (Control Pin) ของมอเตอร์ และมอเตอร์จะหมุนไปยังมุมที่กำหนดไว้ในโปรแกรม</p>
-                    <br></br>
+                        <b>การใช้งาน Servo motor 90s มีขั้นตอนดังนี้</b>
+                        <p>1.	ต่อสายไฟ: ต่อสายไฟสัญญาณ (Signal Pin) กับขาควบคุม (Control Pin) ของ Servo motor 90s และต่อสายไฟไฟจากแหล่งจ่ายไฟ (Power Supply) เข้ากับขาอานาล็อก (Analog Pin) และขาไฟ VCC ของ Servo motor 90s</p>
+                        <p>2.	กำหนดค่า: กำหนดค่าการทำงานของ Servo motor 90s ด้วยโปรแกรมที่ใช้ในการควบคุม โดยกำหนดค่าองศาที่ต้องการให้มอเตอร์หมุนไปยังแต่ละสถานะ</p>
+                        <p>3.	สั่งงาน: สั่งงาน Servo motor 90s โดยส่งสัญญาณ PWM ไปยังขาควบคุม (Control Pin) ของมอเตอร์ และมอเตอร์จะหมุนไปยังมุมที่กำหนดไว้ในโปรแกรม</p>
+                        <br></br>
                     </div>
                     <hr></hr>
                     <div class="h2 px-4 blackText">
