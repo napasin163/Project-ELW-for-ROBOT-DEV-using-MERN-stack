@@ -1,29 +1,46 @@
-import './Header.css'
-import { Outlet, Link } from "react-router-dom";
+import './Header.css';
+import { Outlet, Link } from 'react-router-dom';
 import Logout from '../Imports/Logout';
 import { logoutAction } from '../../container/actions';
 import { useDispatch } from 'react-redux';
-const TopHeader = () => {
+import { useState } from 'react';
 
-    const dispatch = useDispatch()
-    const logout = () =>{
+const TopHeader = () => {
+    const dispatch = useDispatch();
+    const logout = () => {
         dispatch(logoutAction());
-    }
+    };
+
+    const [navbarOpen, setNavbarOpen] = useState(false);
+    const toggleNavbar = () => {
+        setNavbarOpen(!navbarOpen);
+    };
+
     return (
         <body>
             <nav class="navbar navbar-expand-lg BgColorBlue sticky-top">
                 <div class="container">
-                    <Link to="/" class="navbar-nav">
-                        <div>
-                            <span class="">
-                                <img src="https://cdn.discordapp.com/attachments/1034796504126341230/1034796561185644554/ELW_2-removebg-preview.png" alt="ELW" width="50" height="50"></img>
-                            </span>
-                        </div>
+                    <Link to="/" class="navbar-brand">
+                        <img
+                            src="https://cdn.discordapp.com/attachments/1034796504126341230/1034796561185644554/ELW_2-removebg-preview.png"
+                            alt="ELW"
+                            width="50"
+                            height="50"
+                        ></img>
                     </Link>
-                    <div class="d-flex justify-content-evenly bt-center" >
-                        <ul class="navbar-nav me-2 mb-2 mb-lg-0">
+                    <button class="navbar-toggler" type="button" onClick={toggleNavbar}>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class={`collapse navbar-collapse ${navbarOpen ? 'show' : ''}`}>
+                        <ul class="navbar-nav mx-auto me-2 mb-2 mb-lg-0 bt-center">
                             <li class="nav-item dropdown">
-                                <Link to=" " class="nav-link buttonNavBlue dropdown-toggle" data-bs-toggle="dropdown">Ardino</Link>
+                                <Link
+                                    to=" "
+                                    class="nav-link buttonNav buttonNavBlue dropdown-toggle"
+                                    data-bs-toggle="dropdown"
+                                >
+                                    Ardino
+                                </Link>
                                 <ul class="dropdown-menu">
                                     <li><Link to="/arduino" class="dropdown-item">More info</Link></li>
                                     <li><Link to="/hcsr04" class="dropdown-item ">Sensor &raquo;</Link>
@@ -52,8 +69,15 @@ const TopHeader = () => {
                                     </li>
                                 </ul>
                             </li>
+                            {/* Micro:Bit */}
                             <li class="nav-item dropdown">
-                                <Link to="/microbit" class="nav-link buttonNavGreen dropdown-toggle" data-bs-toggle="dropdown">Micro:Bit</Link>
+                                <Link
+                                    to="/microbit"
+                                    class="nav-link buttonNav buttonNavGreen dropdown-toggle"
+                                    data-bs-toggle="dropdown"
+                                >
+                                    Micro:Bit
+                                </Link>
                                 <ul class="dropdown-menu">
                                     <li><Link to="microbit" class="dropdown-item">More info</Link></li>
                                     <li><Link to="/hcsr04MB" class="dropdown-item ">Sensor &raquo;</Link>
@@ -78,26 +102,46 @@ const TopHeader = () => {
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown">
-                                <Link to="/robots" class="nav-link buttonNavYellow">Robot</Link>
+                            {/* Robot */}
+                            <li class="nav-item">
+                                <Link to="/robots" class="nav-link buttonNav buttonNavYellow">
+                                    Robot
+                                </Link>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a href="https://napasin163.itch.io/elw-game" class="nav-link buttonNavPurple">Game</a>
+                            {/* Game */}
+                            <li class="nav-item">
+                                <a
+                                    href="https://napasin163.itch.io/elw-game"
+                                    class="nav-link buttonNav buttonNavPurple"
+                                >
+                                    Game
+                                </a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <Link to="/quiz" class="nav-link buttonNavRed">Quiz</Link>
+                            {/* Quiz */}
+                            <li class="nav-item">
+                                <a href="/quiz" class="nav-link buttonNav buttonNavRed">
+                                    Quiz
+                                </a>
+                            </li>
+                            <li>
+                                <Link
+                                    to="/loginpage"
+                                    class="btn btn-outline-success text-light nav-item"
+                                    type="submit"
+                                >
+                                    Login
+                                </Link>
+                            </li>
+                            <li>
+                                <Logout onLogout={logout}></Logout>
                             </li>
                         </ul>
-                    </div>
-                    <div class="d-flex" >
-                        <Link to ="/loginpage" class="btn btn-outline-success text-light " type="submit">Login</Link>
-                        <Logout onLogout={logout}></Logout>
                     </div>
                 </div>
             </nav>
             <Outlet />
         </body>
     );
-}
+};
 
 export default TopHeader;

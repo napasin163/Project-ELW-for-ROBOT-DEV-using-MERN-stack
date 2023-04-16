@@ -37,7 +37,7 @@ const LoginPage = () => {
         <body>
             <div id='login'>
                 <div className='container'>
-                    <div className='row d-flex justify-content-center login-box'>
+                    <div className='row d-flex justify-content-center login-box img-fluid'>
                         < BaseLogin />
                         < LoginForm loginState={{handlerSubmit, setEmail,setPassword,errorMessage,setError}}/> 
                     </div>

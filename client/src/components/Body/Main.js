@@ -78,10 +78,10 @@ const MainPage = () => {
                 </button>
             </div>
 
-            <div class="container marketing flex">
+            <div class="container marketing d-flex">
                 <div class="row">
                     <div class="col-lg-4">
-                        <div class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <div class="bd-placeholder-img rounded-circle img-fluid"  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
                             <title>Placeholder</title>
                             <img src="https://cdn.discordapp.com/attachments/1034796504126341230/1052588599138324530/party.png" alt="test" width="30%" height="30%"></img>
                             <text x="50%" y="50%" fill="#777" dy=".3em"></text>
@@ -91,7 +91,7 @@ const MainPage = () => {
                         <p></p>
                     </div>
                     <div class="col-lg-4">
-                        <div class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <div class="bd-placeholder-img rounded-circle img-fluid"  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
                             <title>Placeholder</title>
                             <img src="https://cdn.discordapp.com/attachments/1034796504126341230/1052588599461290134/thought.png" alt="test" width="30%" height="30%"></img>
                             <text x="50%" y="50%" fill="#777" dy=".3em"></text>
@@ -101,7 +101,7 @@ const MainPage = () => {
                         <p></p>
                     </div>
                     <div class="col-lg-4">
-                        <div class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <div class="bd-placeholder-img rounded-circle img-fluid"  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
                             <title>Placeholder</title>
                             <img src="https://cdn.discordapp.com/attachments/1034796504126341230/1052588598794399834/light-bulb.png" alt="test" width="30%" height="30%"></img>
                             <text x="50%" y="50%" fill="#777" dy=".3em"></text>
@@ -123,7 +123,7 @@ const MainPage = () => {
                     <div class="col-md-5">
                         <div class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="800" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 800x500" preserveAspectRatio="xMidYMid slice" focusable="false">
                             <title>Placeholder</title>
-                            <img src="https://cdn.discordapp.com/attachments/1034796504126341230/1052596373620531250/CA001-removebg-preview.png" alt="test" width="600" height="600"></img>
+                            <img src="https://cdn.discordapp.com/attachments/1034796504126341230/1052596373620531250/CA001-removebg-preview.png" class="img-fluid" alt="Responsive image"></img>
                             <text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
                         </div>
 
@@ -144,7 +144,7 @@ const MainPage = () => {
                     <div class="col-md-5 order-md-1 marginLeft">
                         <div class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="800" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 800x500" preserveAspectRatio="xMidYMid slice" focusable="false">
                             <title>Placeholder</title>
-                            <img src="https://cdn.discordapp.com/attachments/1034796504126341230/1052596374023188490/microbit-programmable-computer-removebg-preview.png" alt="test" width="650" height="350"></img>
+                            <img src="https://cdn.discordapp.com/attachments/1034796504126341230/1052596374023188490/microbit-programmable-computer-removebg-preview.png" class="img-fluid" alt="Responsive image"></img>
                             <text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
                         </div>
 
@@ -164,7 +164,7 @@ const MainPage = () => {
                     <div class="col-md-5">
                         <div class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="800" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 800x500" preserveAspectRatio="xMidYMid slice" focusable="false">
                             <title>Placeholder</title>
-                            <img src="https://cdn.discordapp.com/attachments/1034796504126341230/1052596373142392903/micro-maqueen-microbit-robot-platform-26368-77-B-removebg-preview.png" alt="test" width="600" height="600"></img>
+                            <img src="https://cdn.discordapp.com/attachments/1034796504126341230/1052596373142392903/micro-maqueen-microbit-robot-platform-26368-77-B-removebg-preview.png" class="img-fluid" alt="Responsive image"></img>
                             <text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
                         </div>
 

@@ -29,6 +29,11 @@ import RelayMB from "./components/Body/MicroBit/RelayMB";
 import ServoMB from "./components/Body/MicroBit/ServoMB";
 import TcrtMB from "./components/Body/MicroBit/TcrtMB";
 import Quiz2 from "./components/Body/Arduino/testScript";
+import SecondQuiz from "./components/Body/quiz/second-quiz";
+import SecondResult from "./components/Body/quiz/resultSecond";
+import ThirdQuiz from "./components/Body/quiz/third-quiz";
+import ThirdResult from "./components/Body/quiz/resultThird";
+import Congrats from "./components/Body/quiz/congrats";
 
 const App = () =>{
     return (
@@ -64,6 +69,11 @@ const App = () =>{
           <Route path="servoMB" element={<ServoMB />} />
           <Route path="tcrtMB" element={<TcrtMB />} />
           <Route path="quiz2" element={<Quiz2 />} />
+          <Route path="secondquiz" element={<SecondQuiz />} />
+          <Route path="secondresult" element={<SecondResult />} />
+          <Route path="thirdquiz" element={<ThirdQuiz />} />
+          <Route path="thirdresult" element={<ThirdResult />} />
+          <Route path="congrats" element={<Congrats />} />
         </Route>
       </Routes>
     </BrowserRouter>

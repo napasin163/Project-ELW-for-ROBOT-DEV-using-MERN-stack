@@ -1,4 +1,4 @@
-import $ from 'jquery'
+/*import $ from 'jquery'
 
 $(document).ready(function () {
     // Retrieve quiz questions and answers
@@ -69,8 +69,8 @@ $(document).ready(function () {
       }
       var answerHtml = "<div class='answer " + (isCorrect ? "correct" : "incorrect") + "'>";
       answerHtml += "<p><strong>Question " + (i + 1) + ":</strong> " + question.question + "</p>";
-      answerHtml += "<p><strong>Your Answer:</strong> " + (userAnswer ? userAnswer : "No answer") + "</p>";
-      answerHtml += "<p><strong>Correct Answer:</strong> " + question.answer + "</p>";
+      answerHtml += "<p><strong class='red'>Your Answer:</strong> " + (userAnswer ? userAnswer : "No answer") + "</p>";
+      answerHtml += "<p><strong class='green'>Correct Answer:</strong> " + question.answer + "</p>";
       answerHtml += "</div>";
       resultHtml += answerHtml;
     }
@@ -82,4 +82,4 @@ $(document).ready(function () {
       localStorage.clear();
       window.location.href = "/quiz";
     });
-  });
+  });*/

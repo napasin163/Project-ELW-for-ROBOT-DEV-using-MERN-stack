@@ -36,7 +36,7 @@ const Arduino = () => {
                     </div>
 
                     <div class="overflow-hidden xd">
-                        <div class="container px-5">
+                        <div class="container px-5 img">
                             <img src="https://cdn.discordapp.com/attachments/1034796504126341230/1052556011090739295/4yair3.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt=" 123" width="900" height="500" loading="lazy"></img>
                         </div>
                     </div>
@@ -54,7 +54,7 @@ const Arduino = () => {
                     <div class="row row-cols-1 row-cols-md-2 px-5 g-4">
                         <div class="col">
                             <div class="card shadow-lg">
-                                <img src="https://cdn.discordapp.com/attachments/1034796504126341230/1052603449704972368/arduino_logo_1200x630-01.png" width="600" height="460" class="card-img-top" alt="bruh2"></img>
+                                <img src="https://cdn.discordapp.com/attachments/1034796504126341230/1052603449704972368/arduino_logo_1200x630-01.png" width="600" height="460" class="card-img-top " alt="bruh2"></img>
                                 <div class="card-body">
                                     <h5 class="card-title">Coding</h5>
                                     <p class="card-text">เรียนรู้การเขียนโค้ดคำสั่งการใช้งานควบคุมอุปกรณ์อิเล็กทรอนิกส์เบื้องต้นผ่านโปรเเกรม Arduino IDE </p>

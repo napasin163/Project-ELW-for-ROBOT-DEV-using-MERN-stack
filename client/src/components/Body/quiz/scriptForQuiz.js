@@ -50,7 +50,7 @@ $(document).ready(function () {
         },
         {
             question: "เซนเซอร์ F249 ไม่ สามารถนำไปประยุกต์ใช้ในงานใด",
-            choices: ["การนับจำนวน", "การปรับค่าเสียงเพลง", "การทำเครื่องรับเหรียญ", "การนับรอบการหมุนของมอเตอร"],
+            choices: ["การนับจำนวน", "การปรับค่าเสียงเพลง", "การทำเครื่องรับเหรียญ", "การนับรอบการหมุนของมอเตอร์"],
             answer: "การปรับค่าเสียงเพลง"
         }
     ];
@@ -88,4 +88,25 @@ $(document).ready(function () {
         localStorage.setItem("userAnswers", JSON.stringify(userAnswers));
         window.location.href = "/result";
     });
+    
+    function areAllAnswersCorrect() {
+        for (var i = 0; i < questions.length; i++) {
+          var selectedChoice = $("input[name='q" + i + "']:checked");
+          if (selectedChoice.length === 0 || selectedChoice.val() !== questions[i].answer) {
+            return false;
+          }
+        }
+        return true;
+      }
+    
+      $("#quiz-form").submit(function (event) {
+        event.preventDefault();
+    
+        if (areAllAnswersCorrect()) {
+          window.location.href = '/secondquiz';
+        } else {
+          // Show a message or display some indication that not all answers are correct
+          alert('คุณยังไม่ผ่านการทดสอบ เสียใจด้วย :(');
+        }
+      });
 });

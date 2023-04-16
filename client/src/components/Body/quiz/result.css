@@ -6,11 +6,11 @@
 }
 
 .correct {
-    background-color: #dff0d8;
+    background-color: #d2f3c6;
 }
 
 .incorrect {
-    background-color: #f2dede;
+    background-color: #eebebe;
 }
 
 .btn-try-again {
@@ -26,6 +26,14 @@
 
 div.answer p{
     font-size: 20px;
+}
+
+.green{
+    -webkit-text-fill-color: rgb(28, 209, 28);
+}
+
+div.incorrect .red {
+    -webkit-text-fill-color: red;
 }
 
 

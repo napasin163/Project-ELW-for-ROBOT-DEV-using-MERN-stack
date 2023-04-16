@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 export default function Logout(props) {
   return (
     <div>
-        <Link to ='/' onClick={props.onLogout} className="btn btn-outline-danger text-light">Logout</Link>
+        <Link to ='/' onClick={props.onLogout} className="btn btn-outline-danger text-light nav-item">Logout</Link>
     </div>
   )
 }

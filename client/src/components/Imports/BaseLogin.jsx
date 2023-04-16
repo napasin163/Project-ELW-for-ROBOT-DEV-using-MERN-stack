@@ -10,7 +10,7 @@ export default function BaseLogin() {
     <div className="col-sm-5 bg-img align-self-center">
       <div className="info">
         <div className="logo clearfix">
-          <Link to="/" className="nav-brand">Logo</Link>
+          <Link to="/" className="nav-brand"></Link>
         </div>
         <div className="btn-section clearfix">
           <Link to="/loginpage" className={location.pathname === "/loginpage" ? DefaultClass + active: DefaultClass}>Login</Link>

@@ -26,11 +26,33 @@ const Robots = () => {
                                 <div class="modal-body">
                                     <img src="https://cdn.discordapp.com/attachments/768084656465117227/1090816877481169016/86D26C5E-69EF-404B-811F-4262175D61FE-removebg-preview.png" alt="datasheet" width="100%" height="100%"></img>
                                 </div>
-                                <p>Mollit deserunt ex ipsum esse non eu aute reprehenderit dolor pariatur amet enim. Occaecat Lorem duis dolor minim in quis. Deserunt minim culpa consectetur reprehenderit tempor voluptate quis.
-
-                                    Eiusmod irure excepteur non qui proident sunt laborum culpa ad ad qui cillum duis esse. Commodo occaecat ex do elit et enim irure fugiat. Velit do eu ullamco elit proident do do laboris est eiusmod.
-
-                                    Pariatur duis excepteur officia deserunt velit. Consequat aute dolore reprehenderit sint occaecat mollit voluptate aute aliqua veniam enim laborum et veniam. Officia in ea deserunt laboris culpa non fugiat Lorem ipsum pariatur laboris occaecat commodo consectetur. Excepteur cillum dolor pariatur consequat voluptate labore cupidatat cupidatat do fugiat pariatur minim excepteur. Consequat sunt anim est do anim. Enim cillum reprehenderit adipisicing labore Lorem Lorem eiusmod. Sint commodo velit anim veniam aute qui veniam.</p>
+                                <h3>จะมีการต่ออุปกรณ์ภายนอกเข้ากับ บอร์ดไมโครคอนซิลเลอร์ ดังนี้ </h3>
+                                <h4>Drive Motor L298N </h4>
+                                <p>ใช้สำหรับควบคุมและขับเคลื่อนมอเตอร์ โดยมีการต่อไฟเลี้ยงของมอเตอร์จากช่อง Vin ของไมโครคอนโทรลเลอร์ 
+                                  และมีช่องควบคุมมอเตอร์ 4 ช่องคือ NI1 = D8, NI2 = D9, NI3 = D12, และ NI4 = D13 สามารถสั่งให้หุ่นยนต์เดินหน้าหรือถอยหลังได้ 
+                                  และกำหนดความเร็วของมอเตอร์ผ่านช่อง ENA = D~10  , FNR = D~11  โดยตั้งค่าได้ด้วยตัวควบคุมความเร็ว (PWM) ที่มีอยู่ในช่อง ENA และช่อง ENB </p>
+                                  <br></br>
+                                <h4>Sensor Infrared TCRT5000 </h4>
+                                <p>ใช้สำหรับตรวจจับความเข้มของแสงอินฟราเรดที่สะท้อนกลับมาจากพื้นหรือวัตถุ โดยใช้เซ็นเซอร์ทั้งหมด 2 ตัว ที่ต้องการไฟเลี้ยง 5V จากบอร์ดไมโครคอนโทรลเลอร์ 
+                                  และใช้ช่องสัญญาณเพื่ออ่านค่าจากเซ็นเซอร์ โดยอ่านค่าได้โดยเซ็นเซอร์ข้างซ้าย = ขา D2 และ เซ็นเซอร์ข้างขวา = D3 ในบอร์ดไมโครคอนโทรลเลอร์</p>
+                                  <br></br>
+                                <h4>Button switch module </h4>
+                                <p>ใช้สำหรับตรวจจับสัญญาณจากปุ่มกด และเมื่อมีการกดปุ่มจะส่งสัญญาณไปยังไมโครคอนโทรลเลอร์ที่ต้องการไฟเลี้ยง 
+                                  ซึ่งโมดูลจะใช้ไฟเลี้ยง 5V จากบอร์ดไมโครคอนโทรลเลอร์ จะต่อขาสัญญาณของโมดูลเข้ากับขา D7 ในบอร์ดไมโครคอนโทรลเลอร์ </p>
+                                  <br></br>
+                                <h4>Passive buzzer module </h4>
+                                <p>ใช้สำหรับส่งเสียงแจ้งเตือนโดยการสร้างเสียงจากการส่งกระแสไฟฟ้าไปยังตัว buzzer โดย ขาสัญญาณต่อเข้ากับ ขา D4 ในบอร์ดไมโครคอนโทรลเลอร์ต้องการไฟเลี้ยง 
+                                  ซึ่งโมดูลจะใช้ไฟเลี้ยง 5V จากบอร์ดไมโครคอนโทรลเลอร์ </p>
+                                  <br></br>
+                                <h4>Ultrasonic Senser Module HC-SR04 </h4>
+                                <p>ใช้สำหรับตรวจจับระยะทางโดยส่งสัญญาณ Ultrasonic ไปยังตัวเซ็นเซอร์ และรับสัญญาณที่ถูกส่งกลับมา โดยใช้ขา Trig เพื่อส่งสัญญาณ Ultrasonic 
+                                  และขา Echo เพื่อรับสัญญาณที่ถูกส่งกลับมา ขาสัญญาณ Trig ต่อเข้ากับขา D4 และขาสัญญาณ Echo ต่อเข้ากับขา D5 ในบอร์ดไมโครคอนโทรลเลอร์ 
+                                  โมดูลจะใช้ไฟเลี้ยง 5V จากบอร์ดไมโครคอนโทรลเลอร์ </p>
+                                  <br></br>
+                                <h4>Servo motor MG90S </h4>
+                                <p>มีการเชื่อมต่อกับไมโครคอนโทรลเลอร์ด้วยสาย 3 เส้น ซึ่งประกอบด้วย ขา GND ขาไฟเลี้ยง 5V และ ขาสัญญาณ โดยในที่นี้ 
+                                  ขาสัญญาณจะต้องเชื่อมต่อกับขา PWM บนบอร์ดไมโครคอนโทรลเลอร์ ซึ่งในที่นี้จะใช้ขา A0 ในบอร์ดไมโครคอนโทรลเลอร์ เป็นขาสัญญาณของ Servo motor MG90S </p>
+                                  
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary btn-lg px-4 me-sm-3" data-bs-dismiss="modal">Close</button>
                                 </div>
@@ -59,13 +81,20 @@ const Robots = () => {
                         <h2 class="bold2">รายละเอียด</h2>
                     </div>
                     <div class="px-5 blackText">
-                        <p>Incididunt ipsum eiusmod proident aliqua sunt. Cupidatat consequat fugiat dolor qui eiusmod qui commodo enim ut id sit. Adipisicing officia eu veniam quis laborum. Ut in tempor nulla esse irure nulla deserunt voluptate labore proident enim dolor. Cillum Lorem aliqua consectetur consectetur enim eiusmod labore sint enim amet ad do.
-
-                            Veniam consectetur culpa velit esse et dolor non fugiat qui ipsum nostrud laboris aliquip amet. Dolor pariatur eu id occaecat non ex amet ipsum ut commodo amet. Eu minim officia sit eiusmod nostrud qui mollit qui adipisicing et irure cupidatat labore occaecat.
-
-                            Nisi labore nisi ipsum officia ut deserunt nulla. Id adipisicing tempor id magna consectetur enim ullamco commodo exercitation. Aliqua reprehenderit reprehenderit commodo fugiat ea ad voluptate dolore elit aute. Esse elit consectetur ex consequat irure fugiat. Proident do consequat enim cillum consectetur aute eiusmod irure ea deserunt eu aliqua.
-
-                            Excepteur aliqua do elit excepteur eiusmod elit officia eu duis proident commodo. Eu quis velit dolore irure deserunt magna. Est ut anim ut do aliqua ea veniam aliquip laboris ullamco reprehenderit. Ex magna ad laborum adipisicing in qui ipsum.</p>
+                        <p>
+                        การใช้โมดูล L298N เพื่อควบคุมการเคลื่อนที่ของมอเตอร์ DC ต้องมีการเชื่อมต่อโมดูล L298N กับไมโครคอนโทรลเลอร์และมอเตอร์ DC โดยใช้ขาต่อของโมดูล L298N ต่างๆ ให้ถูกต้อง
+                        </p>
+                        <p>
+                      ขาต่อ L298N แต่ละตัวจะมีหน้าที่ต่างกัน โดยขา IN1 และ IN2 ใช้สั่งควบคุมมอเตอร์ตัวที่ 1 และขา IN3 และ IN4 ใช้สั่งควบคุมมอเตอร์ตัวที่ 2 และขา ENA และ ENB ใช้ควบคุมความเร็วของมอเตอร์ตัวที่ 1 และ 2
+                        </p>
+                        <p>
+                        การควบคุมการเคลื่อนที่ของมอเตอร์ DC จะต้องใช้สัญญาณไฟฟ้าต่อเข้ากับตัวโมเตอร์ 
+                        (เคลื่อนที่ไปข้างหน้า),(เคลื่อนที่ถอยหลัง) และ (หยุด)
+                        </p>
+                        <p>
+                        การควบคุมการเคลื่อนที่ของมอเตอร์ DC ด้วยโมดูล L298N สามารถทำได้โดยการเชื่อมต่อไว้กับไมโครคอนโทรลเลอร์และมอเตอร์ DC 
+                        แล้วควบคุมการเคลื่อนที่ผ่านโปรแกรม โดยการสั่งคำสั่งในโปรแกรมให้ส่งสัญญาณไฟฟ้าเพื่อควบคุมการเคลื่อนที่ของมอเตอร์ DC โดยใช้ขาต่อของโมดูล L298N ตามที่ได้กล่าวไปแล้ว
+                        </p>
                     </div>
                     <br></br>
                     <hr class="featurette-divider"></hr>
@@ -192,13 +221,18 @@ void Stop() {
                         <h2 class="bold2">รายละเอียด</h2>
                     </div>
                     <div class="px-5 blackText">
-                        <p>Incididunt ipsum eiusmod proident aliqua sunt. Cupidatat consequat fugiat dolor qui eiusmod qui commodo enim ut id sit. Adipisicing officia eu veniam quis laborum. Ut in tempor nulla esse irure nulla deserunt voluptate labore proident enim dolor. Cillum Lorem aliqua consectetur consectetur enim eiusmod labore sint enim amet ad do.
+                      <p>
+                      เพื่อให้หุ่นยนต์เดินไปเจอเส้นสีดำได้ จะต้องใช้เซ็นเซอร์อินฟราเรด TCRT5000 หรือเซ็นเซอร์ไลน์เพื่ออ่านค่าสีของพื้นผิว โดยหากเซ็นเซอร์อ่านเส้นสีดำ หุ่นยนต์จะต้องหยุดเดิน                
+                      </p>
+                      <p>
+                      การทำงานของ TCRT5000 คือ เมื่อมีแสงสะท้อนกลับมาจากพื้นผิวที่เราวางเซ็นเซอร์ไว้ จะมีกระแสไฟฟ้าไหลผ่านตามความสว่างที่เซ็นเซอร์ได้รับ เมื่อพื้นผิวเป็นสีดำ แสงที่สะท้อนกลับจะน้อยลง 
+                      จึงทำให้กระแสไฟฟ้าที่ไหลผ่านเซ็นเซอร์ลดลง ดังนั้นจึงสามารถใช้ค่าความสว่างที่ได้รับจาก TCRT5000 เพื่อตรวจจับเส้นสีดำบนพื้นผิวได้
+                      </p>
+                      <p>
+                      ในการควบคุมหุ่นยนต์ให้เดินตามเส้นสีดำ จะต้องเชื่อมต่อเซ็นเซอร์ TCRT5000 เข้ากับไมโครคอนโทรลเลอร์ และอ่านค่าที่เซ็นเซอร์ได้จากพื้นผิว หากค่าความสว่างที่ได้รับเท่ากับหรือน้อยกว่าค่าที่กำหนด 
+                      หุ่นยนต์จะหยุดเดิน โดยทำการสั่งให้มอเตอร์หยุดหมุนด้วยการสั่งให้ค่า PWM ของ ENA และ ENB เป็นค่า 0 ซึ่งจะทำให้มอเตอร์หยุดหมุนได้
+                      </p>
 
-                            Veniam consectetur culpa velit esse et dolor non fugiat qui ipsum nostrud laboris aliquip amet. Dolor pariatur eu id occaecat non ex amet ipsum ut commodo amet. Eu minim officia sit eiusmod nostrud qui mollit qui adipisicing et irure cupidatat labore occaecat.
-
-                            Nisi labore nisi ipsum officia ut deserunt nulla. Id adipisicing tempor id magna consectetur enim ullamco commodo exercitation. Aliqua reprehenderit reprehenderit commodo fugiat ea ad voluptate dolore elit aute. Esse elit consectetur ex consequat irure fugiat. Proident do consequat enim cillum consectetur aute eiusmod irure ea deserunt eu aliqua.
-
-                            Excepteur aliqua do elit excepteur eiusmod elit officia eu duis proident commodo. Eu quis velit dolore irure deserunt magna. Est ut anim ut do aliqua ea veniam aliquip laboris ullamco reprehenderit. Ex magna ad laborum adipisicing in qui ipsum.</p>
                     </div>
                     <br></br>
                     <hr class="featurette-divider"></hr>
@@ -379,13 +413,10 @@ void Stop() {
                         <h2 class="bold2">รายละเอียด</h2>
                     </div>
                     <div class="px-5 blackText">
-                        <p>Incididunt ipsum eiusmod proident aliqua sunt. Cupidatat consequat fugiat dolor qui eiusmod qui commodo enim ut id sit. Adipisicing officia eu veniam quis laborum. Ut in tempor nulla esse irure nulla deserunt voluptate labore proident enim dolor. Cillum Lorem aliqua consectetur consectetur enim eiusmod labore sint enim amet ad do.
-
-                            Veniam consectetur culpa velit esse et dolor non fugiat qui ipsum nostrud laboris aliquip amet. Dolor pariatur eu id occaecat non ex amet ipsum ut commodo amet. Eu minim officia sit eiusmod nostrud qui mollit qui adipisicing et irure cupidatat labore occaecat.
-
-                            Nisi labore nisi ipsum officia ut deserunt nulla. Id adipisicing tempor id magna consectetur enim ullamco commodo exercitation. Aliqua reprehenderit reprehenderit commodo fugiat ea ad voluptate dolore elit aute. Esse elit consectetur ex consequat irure fugiat. Proident do consequat enim cillum consectetur aute eiusmod irure ea deserunt eu aliqua.
-
-                            Excepteur aliqua do elit excepteur eiusmod elit officia eu duis proident commodo. Eu quis velit dolore irure deserunt magna. Est ut anim ut do aliqua ea veniam aliquip laboris ullamco reprehenderit. Ex magna ad laborum adipisicing in qui ipsum.</p>
+                        <p>การสั่งงานหุ่นยนต์ให้เดินตามเส้นโดยใช้เซ็นเซอร์ TCRT5000 เป็นกระบวนการที่มีขั้นตอนการทำงานคือ ถ้าเซ็นเซอร์ข้างใดข้างหนึ่งตรวจจับเส้นสีดำบนพื้นผิวด้วยเซ็นเซอร์ TCRT5000
+                           แล้วส่งค่าไปยังไมโครคอนโทรลเลอร์เพื่อตรวจสอบว่าหุ่นยนต์อยู่บนเส้นสีดำหรือไม่ หากอยู่บนเส้นสีดำ ไมโครคอนโทรลเลอร์จะสั่งให้หุ่นยนต์ เซ็ตค่าตัวหุ่นยนต์ให้เซ็นเซอร์อยู่ระหว่างกลางเส้นสีดำ 
+                           และถ้าเซนเซอร์ทั้ง 2 ดวงเจอสีขาว ก็จะให้เดินหน้าต่อไปเรื่อย ๆ กระบวนการนี้เรียกว่าการติดตามเส้น (Line Following) ซึ่งเป็นกระบวนการพื้นฐานของหุ่นยนต์เดินตามเส้น
+                            การสั่งงานหุ่นยนต์ให้เดินตามเส้นต้องใช้ความรู้ในการเขียนโปรแกรมเพื่อควบคุมการทำงานของไมโครคอนโทรลเลอร์ และการใช้เซ็นเซอร์ TCRT5000 เพื่อตรวจจับเส้นสีดำบนพื้น</p>
                     </div>
                     <br></br>
                     <hr class="featurette-divider"></hr>
@@ -597,13 +628,9 @@ void Turn_right() {
                         <h2 class="bold2">รายละเอียด</h2>
                     </div>
                     <div class="px-5 blackText">
-                        <p>Incididunt ipsum eiusmod proident aliqua sunt. Cupidatat consequat fugiat dolor qui eiusmod qui commodo enim ut id sit. Adipisicing officia eu veniam quis laborum. Ut in tempor nulla esse irure nulla deserunt voluptate labore proident enim dolor. Cillum Lorem aliqua consectetur consectetur enim eiusmod labore sint enim amet ad do.
-
-                            Veniam consectetur culpa velit esse et dolor non fugiat qui ipsum nostrud laboris aliquip amet. Dolor pariatur eu id occaecat non ex amet ipsum ut commodo amet. Eu minim officia sit eiusmod nostrud qui mollit qui adipisicing et irure cupidatat labore occaecat.
-
-                            Nisi labore nisi ipsum officia ut deserunt nulla. Id adipisicing tempor id magna consectetur enim ullamco commodo exercitation. Aliqua reprehenderit reprehenderit commodo fugiat ea ad voluptate dolore elit aute. Esse elit consectetur ex consequat irure fugiat. Proident do consequat enim cillum consectetur aute eiusmod irure ea deserunt eu aliqua.
-
-                            Excepteur aliqua do elit excepteur eiusmod elit officia eu duis proident commodo. Eu quis velit dolore irure deserunt magna. Est ut anim ut do aliqua ea veniam aliquip laboris ullamco reprehenderit. Ex magna ad laborum adipisicing in qui ipsum.</p>
+                        <p>การสั่งงานให้หุ่นยนต์เดินตามเส้น จนกว่าจะเจอวัตถุข้างหน้าโดยใช้เซ็นเซอร์อัลตราโซนิค (Ultrasonic Sensor Module HC-SR04) ในการเช็ค 
+                          มีขั้นตอนการทำงานคล้ายกับการติดตามเส้น โดยหุ่นยนต์จะเคลื่อนที่ไปตามเส้นทางโดยใช้เซ็นเซอร์ TCRT5000 เพื่อตรวจจับเส้นสีดำบนพื้นผิว และหากพบวัตถุข้างหน้าหุ่นยนต์ 
+                          โปรแกรมจะสั่งให้หุ่นยนต์หยุดการเดินหรือหันทิศทางไปยังทิศทางอื่น</p>
                     </div>
                     <br></br>
                     <hr class="featurette-divider"></hr>
@@ -843,29 +870,9 @@ void Line_U() {
                     <div class="row">
                         <div class="col-md-4">
                             <div class="card mb-4 box-shadow">
-                                <img class="card-img-top" src="https://cdn.discordapp.com/attachments/768084656465117227/1090891600147796020/LINE_ALBUM__230330_6.jpg" alt="Card image cap"></img>
-                                <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card mb-4 box-shadow">
-                                <img class="card-img-top" src="https://cdn.discordapp.com/attachments/768084656465117227/1090891600395247667/LINE_ALBUM__230330_0.jpg" alt="Card image cap"></img>
-                                <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card mb-4 box-shadow">
                                 <img class="card-img-top" src="https://cdn.discordapp.com/attachments/768084656465117227/1090891600860827750/LINE_ALBUM__230330_2.jpg" alt="Card image cap"></img>
                                 <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text">โครงสร้างของหุ่นยนต์</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                     </div>
                                 </div>
@@ -875,7 +882,7 @@ void Line_U() {
                             <div class="card mb-4 box-shadow">
                                 <img class="card-img-top" src="https://cdn.discordapp.com/attachments/768084656465117227/1090891601376710736/LINE_ALBUM__230330_4.jpg" alt="Card image cap"></img>
                                 <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text">ยึดมอเตอร์ ล้อ และโมดูลลำโพงเข้ากับโครงของหุ่นยนต์</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                     </div>
                                 </div>
@@ -885,7 +892,7 @@ void Line_U() {
                             <div class="card mb-4 box-shadow">
                                 <img class="card-img-top" src="https://cdn.discordapp.com/attachments/768084656465117227/1090891611023605770/LINE_ALBUM__230330_7.jpg" alt="Card image cap"></img>
                                 <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text">ยึดล้อหน้าทั้ง 2 ข้างเข้ากับโครงของหุ่นยนต์</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                     </div>
                                 </div>
@@ -895,7 +902,7 @@ void Line_U() {
                             <div class="card mb-4 box-shadow">
                                 <img class="card-img-top" src="https://cdn.discordapp.com/attachments/768084656465117227/1090891611262689280/LINE_ALBUM__230330_8.jpg" alt="Card image cap"></img>
                                 <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text">ติดตั้งบูชรองน็อตสำหรับยึดโครงด้านบนของหุ่นยนต์กับฐาน</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                     </div>
                                 </div>
@@ -905,7 +912,7 @@ void Line_U() {
                             <div class="card mb-4 box-shadow">
                                 <img class="card-img-top" src="https://cdn.discordapp.com/attachments/768084656465117227/1090891611493380096/LINE_ALBUM__230330_9.jpg" alt="Card image cap"></img>
                                 <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text">ติดตั้งบูชรองน็อตสำหรับลองบอร์ด</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                     </div>
                                 </div>
@@ -915,7 +922,7 @@ void Line_U() {
                             <div class="card mb-4 box-shadow">
                                 <img class="card-img-top" src="https://cdn.discordapp.com/attachments/768084656465117227/1090891611715665920/LINE_ALBUM__230330_10.jpg" alt="Card image cap"></img>
                                 <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text">ติดตั้งบอร์ดไมโครคอนเทเลอร์</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                     </div>
                                 </div>
@@ -925,7 +932,7 @@ void Line_U() {
                             <div class="card mb-4 box-shadow">
                                 <img class="card-img-top" src="https://cdn.discordapp.com/attachments/768084656465117227/1090891611929583626/LINE_ALBUM__230330_11.jpg" alt="Card image cap"></img>
                                 <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text">ติดตั้งบอร์ด Drive Motor L298N</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                     </div>
                                 </div>
@@ -935,7 +942,7 @@ void Line_U() {
                             <div class="card mb-4 box-shadow">
                                 <img class="card-img-top" src="https://cdn.discordapp.com/attachments/768084656465117227/1090891612147691550/LINE_ALBUM__230330_12.jpg" alt="Card image cap"></img>
                                 <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text">ติดตั้งบอร์ด Button switch module</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                     </div>
                                 </div>
@@ -945,7 +952,7 @@ void Line_U() {
                             <div class="card mb-4 box-shadow">
                                 <img class="card-img-top" src="https://cdn.discordapp.com/attachments/768084656465117227/1090891612390948934/LINE_ALBUM__230330_13.jpg" alt="Card image cap"></img>
                                 <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text">ยึดServo motor กับโครง</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                     </div>
                                 </div>
@@ -955,7 +962,7 @@ void Line_U() {
                             <div class="card mb-4 box-shadow">
                                 <img class="card-img-top" src="https://cdn.discordapp.com/attachments/768084656465117227/1090891618816643082/LINE_ALBUM__230330_14.jpg" alt="Card image cap"></img>
                                 <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text">ติดตั้งบอร์ด Ultrasonic Senser Module HC-SR04</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                     </div>
                                 </div>
@@ -965,7 +972,7 @@ void Line_U() {
                             <div class="card mb-4 box-shadow">
                                 <img class="card-img-top" src="https://cdn.discordapp.com/attachments/768084656465117227/1090891619181539348/LINE_ALBUM__230330_15.jpg" alt="Card image cap"></img>
                                 <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text">ต่อสายหุ่ยยนต์</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                     </div>
                                 </div>
@@ -975,7 +982,7 @@ void Line_U() {
                             <div class="card mb-4 box-shadow">
                                 <img class="card-img-top" src="https://cdn.discordapp.com/attachments/768084656465117227/1090891619462561842/Robot.jpg" alt="Card image cap"></img>
                                 <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text">หุ่นยนต์ติดตามเส้นตรวจจับสิ่งกีดขวาง</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                     </div>
                                 </div>

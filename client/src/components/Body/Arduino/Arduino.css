@@ -1,33 +1,47 @@
-@media (min-width: 992px) {
-    .rounded-lg-3 { border-radius: .3rem; }
-  }
-  
+/* Default styles */
+.rounded-lg-3 { 
+  border-radius: .3rem; 
+}
 
+.xd {
+  max-height: 100vh;
+}
+
+.blackText {
+  -webkit-text-fill-color: black;
+}
+
+.whiteText {
+  -webkit-text-fill-color: rgb(248, 246, 246);
+}
+
+.BlueText {
+  -webkit-text-fill-color: #0e99ff;
+}
+
+.GreenText {
+  -webkit-text-fill-color: #14b81a;
+}
+
+.YellowText {
+  -webkit-text-fill-color: #fecd29; 
+}
+
+.CT {
+  background-color: red;
+}
+
+
+/* Styles for screens larger than 991px */
+@media screen and (min-width: 992px) {
+  .rounded-lg-3 { 
+    border-radius: .3rem; 
+  }
+}
+
+/* Styles for screens smaller than 768px */
+@media screen and (max-width: 767px) {
   .xd {
-    max-height: 100vh;
+    max-height: 50vh;
   }
-
-  .blackText{
-    -webkit-text-fill-color: black;
-  }
-
-  .whiteText{
-    -webkit-text-fill-color: rgb(248, 246, 246);
-  }
-
-  .BlueText{
-    -webkit-text-fill-color: #0e99ff;
-  }
-
-  .GreenText{
-    -webkit-text-fill-color: #14b81a;
-  }
-
-  .YellowText{
-    -webkit-text-fill-color: #fecd29; 
-  }
-
-  .CT{
-   background-color: red;
-  }
-
+}
